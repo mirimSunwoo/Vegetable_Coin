@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    height: 145px;
+    text-align: center;
+    /* background-color: ; */
+    border-bottom: 1px solid #999;
+}
+.header_logo p{
+    position: absolute;
+    width: 118px;
+    height: 31px;
+    left: 363px;
+    top: 96px;
+}
+.header_menu ul{
+    margin-top: 40px;
+}
+.header_menu li{
+    display: inline-block;
+}
+.header_menu.text{
+    left: 953px;
+    top: 100px;
+}
+.header_menu ul li a{
+    display:block;
+    font:bold 14px 'arial';
+    color: #999;
+    margin: 0px 16px;
+}
