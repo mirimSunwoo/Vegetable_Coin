@@ -9,8 +9,7 @@ body{
 .header{
     height: 145px;
     text-align: center;
-    /* background-color: ; */
-    border-bottom: 1px solid #999;
+    /* border-bottom: 1px solid #999; */
 }
 .header_logo p{
     position: absolute;
@@ -34,4 +33,7 @@ body{
     font:bold 14px 'arial';
     color: #999;
     margin: 0px 16px;
+}
+.header image{
+    position:relative;
 }
