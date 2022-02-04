@@ -14,23 +14,28 @@
     display: flex;
     width: 1194px;
     margin: auto;
-    background: red;
-    height: 86px;
+    /* background: red; */
+    height: 222px;
 }
 .header_logo{
     width: 118px;
     height: 31px;
-    margin-top: 24px;
-    background: green;
+    margin-top: 96px;
+    /* background: green; */
     border-radius: 5px;
 }
 .nav{
     display: flex;
     justify-content: flex-end;
-    line-height: 86px;
+    /* line-height: 86px; */
     width: calc(1194px - 118px);
-    background: blue;
+    /* background: blue; */
 }
 .nav > li{
     margin-left: 58px;
+    margin-top: 96px;
+}
+.nav > li > a{
+    color: white;
+    size: 20px;
 }
