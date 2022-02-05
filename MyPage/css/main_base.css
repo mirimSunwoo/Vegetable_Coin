@@ -1,0 +1,21 @@
+*{
+    font-family: 'Noto Sans KR',sans-serif;
+    list-style: none;
+    text-decoration: none; /*밑줄 없애기*/
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+.intro_bg{
+    background-image: url("../image/main.jpg");
+    width: 100%;
+    height: 1726px;
+}
+.header{
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    background: red;
+}

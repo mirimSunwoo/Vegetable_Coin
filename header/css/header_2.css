@@ -35,7 +35,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    color: #333;
+    color: #fff;
     display: inline-block;
     text-decoration: none;
     z-index: 3;
@@ -55,7 +55,7 @@
   }
   .nav .slide2 {
     opacity: 0;
-    background: rgb(190, 190, 190);
+    background: rgb(207, 207, 207);
     z-index: 1;
   }
   .nav .squeeze {
