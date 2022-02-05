@@ -1,5 +1,9 @@
+@font-face {
+    src: url(../../font);
+    font-family:"Gotham";
+}
 *{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family:"Gotham";
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
