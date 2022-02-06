@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    /* display: block; */
+}
+@font-face {
+    src: url(../../font/English);
+    font-family:"Gotham";
+    
+ }
+ @font-face{
+     src: url(../../font/Korean);
+     font-family: "Pretendard"; 
+ }
+.container{
+    width : 1920px;
+    height: 350px;
+    display: inline-block;
+    position:absolute;
+    /* background-color: rgb(204, 204, 204); */
+}
+.text{
+    top:10px;
+    left: 363px;
+    height : 31px;
+    font-family: "Pretendard";
+    font-size: 26px;
+    font-style: normal;
+    color: #6A9258;
+}
+.box{
+    width : 1194px;
+    height : 234px;
+    left : 363px;
+    top : 101px;
+    
+    border-top: solid 2px #6A9258;
+    border-bottom : solid 2px #6A9258;
+    
+}
+img{
+    width:174px;
+    height:174px;
+    /* max-width: 174px;
+    max-height: 174px; */
+    top:30px;
+    
+}
+.items:hover .delete{
+    opacity: 100;
+}
+.delete{
+    width:32px;
+    height:32px;
+    margin-left: 150px;
+    top : 20px;
+    opacity: 0;
+}
+
+.item2{
+    left:204px;
+}
+.item3{
+    left:408px;
+}
+.item4{
+    left:612px;
+}
+.item5{
+    left:816px;
+}
+
