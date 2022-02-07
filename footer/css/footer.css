@@ -1,19 +1,21 @@
 *{
     margin:0;
     padding:0;
-    position:absolute;
+    /* position:absolute; */
 }
 @font-face {
-    src: url(../../font);
+    src: url(/font);
     font-family:"Gotham";
  }
 .footer-box{
+    position:absolute;
     float: left;
     background-color: #6A9258;
     width: 1920px;
     height: 810px;
 }
 .team-title{
+    position:absolute;
     width: 376px;
     left: 363px;
     top: 98px;
@@ -24,6 +26,7 @@
     font-weight: bold;
 }
 .period-title{
+    position:absolute;
     left: 975px;
     top: 98px;
     font-size: 30px;
@@ -34,6 +37,7 @@
    
 }
 .designer-team{
+    position:absolute;
     left: 363px;
     top: 246px;
     font-size: 28px;
@@ -44,6 +48,7 @@
 }
 
 .designer-period{
+    position:absolute;
     left: 975px;
     top: 246px;
     font-size: 28px;
@@ -53,6 +58,7 @@
     font-weight: bold;
 }
 .designer-name{
+    position:absolute;
     width: 429px;
     left: 363px;
     top: 286px;
@@ -61,6 +67,7 @@
     color: #FFFFFF;
 }
 .design-date{
+    position:absolute;
     width: 200px;
     left: 977px;
     top: 286px;
@@ -69,6 +76,7 @@
     color: #FFFFFF;
 }
 .developer-team{
+    position:absolute;
     left: 363px;
     top: 385px;
     font-size: 28px;
@@ -78,6 +86,7 @@
     font-weight: bold;
 }
 .develop-period{
+    position:absolute;
     left: 975px;
     top: 385px;
     font-size: 28px;
@@ -87,6 +96,7 @@
     font-weight: bold;
 }
 .develop-name{
+    position:absolute;
     width: 400px;
     left: 363px;
     top: 425px;
@@ -95,6 +105,7 @@
     color: #FFFFFF;
 }
 .develop-date{
+    position:absolute;
     width: 200px;
     left:975px;
     top:425px;
@@ -103,7 +114,7 @@
     color: #FFFFFF;
 }
 .line{
-    position: absolute;
+    position:absolute;
     width: 1920px;
     height: 0px;
     left: 0px;
@@ -111,7 +122,7 @@
     border: 1px solid #466538;
 }
 .contact{
-    position: absolute;
+    position:absolute;
     width: 321px;
     height: 89px;
     left: 365px;
@@ -123,7 +134,7 @@
     color: #FFFFFF;
 }
 .email{
-    position: absolute;
+    position:absolute;
     width: 271px;
     height: 0px;
     left: 824px;
