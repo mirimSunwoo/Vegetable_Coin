@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .wrapper{
+        display: grid;
+        grid-template-columns: 200px;
+      }
+      .one {
+        grid-column: 1 / 4;
+      }
+      .two {
+        grid-column: 1 / 4;
+      }
+      .three {
+        grid-column: 1 / 4;
+      }
+    </style>
+    <!-- html include script -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+      $(document).ready( function() {
+
+      $("#header").load("/header/header.html");   
+      $("#contents").load("/vbti/contents.html"); 
+      $("#footer").load("/footer/footer.html");
+
+      });
+    </script>
+</head>
+<body>
+    
+    <div class="wrapper">
+      <div class="one" id="header"></div> 
+      <div class="two" id="contents"></div>
+      <div class="three" id="footer"></div>
+    </div>
+
+</body>
+</html>
