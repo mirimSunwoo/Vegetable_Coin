@@ -92,7 +92,7 @@
     font-style: normal;
     font-weight: bold;
     line-height: 54px;
-    font-size: 24px;
+    font-size: 21px; /*바꿔야함 24*/
 
     color: #191919;
     line-height: 160%;
@@ -249,14 +249,53 @@ button:hover{
     height: 71px;
     left: 744px;
     top: 107px;
-
+    /* transform: translate(-50%, -50%); */
     font-family: Noto Sans CJK KR;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;  /*바꿔야함 48*/
     line-height: 71px;
 
     text-align: center;
 
     color: #6A9258;
 }
+/* 명단 사람들 */
+.list{
+    position: absolute;
+    width: 902px;
+    height: 234px;
+    left: 510px;
+    top: 219px;
+    display: flex;
+    /* background-color: orange; */
+}
+.list > li{
+    flex: 1;
+    height: 234px;
+    /* background-color: blue; */
+    background-image: url("../image/list_bg.png");
+}
+.list > li:not(:last-child){
+    margin-right: 100px;
+}
+/* list이름 */
+.list .list_name{
+    position: absolute;
+    width: 89px;
+    height: 29px;
+    margin-left: 72px;
+    top: 260px;
+    
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px; /*바꿔야힘 24*/
+    line-height: 29px;
+
+    text-align: center;
+
+    color: #6A9258;
+}
+/* recipes */
