@@ -11,6 +11,7 @@
     src: url(../../font);
     font-family:"Gotham";
 }
+/* 배경 */
 .intro_bg{
     background-image: url("../image/intro_bg.png");
     width: 100%;
@@ -22,6 +23,7 @@
     margin: auto;
     background: red;
 }
+/* 제목 */
 .intro_text > p {
     position: absolute;
     width: 1202px;
@@ -41,6 +43,7 @@
     color: #FFFFFF;
 
 }
+/* what we doing */
 .info_text > h1 {
     position: absolute;
     width: 1136px;
@@ -74,7 +77,7 @@
     color: #6A9258;
     margin-bottom: 0px;
 }
-
+/* 중간중간 강조 */
 .info_text .info_p1 > strong{
     color: #6A9258;
 }
@@ -95,6 +98,7 @@
     line-height: 160%;
     margin-top: 20px;
 }
+/* 꽃과 구름 */
 .cloud_flower .cloud{
     position: absolute;
     width: 725px;
@@ -109,6 +113,7 @@
     left: 1180px;
     top: 1475px;
 }
+/* 요즘 핫한 채소 */
 .vegetables p{
     position: absolute;
     width: 166px;
@@ -142,4 +147,49 @@
     text-align: center;
 
     color: #6B8060;
+}
+/* 당근, 고추, 깻잎논쟁, 방울토마토 */
+.icons{
+    position: absolute;
+    width: 1194px;
+    height: 433px;
+    left: 366px;
+    top: 2508px;
+    display: flex;
+    /* background-color: orange; */
+}
+.icons > li{
+    flex: 1;
+    /* background-color: blue; */
+    height: 433px;
+}
+.icons >li:not(:last-child){
+    margin-right: 30px;
+}
+/* click버튼 */
+.icon_click{
+    position: absolute;
+    width: 39px;
+    height: 51.19px;
+    margin-left: 212.5px;
+    top: 29.81px;
+}
+/* 채소이름 */
+.contents_name{
+    position: absolute;
+    width: 65px;
+    height: 33px;
+    margin-left: 181px;
+    top: 372px;
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+/* view more버튼 */
+.btn_viewmore{
+
 }

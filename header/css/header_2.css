@@ -1,3 +1,9 @@
+.wrap{
+  position: absolute;
+  width: 1920px;
+  height: 1726px;
+  top: 95px;
+}
 .header{
     display: flex;
     width: 1194px;
