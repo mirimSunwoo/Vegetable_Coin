@@ -1,12 +1,31 @@
+@font-face {
+  src: url(../../font/English);
+  font-family:"Gotham";
+  
+}
 .for_slick_slider{
   display: flex;
+  /* width:1920px; */
+  height : 500px;
 }
-.for_slick_slider .items{
-  width : 350px;
-  height : 350px;
-  margin : 50px;
+.for_slick_slider .popluar-items{
+  width : 276px;
+  height: 276px;
+  margin : 60px;
+  
 }
-.for_slick_slider .items img{
-  width : 350px;
-  height: 350px;
+.for_slick_slider .popluar-items .popluar-img{
+  width : 276px;
+  height: 276px;
+}
+.for_slick_slider .slick-center .popluar-img{
+  transform : scale(1.05);
+}
+.popular-text{
+  text-align: center;
+  color: #191919;
+  font-family:"Pretendard";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
 }
