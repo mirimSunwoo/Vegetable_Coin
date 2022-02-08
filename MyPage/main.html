@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_2.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel = "stylesheet" href="./css/footer.css"">
+    
     <link rel="stylesheet" type="text/css" href="./css/main_base.css">
     <title>Document</title>
 </head>
@@ -12,7 +17,19 @@
     <div class="wrap">
         <div class="intro_bg">
             <div class="header">
-                <!-- header들어갈 자리 -->
+                <div class="header_logo">
+                    <a href="./main.html"><img src="../header/image/header.png"></a>
+                </div>
+                <ul class="nav">
+                    <li class="slide1"></li>
+                    <li class="slide2"></li>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">채소 키우기</a></li>
+                    <li><a href="#">레시피</a></li>
+                    <li><a href="#">VBTI</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
             </div>
             <div class="intro_text">
                 <p>vegetable<br>coin</p>
@@ -93,6 +110,83 @@
                         <div class="list_name">방울이 님</div>
                     </li>
                 </div>
+            </div>
+            <div class="recipes">
+                <p>Recipes</p>
+                <h1>취향저격 레시피</h1>
+                <!-- 민정이 recipe코드 -->
+                <div class="ctg-btn">
+                    <p class="western btn">샐러드</p>
+                    <p class="western btn">양식</p>
+                    <p class="juice btn">주스</p>
+                    <p class="side-dish btn">반찬</p>
+                    <p class="etc btn">기타</p>
+                </div>
+                <div class="box">
+                    <li>
+                        <div class="box_bg">
+                            <img class="img" src="./image/box_1.png">
+                            <p class="box_name">아보카도 샐러드</p>
+                            <p class="box_theme">샐러드, 양식</p>
+                            <img class="favorite" src="./image/like_pull.png">
+                            <p class="number">125</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box_bg">
+                            <img class="img" src="./image/box_2.png">
+                            <p class="box_name">토마토 카프레제</p>
+                            <p class="box_theme">샐러드, 양식</p>
+                            <img class="favorite" src="./image/like_empty.png">
+                            <p class="number">96</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box_bg">
+                            <img class="img" src="./image/box_3.png">
+                            <p class="box_name">감자스프</p>
+                            <p class="box_theme">양식</p>
+                            <img class="favorite" src="./image/like_pull.png">
+                            <p class="number">117</p>
+                        </div>
+                    </li>
+                </div>
+                <button class="btn_viewmore" style="position: absolute; top: 4776px;">View more</button>
+            </div>
+            <div class="vbti">
+                <img src="./image/vbti.png">
+                <h1>당신에게 어울리는<br>채소를 만나보세요!</h1>
+                <button class="btn_viewmore" style="position: absolute; top: 363px; left: 782px;">VBTI 바로가기</button>
+            </div>
+            <div class="footer">
+                <div>
+                    <p class="team-title">VEGETABLE COIN TEAM</p>
+                    <p class="period-title">PERIOD</p>
+                </div>
+        
+                <div style="margin-bottom: 0;">
+                    <p class="designer-team">DESIGNER</p>
+                    <p class="designer-period">DESIGN</p>
+                </div>
+                
+                <div>
+                    <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+                    <p class="design-date">2022. 01</p>
+                </div>
+                
+                <div>
+                    <p class="developer-team">DEVELOPER</p>
+                    <p class="develop-period">DEVELOP</p>
+                </div>
+        
+                <div>
+                    <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+                    <p class="develop-date">2022. 02</p>
+                </div>
+                <hr class="line">
+                <p class="contact">Contact</p>
+                <p class="email">vegatable@mirim.hs.kr</p>
+            </div>
             </div>
         </div>
     </div>

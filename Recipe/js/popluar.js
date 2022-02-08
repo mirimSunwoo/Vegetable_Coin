@@ -2,11 +2,13 @@ $(function (){
   $('.multiple-items').slick({
     infinite : true,
     slidesToShow : 3,
-    arrow : false,
+    slidesToScoll : 1,
+    arrows : true,
     autoplay : true,
     autoplaySpeed : 1500,
     dots : false,
-    centerMode : true,
-    centerPadding : '0'
+    centerPadding : '0',
+    variableWidth : true,
+    centerMode : true
   });
 });

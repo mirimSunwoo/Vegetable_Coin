@@ -86,15 +86,15 @@
 {
     float: right;
 }
-.slick-slide img
+.slick-slide .popluar-img
 {
     display: block;
 }
-.slick-slide.slick-loading img
+.slick-slide.slick-loading .popluar-img
 {
     display: none;
 }
-.slick-slide.dragging img
+.slick-slide.dragging .popluar-img
 {
     pointer-events: none;
 }
