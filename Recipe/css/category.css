@@ -16,7 +16,7 @@ td{
     /* border: 1px solid black; */
 }
 
-.text{ /* Recipe */
+.category-text{ /* Recipe */
     margin-left:363px;
     margin-bottom: 60px;
     font-family: "Pretendard";
@@ -24,6 +24,7 @@ td{
     font-weight: 600;
     font-size: 26px;
     color: #6A9258;
+    /* background-color: #EEBB4D; */
 }
 
 .ctg-btn{/* 카태고리 선택 박스 */
@@ -63,7 +64,7 @@ form > select:hover{
     border: 0px;
 }
 
-.img{
+.food-img{
     width:378px;
     height:378px;
     border-radius: 10px;

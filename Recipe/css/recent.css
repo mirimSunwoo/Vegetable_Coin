@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding:0px;
-    position:absolute;
+    
     /* display: block; */
 }
 @font-face {
@@ -13,25 +13,28 @@
      src: url(../../font/Korean);
      font-family: "Pretendard"; 
  }
-.container{
+.recent-container{
     width : 1920px;
     height: 350px;
+    margin-bottom: 265;
     display: inline-block;
     position:absolute;
-    /* background-color: rgb(204, 204, 204); */
+    /* background-color: rgb(201, 57, 57); */
 }
-.text{
+.recent-text{
     top:10px;
     left: 363px;
     height : 31px;
     font-family: "Pretendard";
     font-size: 26px;
     font-style: normal;
+    position:absolute;
     color: #6A9258;
 }
-.box{
+.recent-box{
     width : 1194px;
     height : 234px;
+    position:absolute;
     left : 363px;
     top : 101px;
     
@@ -39,25 +42,29 @@
     border-bottom : solid 2px #6A9258;
     
 }
-img{
+.recent-img{
     width:174px;
+    position:absolute;
     height:174px;
     /* max-width: 174px;
     max-height: 174px; */
     top:30px;
     
 }
-.items:hover .delete{
+.recent-items:hover .delete{
     opacity: 100;
 }
 .delete{
     width:32px;
     height:32px;
     margin-left: 150px;
+    position:absolute;
     top : 20px;
     opacity: 0;
 }
-
+.recent-items{
+    position:absolute;
+}
 .item2{
     left:204px;
 }
