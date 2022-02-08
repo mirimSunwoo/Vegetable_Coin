@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    /* position:absolute; */
+}
+@font-face {
+    src: url(/font);
+    font-family:"Gotham";
+ }
+.footer{
+    position:absolute;
+    float: left;
+    background-color: #6A9258;
+    width: 1920px;
+    height: 810px;
+
+    left: 0px;
+    top: 5912px;
+}
+.team-title{
+    position:absolute;
+    width: 376px;
+    left: 363px;
+    top: 98px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+}
+.period-title{
+    position:absolute;
+    left: 975px;
+    top: 98px;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+   
+}
+.designer-team{
+    position:absolute;
+    left: 363px;
+    top: 246px;
+    font-size: 28px;
+    color: #8BBE74;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+}
+
+.designer-period{
+    position:absolute;
+    left: 975px;
+    top: 246px;
+    font-size: 28px;
+    color: #8BBE74;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+}
+.designer-name{
+    position:absolute;
+    width: 429px;
+    left: 363px;
+    top: 286px;
+    font-size: 28px;
+    font-family: "Gotham";
+    color: #FFFFFF;
+}
+.design-date{
+    position:absolute;
+    width: 200px;
+    left: 977px;
+    top: 286px;
+    font-size: 28px;
+    font-family: "Gotham";
+    color: #FFFFFF;
+}
+.developer-team{
+    position:absolute;
+    left: 363px;
+    top: 385px;
+    font-size: 28px;
+    color: #8BBE74;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+}
+.develop-period{
+    position:absolute;
+    left: 975px;
+    top: 385px;
+    font-size: 28px;
+    color: #8BBE74;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+}
+.develop-name{
+    position:absolute;
+    width: 400px;
+    left: 363px;
+    top: 425px;
+    font-size: 28px;
+    font-family: "Gotham";
+    color: #FFFFFF;
+}
+.develop-date{
+    position:absolute;
+    width: 200px;
+    left:975px;
+    top:425px;
+    font-size: 28px;
+    font-family: "Gotham";
+    color: #FFFFFF;
+}
+.line{
+    position:absolute;
+    width: 1920px;
+    height: 0px;
+    left: 0px;
+    top: 592px;
+    border: 1px solid #466538;
+}
+.contact{
+    position:absolute;
+    width: 321px;
+    height: 89px;
+    left: 365px;
+    top: 648px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: #FFFFFF;
+}
+.email{
+    position:absolute;
+    width: 271px;
+    height: 0px;
+    left: 824px;
+    top: 685px;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}

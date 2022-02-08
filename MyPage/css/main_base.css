@@ -17,12 +17,12 @@
     width: 100%;
     height: 1726px;
 }
-.header{
+/* .header{
     display: flex;
     width: 1280px;
     margin: auto;
     background: red;
-}
+} */
 /* 제목 */
 .intro_text > p {
     position: absolute;
