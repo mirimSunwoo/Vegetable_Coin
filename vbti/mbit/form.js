@@ -18,13 +18,15 @@ $('.next_btn').click(function(e){
     let divs = $(this).parent().prev().children();
     let present_top = $(this).parent().parent()[0].offsetTop;
     let inputs = divs.find('input:checked');
-    if(inputs.length < 1) {
-        alert('문항이 선택되지 않았습니다.');
-        return false;
-    }
     e.preventDefault();
     scrollDown(present_top);
 });
+
+// if(inputs.length < 1) {
+    //     alert('문항이 선택되지 않았습니다.');
+    //     return false;
+    // }
+
 
 $('.prev_btn').click(function(e){
     let present_top = $(this).parent().parent()[0].offsetTop;
