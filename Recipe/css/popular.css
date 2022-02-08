@@ -3,6 +3,22 @@
   font-family:"Gotham";
   
 }
+.popluar-box{
+  width: 1920px;
+  height: 120px;
+  display: inline-block;
+  position:absolute;
+}
+.popular-title{
+  top:10px;
+  left: 363px;
+  
+  font-family: "Pretendard";
+  font-size: 26px;
+  font-style: normal;
+  position:absolute;
+  color: #6A9258;
+}
 .for_slick_slider{
   display: flex;
   /* width:1920px; */
