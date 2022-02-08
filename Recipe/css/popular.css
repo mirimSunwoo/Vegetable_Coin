@@ -9,20 +9,24 @@
   height : 500px;
 }
 .for_slick_slider .popluar-items{
-  width : 276px;
+  /* width : 276px; */
   height: 276px;
-  margin : 60px;
+  margin : 130px;
   
 }
+
 .for_slick_slider .popluar-items .popluar-img{
   width : 276px;
   height: 276px;
 }
 .for_slick_slider .slick-center .popluar-img{
-  transform : scale(1.05);
+  transform : scale(1.2);
 }
 .popular-text{
   text-align: center;
+  /* vertical-align: middle; */
+  margin-top: 35px;
+  position: relative;
   color: #191919;
   font-family:"Pretendard";
   font-style: normal;
