@@ -20,6 +20,7 @@ body{
 }
 
 #survey{
+    /* margin-top: 3%; */
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -28,10 +29,10 @@ body{
 }
 
 .test{
-    margin-top: 2%;
+    margin-top: 3%;
     background-color: white;
-    width: 1790px;
-    height: 680px;
+    width: 1920px;
+    height: 1000px;
 }
 
 progress {
@@ -66,6 +67,11 @@ progress {
     size: 36px;
 }
 
+.question{
+    margin-top: 3%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 
 .answer{
     text-align: center;
@@ -79,6 +85,9 @@ progress {
     size: 24px; 
     text-align: center; 
     vertical-align: bottom;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .answer div{
@@ -92,14 +101,22 @@ progress {
 .prev_btn{
     background-color: white;
     color: #6A9258;
-    margin-top: 2%;
-    margin-right: 35%;
+    margin-right: 30.7%;
+    margin-bottom: -20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.imgs{
+    align-items: center; 
+    text-align: center; 
+    margin-top: 3%;
 }
 
 .btn_wrap{
     display: flex;
     justify-content: unsafe;
     align-items: center;
+    margin-top: 5%;
 }
 
 .btn_sort{
@@ -115,14 +132,18 @@ button, .submit_btn{
     border-radius: 10px;
     font-family: "NEXON Lv1 Gothic OTF";
     font-size: 28px;
-    background-color: #6a925841;
+    background-color: rgba(106, 146, 88, 0.1);
     color: #191919;
     cursor: pointer;
     margin-top: 2%;
 }
 
 .next_btn:focus, .submit_btn:focus{
-    background-color: #6a9258b6;
+    background-color: #6A9258;
+}
+
+.next_btn{
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #one{
