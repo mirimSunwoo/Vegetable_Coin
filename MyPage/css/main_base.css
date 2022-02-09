@@ -1,16 +1,21 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@font-face {
+    src: url(/font);
     font-family:"Gotham";
+ }
+*{
+    /* font-family:"Gotham"; */
     list-style: none;
     text-decoration: none; /*밑줄 없애기*/
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
-    color: #000;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* color: #000; */
 }
-@font-face {
-    src: url(../../font/);
-    font-family:"Gotham";
-}
+
 /* 배경 */
 .intro_bg{
     background-image: url("../image/intro_bg.png");
@@ -24,7 +29,7 @@
     background: red;
 } */
 /* 제목 */
-.intro_text > p {
+.intro_text  {
     position: absolute;
     width: 1202px;
     height: 336px;
@@ -43,12 +48,16 @@
     color: #FFFFFF;
 
 }
+/* .intro{
+    font-family: "Gotham";
+    color: blue;
+} */
 /* what we doing */
 .info_text > h1 {
     position: absolute;
     width: 1136px;
     height: 185px;
-    left: 363px;
+    left: 344px;
     top: 1429px;
 
     font-family:"Gotham";
@@ -67,9 +76,9 @@
     left: 344px;
     top: 1686px;
 
-    font-family:"Gotham";
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 36px;
     line-height: 54px;
     /* or 150% */
@@ -80,6 +89,7 @@
 /* 중간중간 강조 */
 .info_text .info_p1 > strong{
     color: #6A9258;
+    font-weight: bold;
 }
 .info_text .info_p2{
     position: absolute;
@@ -88,15 +98,16 @@
     left: 344px;
     top: 1796px;
 
-    font-family:"Gotham";
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 54px;
-    font-size: 21px; /*바꿔야함 24*/
+    font-size: 24px; 
 
     color: #191919;
     line-height: 160%;
     margin-top: 20px;
+
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* 꽃과 구름 */
 .cloud_flower .cloud{
@@ -138,7 +149,7 @@
     left: 796px;
     top: 2350px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -182,7 +193,7 @@
     margin-left: 181px;
     top: 372px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -250,10 +261,10 @@ button:hover{
     left: 744px;
     top: 107px;
     /* transform: translate(-50%, -50%); */
-    font-family: Noto Sans CJK KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;  /*바꿔야함 48*/
+    font-size: 48px;  /*바꿔야함 48*/
     line-height: 71px;
 
     text-align: center;
@@ -288,7 +299,7 @@ button:hover{
     top: 260px;
     
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px; /*바꿔야힘 24*/
@@ -316,15 +327,15 @@ button:hover{
 }
 .recipes > h1{
     position: absolute;
-    width: 302px;
+    width: 320px;
     height: 58px;
     left: 800px;
     top: 4008px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px; /*바꿔야함 48*/
+    font-size: 48px; /*바꿔야함 48*/
     line-height: 58px;
 
     color: #6A9258;
@@ -480,7 +491,7 @@ form > select:hover{
     left: 782px;
     top: 129px;
 
-    font-family: Noto Sans CJK KR;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 45px; /*바꿔야함 48*/
