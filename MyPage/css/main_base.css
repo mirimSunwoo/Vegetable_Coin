@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap'); */
 @font-face {
     src: url(/font);
     font-family:"Gotham";
@@ -11,8 +11,8 @@
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
-    font-family: 'Nanum Myeongjo', serif;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+
     /* color: #000; */
 }
 
@@ -317,7 +317,7 @@ button:hover{
     left: 902px;
     top: 3969px;
 
-    font-family: Gotham;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -408,6 +408,8 @@ form > select:hover{
     left: 363px;
     top: 4245px;
     display: flex;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+
     /* background-color: blue; */
 }
 .box > li{
@@ -428,7 +430,7 @@ form > select:hover{
     margin-left: 20px;
     top: 352px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -443,7 +445,7 @@ form > select:hover{
     margin-left: 20px;
     top: 387px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -468,7 +470,7 @@ form > select:hover{
     margin-left: 325px;
     top: 352px;
 
-    font-family: Pretendard;
+    font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
