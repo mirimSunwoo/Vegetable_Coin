@@ -1,6 +1,6 @@
 function scrollUp(top) {
     const vheight = $('.test').height();
-    const margin_top = parseInt($('#survey').css('margin-top'), 10);
+    const margin_top = parseInt($('#survey').css('margin-top'), 25);
     $('html, body').animate({
         scrollTop: top - vheight - margin_top
     }, 500);
@@ -8,7 +8,7 @@ function scrollUp(top) {
 
 function scrollDown(top) {
     const vheight = $('.test').height();
-    const margin_top = parseInt($('#survey').css('margin-top'), 10);
+    const margin_top = parseInt($('#survey').css('margin-top'), 6);
     $('html, body').animate({
         scrollTop: vheight + top - margin_top
     }, 500);
