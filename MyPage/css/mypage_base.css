@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none; /*밑줄 없애기*/
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+.intro{
+    position: absolute;
+    width: 1920px;
+    height: 596px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+    opacity: 0.3;
+
+    background-image: url(../image/like.jpeg);
+}
+.intro_info{
+    background-image: url(../image/profile_bg.png);
+    position: absolute;
+    width: 276px;
+    height: 276px;
+    left: 363px;
+    top: 458px;
+    border-radius: 500px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.intro_info > img{
+    position: absolute;
+    width: 244px;
+    height: 242px;
+    left: 16px;
+    top: 17px;
+}
+.profile_name{
+    position: absolute;
+    width: 133px;
+    height: 70px;
+    left: 669px;
+    top: 616px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+
+    color: #191919;
+}
+.profile_email{
+    position: absolute;
+    width: 308px;
+    height: 35px;
+    left: 669px;
+    top: 684px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #191919;
+}
+.profile_edit{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    left: 1457px;
+    top: 687px;
+
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.my_plant .title{
+    position: absolute;
+    width: 206px;
+    height: 70px;
+    left: 363px;
+    top: 919px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+
+    color: #6A9258;
+}
+.myplants{
+    position: absolute;
+    width: 1194px;
+    height: 380px;
+    left: 363px;
+    top: 1039px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../image/plant_1.png');
+    /* border-radius: 50px; */
+    -webkit-border-top-left-radius:50px;
+    -webkit-border-bottom-right-radius:50px;
+}
+.myplants .plant_name{
+    position: absolute;
+    width: 133px;
+    height: 52px;
+    left: 40px;
+    top: 258px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+
+    color: #FFFFFF;
+}
+.myplants .plant_class{
+    position: absolute;
+    width: 111px;
+    height: 35px;
+    left: 40px;
+    top: 310px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;    
+    
+    color: #FFFFFF;
+    
+}
+.plant_add{
+    position: absolute;
+    width: 1194px;
+    height: 380px;
+    left: 363px;
+    top: 1449px;
+
+    border: 2px dashed #6A9258;
+    box-sizing: border-box;
+    border-radius: 50px 0px;
+}
+.plant_add > img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 537px;
+    top: 108px;
+}
+.plant_add .btn_info{
+    position: absolute;
+    width: 96px;
+    height: 28px;
+    left: 549px;
+    top: 248px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+
+    color: #EEBB4D;
+}
