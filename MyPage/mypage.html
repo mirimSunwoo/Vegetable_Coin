@@ -22,6 +22,27 @@
         <p class="profile_name">강낭콩</p>
         <p class="profile_email">gangnangkong@gmail.com</p>
         <p class="profile_edit">수정하기 ></p>
+
+        <!-- 수정하기 팝업될 레이어 -->
+        <div class="edit_modal">
+            <div class="modal-content">
+                <!-- x키를 표시하는 방법.. 와 신기하다 -->
+                <span class="close-button">&times;</span> 
+                <h1 class="title">내 정보 수정</h1>
+                <form action="#post.php" methos="POST">
+                    <label for="name">이름</label>
+                    <input type="name" name="name" placeholder="강낭콩" required="required"> 
+                    <label for="email">이메일</label>
+                    <input type="email" name="email" placeholder="gangnangkong@gmail.com" required="required">
+                    <label for="email">이메일</label>
+                    <input type="email" name="email" placeholder="gangnangkong" required="required"> 
+                    <label for="password">비밀번호</label>
+                    <input type="password" name="password" placeholder="gangnangkong1234" required="required">   
+                    <input type="submit" id="submit" value="추가하기"> 
+                </form>
+            </div>
+        </div>
+
         <div class="my_plant">
             <h1 class="title">My Plant</h1>
             <div class="myplants">
@@ -32,8 +53,22 @@
             <div class="plant_add">
                 <button class="btn_plus"><img src="./image/btn_plus.png"></button>
                 <p class="btn_info">내 식물 추가</p>
+
+                <!-- 식물추가 팝업될 레이어 -->
+
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- footer 곧 바뀔 내용 -->
         <div class="footer" style="top:2079px;">
             <div>
                 <p class="team-title">VEGETABLE COIN TEAM</p>
@@ -63,6 +98,11 @@
             <p class="contact">Contact</p>
             <p class="email">vegatable@mirim.hs.kr</p>
         </div>
+
+
+
+
+
         </div>
     </div>
     </div>
