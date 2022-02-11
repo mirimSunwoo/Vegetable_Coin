@@ -145,12 +145,29 @@
     box-sizing: border-box;
     border-radius: 50px 0px;
 }
-.plant_add > img{
+.plant_add .btn_plus{
     position: absolute;
     width: 120px;
     height: 120px;
     left: 537px;
     top: 108px;
+
+    background: #EEBB4D;
+    box-shadow: 0px 4px 16px rgba(238, 187, 77, 0.3);
+    border-radius: 100px;
+    border: none;
+}
+.plant_add button:hover{
+    background-color: rgba(238, 187, 77, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
+}
+.plant_add img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 32px;
+    top: 32px;
 }
 .plant_add .btn_info{
     position: absolute;
