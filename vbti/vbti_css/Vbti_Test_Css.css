@@ -12,6 +12,11 @@
     font-style: normal;
 }
 
+/* @font-face {
+    src: url(/font/);
+    font-family:"Gotham";
+ } */
+
 body{
     background-size: cover;
     color: #000;
@@ -63,13 +68,14 @@ progress {
 }
 
 .question_container .question{
-    font-family: "GmarketSansBold";
+    /* font-family: "GmarketSansBold"; */
     size: 36px;
 }
 
 .question{
     margin-top: 3%;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
+    font-weight: 400px;
 }
 
 
