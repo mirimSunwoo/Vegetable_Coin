@@ -184,3 +184,147 @@
 
     color: #EEBB4D;
 }
+.edit_modal{
+    position: absolute;
+    width: 1194px;
+    height: 1302px;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.edit_modal .title{
+    position: absolute;
+    width: 394px;
+    height: 48px;
+
+    top: 44px;
+    left: 400px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+
+    text-align: center;
+
+    color: #6A9258;
+
+}
+.edit_modal .line{
+    position: absolute;
+    width: 1194px;
+    height: 0px;
+    top: 136px;
+
+    border: 2px solid #AAAAAA;
+}
+.edit_modal .little_title{
+    position: absolute;
+    width: 111pxx;
+    height: 43px;
+
+    left: 76px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+
+    /* Main */
+
+    color: #6A9258;
+}
+.close-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    left: 1101px;
+    top: 43px;
+    color: #6A9258;
+}
+.input_name{
+    position: absolute;
+    width: 1050px;
+    height: 72px;
+
+    top: 283px;
+    left: 72px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 26px;
+}
+.input_email{
+    position: absolute;
+    width: 1050px;
+    height: 72px;
+
+    top: 502px;
+    left: 72px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+.input_id{
+    position: absolute;
+    width: 1050px;
+    height: 72px;
+
+    top: 721px;
+    left: 72px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+.input_password{
+    position: absolute;
+    width: 1050px;
+    height: 72px;
+
+    top: 940px;
+    left: 72px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+#submit{
+    position: absolute;
+    width: 1050px;
+    height: 118px;
+
+    top: 1112px;
+    left: 72px;
+    background: #6A9258;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+
+    border: 0;
+
+}
+input::placeholder{
+    color: #191919;
+    size: 26px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 30px;
+    top: 17px;
+}
