@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/category.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
 <body>
     <p class="category-text">Recipe</p>
     <div class="ctg-btn">
-        <button class="western btn">샐러드</button>
-        <button class="western btn">양식</button>
-        <button class="juice btn">주스</button>
-        <button class="side-dish btn">반찬</button>
-        <button class="etc btn">기타</button>
+        <input class="western btn" type="button" value="샐러드">
+        <input class="western btn" type="button" value="양식">
+        <input class="juice btn" type="button" value="주스">
+        <input class="side-dish btn" type="button" value="반찬">
+        <input class="etc btn" type="button" value="기타">
     </div>
 
     <form class="sort">
@@ -24,36 +27,59 @@
         </select>
     </form>
 
+    <section id="content_box">
+        <div class="box">
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/avocado_salad.png"></li>
+                <li class="recipe_title"><span class="recipe_name">아보카도 샐러드</span><img class="recipe_favorite fav_oneline" src="./image/favorite_white.png"><p class="recipe_favorite_num one">93</p></li>
+                <li class="recipe_theme">샐러드, 양식</li>
+            </ul>
 
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/tomato_caprese.png"></li>
+                <li class="recipe_title"><span class="recipe_name">토마토 카프레제</span><img class="recipe_favorite fav_oneline" src="./image/favorite_red.png"><p class="recipe_favorite_num one">54</p></li>
+                <li class="recipe_theme">샐러드, 양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/soup.png"></li>
+                <li class="recipe_title"><span class="recipe_name">스프</span><img class="recipe_favorite fav_oneline" src="./image/favorite_red.png"><p class="recipe_favorite_num one">117</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/pickle.png"></li>
+                <li class="recipe_title"><span class="recipe_name">오이피클</span><img class="recipe_favorite" src="./image/favorite_white.png"><p class="recipe_favorite_num two">93</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/carrot_cake.png"></li>
+                <li class="recipe_title"><span class="recipe_name">당근 케이크</span><img class="recipe_favorite" src="./image/favorite_red.png"><p class="recipe_favorite_num two">89</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/tomato_soup.png"></li>
+                <li class="recipe_title"><span class="recipe_name">토마토 스프</span><img class="recipe_favorite" src="./image/favorite_white.png"><p class="recipe_favorite_num two">723</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/strawberry_jam.png"></li>
+                <li class="recipe_title"><span class="recipe_name">딸기 쨈</span><img class="recipe_favorite" src="./image/favorite_white.png"><p class="recipe_favorite_num three">93</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/sweet_pumpkin_soup.png"></li>
+                <li class="recipe_title"><span class="recipe_name">단호박 스프</span><img class="recipe_favorite" src="./image/favorite_red.png"><p class="recipe_favorite_num three">93</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+            <ul class="category_items">
+                <li><img class="recipe_img" src="./image/potato_wedges.png"></li>
+                <li class="recipe_title"><span class="recipe_name">웨지 감자</span><img class="recipe_favorite" src="./image/favorite_white.png"><p class="recipe_favorite_num three">93</p></li>
+                <li class="recipe_theme">양식</li>
+            </ul>
+        </div>
+    </section>
 
-    <div class="box">
-        <li>
-            <div class="box_bg">
-                <img class="img" src="./image/avocado_salad.png">
-                <p class="box_name">아보카도 샐러드</p>
-                <p class="box_theme">샐러드, 양식</p>
-                <img class="favorite" src="./image/favorite_red.png">
-                <p class="number">125</p>
-            </div>
-        </li>
-        <li>
-            <div class="box_bg">
-                <img class="img" src="./image/tomato_caprese.png">
-                <p class="box_name">토마토 카프레제</p>
-                <p class="box_theme">샐러드, 양식</p>
-                <img class="favorite" src="./image/favorite_white.png">
-                <p class="number">96</p>
-            </div>
-        </li>
-        <li>
-            <div class="box_bg">
-                <img class="img" src="./image/soup.png">
-                <p class="box_name">감자스프</p>
-                <p class="box_theme">양식</p>
-                <img class="favorite" src="./image/favorite_red.png">
-                <p class="number">117</p>
-            </div>
-        </li>
-    </div>
+    
+    <script src="./js/category.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </body>
 </html>
