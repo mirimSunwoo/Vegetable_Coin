@@ -22,7 +22,7 @@
     display: inline-block;
     margin-right: 84px;
     cursor: pointer;
-    font-family: "Pretendard";
+    font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -35,10 +35,16 @@
 }
 
 .sort{
-    margin-left: 1470px;
-    margin-bottom: 30px;
+    margin-left: 1495px;
+    margin-bottom: 10px;
+    margin-top: 70px;
     width: 50px;
     height: 23px;
+    font-size: 24px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    
 }
 
 form > select{
@@ -51,80 +57,71 @@ form > select:hover{
     border: 0px;
 }
 
-/* 선우 카테고리 css */
-
-.box{
-    position: absolute;
-    width: 1194px;
-    height: 431px; 
-    margin-left: 363px;
-    /* top: 4245px; */
-    display: flex;
-    /* background-color: blue; */
-}
-.box > li{
-    flex: 1;
-    height: 431px;
-    border-radius: 10px;
+/* 카테고리 박스 */
+ul > li{
     list-style: none;
-    /* background-color: orange; */
 }
 
-/* .box > li:not(:last-child){
+#content_box{
+    margin-left: 363px;
+    margin-top: 30px;
+    width: 1250px;
+    
+}
+.category_items{
+    float: left;
     margin-right: 30px;
-} */
-.box .box_name{
-    position: absolute;
-    width: 200px;
-    height: 29px;
-    /* margin-left: 20px; */
-    top: 400px;
-
-    font-family: Pretendard;
+}
+.recipe_title{
+    margin-top: 20px;
+}
+.recipe_name{
+    display: inline-block;
+    width: 310px;
+    font-size: 24px;
+    font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+}
+.recipe_favorite{
+    display: inline;
+    margin-right: 8px;
+
+}
+
+.recipe_favorite_num{
+    display: inline;
+    width: 300px;
+    margin-left: 8px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight:500;
+    font-size: 20px;
     line-height: 29px;
-
     color: #191919;
 }
-.box .box_theme{
-    position: absolute;
-    width: 120px;
-    height: 24px;
-    /* margin-left: 20px; */
-    top: 430px;
 
-    font-family: Pretendard;
+.one{
+    position: absolute;
+    top: 650px;
+}
+
+.two{
+    position: absolute;
+    top: 1170px;
+}
+
+.three{
+    position: absolute;
+    top: 1688px;
+}
+
+.recipe_theme{
+    margin-bottom: 55px;
+    font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
-
+    line-height: 29px;
     color: #ABABAB;
-}
-.box .img{
-    position: absolute;
-}
-.box .favorite{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin-left: 315px;
-    top: 405px;
-}
-.box .number{  
-    position: absolute;
-    width: 33px;
-    height: 24px;
-    margin-left: 343px;
-    top: 400px;
-
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #191919;
 }
