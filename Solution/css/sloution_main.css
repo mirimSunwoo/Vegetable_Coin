@@ -1,6 +1,6 @@
-.main-item{
+/* .main-item{
     border: 2px solid blue;
-}
+} */
 .wrapper { 
     display: grid;
     grid-template-rows: 300px 800px 500px 2000px 810px;
