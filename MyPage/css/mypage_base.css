@@ -14,10 +14,10 @@
     left: 0px;
     top: 0px;
 
-    background: #000000;
+    background-color: #000000;
     opacity: 0.3;
 
-    background-image: url(../image/like.jpeg);
+    background-image: url(../image/mypage_top_img.png);
 }
 .intro_info{
     background-image: url(../image/profile_bg.png);
@@ -73,6 +73,11 @@
     left: 1457px;
     top: 687px;
 
+    font-size: 19px;
+    outline: 0;
+    border: 0;
+
+    background-color: #ffffff;
     font-weight: 400;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -185,13 +190,41 @@
     color: #EEBB4D;
 }
 .edit_modal{
-    position: absolute;
+    /* position: absolute;
     width: 1194px;
     height: 1302px;
 
     background: #FFFFFF;
-    border-radius: 30px;
+    border-radius: 30px; */
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: scale(1.1); 
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
 }
+.modal-content{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff; 
+    /* padding: 1rem 1.5rem;  */
+    width: 1194px;
+    height: 1302px;
+    
+    border-radius: 30px; 
+}
+.show-modal { 
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+} 
 .edit_modal .title{
     position: absolute;
     width: 394px;
@@ -212,7 +245,7 @@
 }
 .edit_modal .line{
     position: absolute;
-    width: 1194px;
+    width: 1190px;
     height: 0px;
     top: 136px;
 
@@ -320,6 +353,9 @@
 
     border: 0;
 
+}
+#submit:hover{
+    background: rgba(106, 146, 88, 0.9);
 }
 input::placeholder{
     color: #191919;
