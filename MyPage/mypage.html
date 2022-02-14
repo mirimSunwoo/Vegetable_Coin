@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel = "stylesheet" href="./css/mypage_base.css"">
 
-    <link rel = "stylesheet" href="./css/footer.css"">
+    <link rel="stylesheet" href="./css/mypage_base.css"">
+
+    <link rel = " stylesheet" href="./css/footer.css"">
 
     <title>Mypage</title>
 </head>
 <body>
-    <div class="wrap">
-        <div class="intro">
-            <!-- 사용자가 직접 추가할 배경 -->
+    <div class=" wrap">
+    <div class="intro">
+        <!-- 사용자가 직접 추가할 배경 -->
+    </div>
+    <div class="intro_info">
+        <img src="./image/list_2.png">
+    </div>
+    <p class="profile_name">강낭콩</p>
+    <p class="profile_email">gangnangkong@gmail.com</p>
+    <button class="profile_edit">수정하기 ></button>
+
+    <div class="my_plant">
+        <h1 class="title">My Plant</h1>
+        <div class="myplants">
+            <!-- <img src="./image/plant_1.png"> -->
+            <p class="plant_name">케빈스키</p>
+            <p class="plant_class">방울토마토</p>
         </div>
-        <div class="intro_info">
-            <img src="./image/list_2.png">
-        </div>
-        <p class="profile_name">강낭콩</p>
-        <p class="profile_email">gangnangkong@gmail.com</p>
-        <p class="profile_edit">수정하기 ></p>
+        <div class="plant_add">
+            <button class="btn_plus"><img src="./image/btn_plus.png"></button>
+            <p class="btn_info">내 식물 추가</p>
 
-        <!-- 수정하기 팝업될 레이어 -->
-        <div class="edit_modal">
-            <div class="modal-content">
-                <!-- x키를 표시하는 방법.. 와 신기하다 -->
-                <span class="close-button"><img src="./image/btn_close.png"></span> 
-                <h1 class="title">내 정보 수정</h1>
-                <p class="line"></p>
-                <form action="#post.php" methos="POST">
-                    <label for="name" class="little_title" style="top: 216px;">이름</label>
-                    <input type="name" name="name" class="input_name" placeholder="강낭콩" required="required"> 
-                    <label for="email" class="little_title"  style="top: 435px;">이메일</label>
-                    <input type="email" name="email" class="input_email" placeholder="gangnangkong@gmail.com" required="required">
-                    <label for="id" class="little_title"  style="top: 654px;">아이디</label>
-                    <input type="id" name="id" class="input_id" placeholder="gangnangkong" required="required"> 
-                    <label for="password" class="little_title"  style="top: 873px;">비밀번호</label>
-                    <input type="password" name="password" class="input_password" placeholder="gangnangkong1234" required="required">   
-                    <input type="submit" id="submit" value="추가하기"> 
-                </form>
-            </div>
-        </div>
-
-        <div class="my_plant">
-            <h1 class="title">My Plant</h1>
-            <div class="myplants">
-                <!-- <img src="./image/plant_1.png"> -->
-                <p class="plant_name">케빈스키</p>
-                <p class="plant_class">방울토마토</p>
-            </div>
-            <div class="plant_add">
-                <button class="btn_plus"><img src="./image/btn_plus.png"></button>
-                <p class="btn_info">내 식물 추가</p>
-
-                <!-- 식물추가 팝업될 레이어 -->
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <!-- footer 곧 바뀔 내용 -->
-        <div class="footer" style="top:2079px;">
-            <div>
-                <p class="team-title">VEGETABLE COIN TEAM</p>
-                <p class="period-title">PERIOD</p>
-            </div>
-    
-            <div style="margin-bottom: 0;">
-                <p class="designer-team">DESIGNER</p>
-                <p class="designer-period">DESIGN</p>
-            </div>
-            
-            <div>
-                <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
-                <p class="design-date">2022. 01</p>
-            </div>
-            
-            <div>
-                <p class="developer-team">DEVELOPER</p>
-                <p class="develop-period">DEVELOP</p>
-            </div>
-    
-            <div>
-                <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
-                <p class="develop-date">2022. 02</p>
-            </div>
-            <hr class="line">
-            <p class="contact">Contact</p>
-            <p class="email">vegatable@mirim.hs.kr</p>
-        </div>
-
-
-
-
-
+            <!-- 식물추가 팝업될 레이어 -->
         </div>
     </div>
+
+    <!-- footer 곧 바뀔 내용 -->
+    <div class="footer" style="top:2079px;">
+        <div>
+            <p class="team-title">VEGETABLE COIN TEAM</p>
+            <p class="period-title">PERIOD</p>
+        </div>
+
+        <div style="margin-bottom: 0;">
+            <p class="designer-team">DESIGNER</p>
+            <p class="designer-period">DESIGN</p>
+        </div>
+
+        <div>
+            <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+            <p class="design-date">2022. 01</p>
+        </div>
+
+        <div>
+            <p class="developer-team">DEVELOPER</p>
+            <p class="develop-period">DEVELOP</p>
+        </div>
+
+        <div>
+            <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+            <p class="develop-date">2022. 02</p>
+        </div>
+        <hr class="line">
+        <p class="contact">Contact</p>
+        <p class="email">vegatable@mirim.hs.kr</p>
     </div>
-</body>
+
+    <!-- 수정하기 팝업될 레이어 -->
+    <div class="edit_modal">
+        <div class="modal-content">
+            <!-- x키를 표시하는 방법.. 와 신기하다 -->
+            <span class="close-button"><img src="./image/btn_close.png"></span>
+            <h1 class="title">내 정보 수정</h1>
+            <p class="line"></p>
+            <form action="#post.php" methos="POST">
+                <label for="name" class="little_title" style="top: 216px;">이름</label>
+                <input type="name" name="name" class="input_name" placeholder="강낭콩" required="required">
+                <label for="email" class="little_title" style="top: 435px;">이메일</label>
+                <input type="email" name="email" class="input_email" placeholder="gangnangkong@gmail.com"
+                    required="required">
+                <label for="id" class="little_title" style="top: 654px;">아이디</label>
+                <input type="id" name="id" class="input_id" placeholder="gangnangkong" required="required">
+                <label for="password" class="little_title" style="top: 873px;">비밀번호</label>
+                <input type="password" name="password" class="input_password" placeholder="gangnangkong1234"
+                    required="required">
+                <input type="submit" id="submit" value="추가하기">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var modal = document.querySelector(".edit_modal");
+        var profile_edit = document.querySelector(".profile_edit");
+        var closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        profile_edit.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick); 
+    </script>
+    </div>
+    </div>
+    </div>
+    </body>
 </html>
