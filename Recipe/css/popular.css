@@ -1,5 +1,5 @@
 @font-face {
-  src: url(../../font/English);
+  src: url(../../font);
   font-family:"Gotham";
   
 }
@@ -34,6 +34,7 @@
 .for_slick_slider .popluar-items .popluar-img{
   width : 276px;
   height: 276px;
+  border-radius: 50px 0px 50px 0px;
 }
 .for_slick_slider .slick-center .popluar-img{
   transform : scale(1.2);
