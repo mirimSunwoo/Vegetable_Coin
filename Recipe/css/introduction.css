@@ -122,7 +122,6 @@ li{
     line-height: 23px;
     color: #767676;
 }
-
 /* 가로선 */
 .width_line{
     position:absolute;
@@ -131,7 +130,6 @@ li{
     bottom: 152px;
     background-color:  #DBDBDB;
 }
-
 /* 세로선 */
 .vertical_line{
     position: absolute;
@@ -139,4 +137,29 @@ li{
     width: 1px;
     height: 304px;
     background-color:  #DBDBDB;
+}
+
+/* 필요한 재료 상세 */
+/* 재료 텍스트 */
+.material_title{
+    margin-left: 363px;
+    margin-bottom: 60px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #6A9258;
+}
+.material_ul{
+    margin-left: 363px;
+    margin-bottom: 36px;
+}
+.material_ul > li{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
 }
