@@ -2,9 +2,9 @@
     border: 1px solid black;
     display: flex;
 }
-li{
+/* li{
     list-style: none;
-}
+} */
 /* 인트로 사진 */
 .intro_img{
     display: flex;
@@ -139,6 +139,8 @@ li{
     background-color:  #DBDBDB;
 }
 
+
+
 /* 필요한 재료 상세 */
 /* 재료 텍스트 */
 .material_title{
@@ -156,6 +158,34 @@ li{
     margin-bottom: 36px;
 }
 .material_ul > li{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+
+
+
+/* 요리 방법 */
+.way_title{
+    margin-left: 363px;
+    margin-bottom: 60px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #6A9258;
+}
+.way_ul{
+    list-style-type: decimal;
+}
+.way_ul > li{
+    margin-left: 385px;
+    margin-bottom: 36px;
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: normal;
