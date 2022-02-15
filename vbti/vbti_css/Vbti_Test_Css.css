@@ -12,6 +12,8 @@
     font-style: normal;
 }
 
+/* 질문 볼드, 밑에 미디움 바꾸기 */
+
 /* @font-face {
     src: url(/font/);
     font-family:"Gotham";
@@ -75,7 +77,7 @@ progress {
 .question{
     margin-top: 3%;
     font-family: 'Noto Sans KR';
-    font-weight: 400px;
+    font-weight: bold;
 }
 
 
