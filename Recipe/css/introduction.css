@@ -1,0 +1,72 @@
+.introduction{
+    border: 1px solid black;
+    display: flex;
+}
+li{
+    list-style: none;
+}
+/* 인트로 사진 */
+.intro_img{
+    display: flex;
+    margin-left: 363px;
+    width: 582px;
+    height: 582px;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.intro_content{
+    display:inline-flex;
+    position: relative;
+    float: left;
+    margin-left: 132px;
+    width: 485px;
+    height: 266px;
+    border: 1px solid sandybrown;
+}
+
+/* 레시피 이름 */
+.recipe_name{
+    display: inline-block;
+    /* border: 1px solid blueviolet; */
+    width: 400px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+    /* identical to box height */
+    color: #000000;
+
+}
+/* 좋아요 사진 */
+.intro_favorite{
+    position: absolute;
+    top:20px;
+    right: 60px;
+    /* border: 2px solid rgb(31, 201, 59); */
+}
+/* 좋아요 수 */
+.favorite_num{
+    position: absolute;
+    top : 12px;
+    right: 5px;
+    width: 42px;
+    /* border: 2px solid rgb(31, 201, 59); */
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+}
+/* 레시피 설명 */
+.recipe_explanation{
+    width: 480px;
+    bottom: 90px;
+    position:absolute;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    
+}
