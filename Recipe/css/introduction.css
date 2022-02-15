@@ -14,14 +14,16 @@ li{
     border-radius: 50px 0px 50px 0px;
 }
 
+
+/* 소개 박스 */
 .intro_content{
     display:inline-flex;
     position: relative;
     float: left;
     margin-left: 132px;
-    width: 485px;
-    height: 266px;
-    border: 1px solid sandybrown;
+    width: 480px;
+    height: 304px;
+    /* border: 1px solid sandybrown; */
 }
 
 /* 레시피 이름 */
@@ -69,4 +71,72 @@ li{
     font-size: 20px;
     line-height: 32px;
     
+}
+
+
+
+/* 레시피 정보 상자 */
+.recipe_info{
+    width: 480px;
+    height: 304px;
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 1078px;
+    /* border: 1px solid hotpink; */
+}
+/* 주재료 상자 */
+.main_material_box{
+    position:absolute;
+    margin-top: 20px;
+    /* border: 1px solid darkorchid; */
+}
+/* 소요시간 상자 */
+.time_box{
+    margin-top: 20px;
+    margin-left: 260px;
+}
+/* 양 상자 */
+.amount_box{
+    margin-top: 50px;
+}
+/* 정보 이미지 */
+.info_img{
+    margin-bottom: 20px;
+}
+/* 정보 제목 */
+.info_title{
+    /* border: 1px solid black; */
+    margin-bottom: 6px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+/* 정보 내용 */
+.info_name{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #767676;
+}
+
+/* 가로선 */
+.width_line{
+    position:absolute;
+    width: 480px;
+    height: 1px;
+    bottom: 152px;
+    background-color:  #DBDBDB;
+}
+
+/* 세로선 */
+.vertical_line{
+    position: absolute;
+    right: 240px;
+    width: 1px;
+    height: 304px;
+    background-color:  #DBDBDB;
 }
