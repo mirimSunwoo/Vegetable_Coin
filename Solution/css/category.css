@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.category-text{ /* Recipe */
+    margin-left:363px;
+    margin-bottom: 60px;
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    color: #6A9258;
+    /* background-color: #EEBB4D; */
+}
+
+.ctg-btn{/* 카태고리 선택 박스 */
+    margin-left: 586px;
+}
+
+.btn{/* 카테고리 선택 버튼 */
+    display: inline-block;
+    margin-right: 84px;
+    cursor: pointer;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #E0E4E1;
+    border: 0px;
+    background-color: white;
+}
+/* 마우스 올렸을 떄 */
+.btn:hover{
+    color: #EEBB4D;
+}
+/* 정렬 */
+.sort{
+    margin-left: 1495px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    width: 50px;
+    height: 23px;
+    font-size: 24px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+form > select{
+    border: 0px;
+    outline: none;
+
+}
+
+form > select:hover{
+    border: 0px;
+}
+
+/* 카테고리 박스 */
+ul > li{
+    list-style: none;
+}
+
+#content_box{
+    margin-left: 363px;
+    margin-top: 30px;
+    width: 1250px;
+    /* border: 1px solid black; */
+    
+}
+.category_items{
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 276px;
+    height: 379px;
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+ 
+}
+/* 맨 위에 아이템들은 위에 여백 없앰 */
+.top_item{
+    margin-top: 0px;
+}
+/* 식물 이름 */
+.recipe_title{
+    margin-top: 20px;
+}
+.recipe_name{
+    display: inline-block;
+    width: 310px;
+    font-size: 24px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 30px;
+}
+/* 재배 난이도 */
+.level{
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    margin-left: 30px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ABABAB;
+}

@@ -1,0 +1,66 @@
+ /*최근 본 식물*/
+
+ .recent-container{
+    width : 1920px;
+    height: 350px;
+    margin-bottom: 265;
+    display: inline-block;
+    position:absolute;
+}
+.recent-text{
+    top:10px;
+    left: 363px;
+    height : 31px;
+    font-family: "Pretendard";
+    font-size: 26px;
+    font-style: normal;
+    position:absolute;
+    color: #6A9258;
+}
+.recent-box{
+    width : 1194px;
+    height : 234px;
+    position:relative;
+    left : 363px;
+    top : 101px;
+    
+    border-top: solid 2px #6A9258;
+    border-bottom : solid 2px #6A9258;
+    
+}
+
+
+.recent-items:hover .delete{
+    opacity: 100;
+}
+.delete{
+    display: inline;
+    /* border: 1px solid blue; */
+    width:32px;
+    height:32px;
+    position: absolute;
+    top: 15px;
+    left: 153px;
+    opacity: 0;
+}
+li{
+    list-style: none;
+}
+.recent-items{
+    display: inline;
+    position: relative;
+    float: left;
+    width:190px;
+    height:234px;
+    /* margin-top: 30px; */
+    margin-right:30px;
+    /* border: 1px solid black; */
+}
+.recent-img{
+    display: inline;
+    width:174px ;
+    height:174px;
+    margin-top: 30px;
+    border: 1px solid #6A9258;
+    border-radius: 10px;
+}
