@@ -193,3 +193,53 @@
     line-height: 36px;
     color: #000000;
 }
+
+
+
+/* 키우러가기 */
+.raise_title{
+    margin-left: 363px;
+    margin-bottom: 2px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #6A9258;
+}
+/* 더보기 버튼 */
+.seemore_box{
+    margin-left: 1473px;
+}
+.seemore_btn1{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+    color: #000000;
+    border: 0px;
+    cursor: pointer;
+    background-color: white;
+}
+.seemore_btn2{
+    cursor: pointer;
+    border: 0px;
+    position:absolute;
+    margin-top:2px;
+    background-color: white;
+}
+.raise_box{
+    margin-left: 363px;
+    margin-top: 30px;
+}
+.raise_items{
+    list-style: none;
+    float: left;
+    
+    margin-right: 30px;
+}
+.raise_name{
+    margin-top: 20px;
+    text-align: center;
+}
