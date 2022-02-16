@@ -14,10 +14,11 @@
     left: 0px;
     top: 0px;
 
-    background-color: #000000;
-    opacity: 0.3;
+    /* background-color: #000000;
+    opacity: 0.3; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/mypage_top_img.png');
 
-    background-image: url(../image/mypage_top_img.png);
+    /* background-image: url(../image/mypage_top_img.png); */
 }
 .intro_info{
     background-image: url(../image/profile_bg.png);
@@ -207,15 +208,15 @@
     transform: scale(1.1); 
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
 }
-.modal-content{
+.edit_modal .modal-content{
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     background-color: #ffffff; 
     /* padding: 1rem 1.5rem;  */
-    width: 1194px;
-    height: 1302px;
+    width: 582px;
+    height: 804px;
     
     border-radius: 30px; 
 }
@@ -226,6 +227,171 @@
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
 } 
 .edit_modal .title{
+    position: absolute;
+    width: 394px;
+    height: 48px;
+
+    top: 16px;
+    left: 94px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+
+    text-align: center;
+
+    color: #6A9258;
+
+}
+.edit_modal .line{
+    position: absolute;
+    width: 578px;
+    height: 0px;
+    top: 80px;
+
+    border: 2px solid #AAAAAA;
+}
+.edit_modal .little_title{
+    position: absolute;
+    width: 74px;
+    height: 29px;
+
+    left: 44px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    /* Main */
+
+    color: #6A9258;
+}
+.edit_modal .close-button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    left: 522px;
+    top: 20px;
+    color: #6A9258;
+}
+.input_name{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 165px;
+    left: 40px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 30px;
+    font-size: 26px;
+}
+.input_email{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 306px;
+    left: 40px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+.input_id{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 447px;
+    left: 40px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+.input_password{
+    position: absolute;
+    width: 502px;
+    left: 40px;
+
+    top: 588px;
+    height: 56px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 26px;
+    padding-left: 30px;
+
+}
+#submit{
+    position: absolute;
+    width: 502px;
+    height: 60px;    
+
+    top: 704px;
+    left: 40px;
+    background: #6A9258;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+
+    border: 0;
+
+}
+#submit:hover{
+    background: rgba(106, 146, 88, 0.9);
+}
+input::placeholder{
+    color: #8f8f8f;
+    font-size: 20px;
+    line-height: 29px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 30px;
+    top: 17px;
+}
+.add_modal{
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden;  
+    transform: scale(1.1); 
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
+}
+.add_modal .modal-content{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff; 
+    /* padding: 1rem 1.5rem;  */
+    width: 1194px;
+    height: 1364px;
+    
+    border-radius: 30px; 
+}
+.add_modal .title{
     position: absolute;
     width: 394px;
     height: 48px;
@@ -241,19 +407,18 @@
     text-align: center;
 
     color: #6A9258;
-
 }
-.edit_modal .line{
+.add_modal .line{
     position: absolute;
     width: 1190px;
     height: 0px;
     top: 136px;
 
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
 }
-.edit_modal .little_title{
+.add_modal .little_title{
     position: absolute;
-    width: 111pxx;
+    width: 235px;
     height: 43px;
 
     left: 76px;
@@ -267,7 +432,7 @@
 
     color: #6A9258;
 }
-.close-button{
+.add_modal .close-button{
     position: absolute;
     width: 50px;
     height: 50px;
@@ -276,7 +441,7 @@
     top: 43px;
     color: #6A9258;
 }
-.input_name{
+.input_vt_name{
     position: absolute;
     width: 1050px;
     height: 72px;
@@ -290,12 +455,12 @@
     padding-left: 30px;
     font-size: 26px;
 }
-.input_email{
+.input_value{
     position: absolute;
-    width: 1050px;
+    width: 260px;
     height: 72px;
 
-    top: 502px;
+    top: 522px;
     left: 72px;
     
     border: 1px solid #6A9258;
@@ -305,13 +470,13 @@
     padding-left: 30px;
 
 }
-.input_id{
+.input_date{
     position: absolute;
-    width: 1050px;
+    width: 560px;
     height: 72px;
 
-    top: 721px;
-    left: 72px;
+    top: 522px;
+    left: 492px;
     
     border: 1px solid #6A9258;
     box-sizing: border-box;
@@ -320,47 +485,50 @@
     padding-left: 30px;
 
 }
-.input_password{
+.plant_img_add{
     position: absolute;
     width: 1050px;
-    height: 72px;
-
-    top: 940px;
+    height: 380px;
     left: 72px;
-    
-    border: 1px solid #6A9258;
+    top: 694px;
+
+    border: 2px dashed #6A9258;
     box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 26px;
-    padding-left: 30px;
-
+    border-radius: 50px 0px;
 }
-#submit{
+.plant_img_add .btn_img_add{
     position: absolute;
-    width: 1050px;
-    height: 118px;
+    width: 324px;
+    height: 43px;
 
-    top: 1112px;
-    left: 72px;
-    background: #6A9258;
-    border-radius: 10px;
-    text-align: center;
-    color: #FFFFFF;
+    top: 169px;
+    left: 363px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 30px;
+    line-height: 43px;
+    text-align: center;
 
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
-
-    border: 0;
-
+    color: #606060;
 }
-#submit:hover{
-    background: rgba(106, 146, 88, 0.9);
+.add-show-modal{
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
 }
-input::placeholder{
-    color: #191919;
-    size: 26px;
-    font-family: 'Noto Sans KR', sans-serif;
-    left: 30px;
-    top: 17px;
+.add_modal .add-close-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    left: 1101px;
+    top: 43px;
+    color: #6A9258; 
+}
+#date{
+    width: 500px;
+    height: 500px;
 }
