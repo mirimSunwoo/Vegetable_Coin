@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+        .add_modal{
+            position: fixed; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            /* opacity: 0;  */
+            /* visibility: hidden;  */
+            transform: scale(1.1); 
+            transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
+        }
+        .add_modal .modal-content{
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: #ffffff; 
+            /* padding: 1rem 1.5rem;  */
+            width: 1194px;
+            height: 1364px;
+            
+            border-radius: 30px; 
+        }
+        .add_modal .title{
+            position: absolute;
+            width: 394px;
+            height: 48px;
+
+            top: 44px;
+            left: 400px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+
+            text-align: center;
+
+            color: #6A9258;
+        }
+        .add_modal .line{
+            position: absolute;
+            width: 1190px;
+            height: 0px;
+            top: 136px;
+
+            border: 2px solid #AAAAAA;
+        }
+        .add_modal .little_title{
+            position: absolute;
+            width: 235px;
+            height: 43px;
+
+            left: 76px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 43px;
+
+            /* Main */
+
+            color: #6A9258;
+        }
+        .add_modal .close-button{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+
+            left: 1101px;
+            top: 43px;
+            color: #6A9258;
+        }
+        .input_vt_name{
+            position: absolute;
+            width: 1050px;
+            height: 72px;
+
+            top: 283px;
+            left: 72px;
+            
+            border: 1px solid #6A9258;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding-left: 30px;
+            font-size: 26px;
+        }
+        .input_value{
+            position: absolute;
+            width: 260px;
+            height: 72px;
+
+            top: 522px;
+            left: 72px;
+            
+            border: 1px solid #6A9258;
+            box-sizing: border-box;
+            border-radius: 10px;
+            font-size: 26px;
+            padding-left: 30px;
+
+        }
+        .input_date{
+            position: absolute;
+            width: 560px;
+            height: 72px;
+
+            top: 522px;
+            left: 492px;
+            
+            border: 1px solid #6A9258;
+            box-sizing: border-box;
+            border-radius: 10px;
+            font-size: 26px;
+            padding-left: 30px;
+
+        }
+        #submit{
+            position: absolute;
+            width: 1050px;
+            height: 118px;
+
+            top: 1174px;
+            left: 72px;
+            background: #6A9258;
+            border-radius: 10px;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 30px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+
+            border: 0;
+        }
+        .plant_img_add{
+            position: absolute;
+            width: 1050px;
+            height: 380px;
+            left: 72px;
+            top: 694px;
+
+            border: 2px dashed #6A9258;
+            box-sizing: border-box;
+            border-radius: 50px 0px;
+        }
+        .plant_img_add .btn_img_add{
+            position: absolute;
+            width: 324px;
+            height: 43px;
+
+            top: 169px;
+            left: 363px;
+
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 43px;
+            text-align: center;
+
+            color: #606060;
+        }
+    </style>
+</head>
+<body>
+    <div class="add_modal">
+        <div class="modal-content">
+            <span class="close-button"><img src="./image/btn_close.png"></span>
+            <h1 class="title">내 식물 추가</h1>
+            <p class="line"></p>
+            <form action="#post.php" methos="POST">
+                <label for="vt_name" class="little_title" style="top: 216px;">내 식물 이름</label>
+                <input type="vt_name" name="vt_name" class="input_vt_name" placeholder="내 식물 이름" required="required">
+                <label for="value" class="little_title" style="top: 455px;">채소 종류</label>
+                <select type="value" name="value" class="input_value" placeholder="깻잎"required="required">\
+                    <option value="a">꺳잎</option>
+                    <option value="a">옥수수</option>
+                    <option value="a">딸기</option>
+                    <option value="a">머위</option>
+                    <option value="a">무</option>
+                    <option value="a">부추</option>
+
+                    <option value="a">아스파라거스</option>
+                    <option value="a">우엉</option>
+                    <option value="a">콩나물</option>
+                    <option value="a">토란</option>
+                    <option value="a">파</option>
+                    <option value="a">고구마</option>
+
+                    <option value="a">상추</option>
+                    <option value="a">오이</option>
+                    <option value="a">가지</option>
+                    <option value="a">고추</option>
+                    <option value="a">강낭콩</option>
+                    <option value="a">호박</option>
+
+                    <option value="a">당근</option>
+                    <option value="a">방울토마토</option>
+                    <option value="a">감자</option>
+                    <option value="a">시금치</option>
+                    <option value="a">양배추</option>
+                    <option value="a">배추</option>
+
+                    <option value="a">미나리</option>
+                    <option value="a">양파</option>
+                    <option value="a">피망</option>
+                    <option value="a">샐러리</option>
+                    <option value="a">브로콜리</option>
+                    <option value="a">순무</option>
+
+                    <option value="a">토마토</option>
+                    <option value="a">청경채</option>
+                </select>
+                <label for="date" class="little_title" style="top: 455px; left: 496px;">키우기 시작한 날짜</label>
+                <input type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">
+                <div class="plant_img_add">
+                    <p class="btn_img_add">채소 종류를 선택해 주세요</p>
+                </div>
+                <input type="submit" id="submit" value="추가하기">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
