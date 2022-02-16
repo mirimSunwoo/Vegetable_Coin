@@ -1,3 +1,6 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
 .introduction{
     border: 1px solid black;
     display: flex;
@@ -196,6 +199,8 @@
 
 
 
+
+
 /* 키우러가기 */
 .raise_title{
     margin-left: 363px;
@@ -229,6 +234,8 @@
     margin-top:2px;
     background-color: white;
 }
+
+/* 키우러가기 상자 */
 .raise_box{
     margin-left: 363px;
     margin-top: 30px;
@@ -242,4 +249,14 @@
 .raise_name{
     margin-top: 20px;
     text-align: center;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #191919;
 }
