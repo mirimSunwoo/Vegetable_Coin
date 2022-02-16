@@ -1,6 +1,6 @@
 .wrapper { 
     display: grid;
-    grid-template-rows: 332px 683px 584px 584px 577px 810px;
+    grid-template-rows: 332px 683px 1186px 577px 810px;
     grid-template-columns: 1920px;
     height : 100vh;  
     /* align-items: center; */
@@ -92,6 +92,7 @@
 
 
 
+
 /* 레시피 정보 상자 */
 .recipe_info{
     width: 480px;
@@ -168,9 +169,12 @@
 
 
 
+
+
+
 /* 필요한 재료 상세 */
 /* 재료 텍스트 */
-.material_title{
+.grow_title{
     margin-left: 363px;
     margin-bottom: 60px;
     font-family: "Noto Sans KR";
@@ -180,46 +184,38 @@
     line-height: 38px;
     color: #6A9258;
 }
-.material_ul{
+.grow_ul{
     margin-left: 363px;
     margin-bottom: 36px;
 }
-.material_ul > li{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 36px;
-    color: #000000;
-}
-
-
-
-
-/* 요리 방법 */
-.way_title{
-    margin-left: 363px;
-    margin-bottom: 60px;
+.grow_ul > h3{
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 38px;
-    color: #6A9258;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    /* identical to box height, or 180% */
+
+
+    color: #000000;
 }
-.way_ul{
-    list-style-type: decimal;
-}
-.way_ul > li{
-    margin-left: 385px;
-    margin-bottom: 36px;
+.grow_ul > li{
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 36px;
+    margin-bottom: 53px;
+    /* or 180% */
+
+
     color: #000000;
 }
+
+
+
+
 
 
 
@@ -236,33 +232,12 @@
     line-height: 38px;
     color: #6A9258;
 }
-/* 더보기 버튼 */
-.seemore_box{
-    margin-left: 1473px;
-}
-.seemore_btn1{
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 28px;
-    color: #000000;
-    border: 0px;
-    cursor: pointer;
-    background-color: white;
-}
-.seemore_btn2{
-    cursor: pointer;
-    border: 0px;
-    position:absolute;
-    margin-top:2px;
-    background-color: white;
-}
+
 
 /* 키우러가기 상자 */
 .raise_box{
     margin-left: 363px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .raise_items{
     list-style: none;
