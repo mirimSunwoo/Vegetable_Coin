@@ -1,0 +1,261 @@
+.wrapper { 
+    display: grid;
+    grid-template-rows: 332px 683px 1186px 577px 810px;
+    grid-template-columns: 1920px;
+    height : 100vh;  
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+.introduction{
+    /* border: 1px solid black; */
+    display: flex;
+}
+/* li{
+    list-style: none;
+} */
+/* 인트로 사진 */
+.intro_img{
+    display: flex;
+    margin-left: 363px;
+    width: 582px;
+    height: 582px;
+    border-radius: 50px 0px 50px 0px;
+}
+
+
+/* 소개 박스 */
+.intro_content{
+    display:inline-flex;
+    position: relative;
+    float: left;
+    margin-left: 132px;
+    width: 480px;
+    height: 278px;
+    /* border: 1px solid sandybrown; */
+}
+
+/* 채소 영어 이름 */
+.vegetable_english_name{
+    float: left;
+    width: 480px;
+    /* border: 1px solid blueviolet; */
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    color: #6A9258;
+}
+/* 채소 한글 이름 */
+.vegetable_name{
+    display: inline-block;
+    /* border: 1px solid blueviolet; */
+    /* width: 400px; */
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+    /* identical to box height */
+    color: #000000;
+
+}
+/* 레벨 */
+.intro_level{
+    margin-left: 24px;
+    display: inline-block;
+    /* border: 2px solid rgb(31, 201, 59); */
+}
+.name_and_level{
+    position: absolute;
+    top:30px;
+    height: 85px;
+    /* border: 1px solid rgb(62, 45, 78); */
+}
+/* 레시피 설명 */
+.recipe_explanation{
+    width: 480px;
+    bottom: 57px;
+    position:absolute;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    
+}
+
+
+
+
+/* 레시피 정보 상자 */
+.recipe_info{
+    width: 480px;
+    height: 304px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 1078px;
+    /* border: 1px solid hotpink; */
+}
+/* 주재료 상자 */
+.water_box{
+    position:absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: 1px solid darkorchid; */
+}
+/* 햇빛 양 상자 */
+.light_box{
+    margin-top: 20px;
+    margin-left: 260px;
+    /* border: 1px solid darkorchid; */
+}
+/* 심는시기 상자 */
+.shovel_box{
+    position: absolute;
+    margin-top: 50px;
+    /* border: 1px solid darkorchid; */
+}
+.flowerpot_box{
+    margin-left: 260px;
+    margin-top: 50px;
+    position: absolute;
+    /* border: 1px solid darkorchid; */
+}
+/* 정보 이미지 */
+.info_img{
+    margin-bottom: 20px;
+}
+/* 정보 제목 */
+.info_title{
+    /* border: 1px solid black; */
+    margin-bottom: 6px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+/* 정보 내용 */
+.info_name{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #767676;
+}
+/* 가로선 */
+.width_line{
+    position:absolute;
+    width: 480px;
+    height: 1px;
+    bottom: 152px;
+    background-color:  #DBDBDB;
+}
+/* 세로선 */
+.vertical_line{
+    position: absolute;
+    right: 240px;
+    width: 1px;
+    height: 304px;
+    background-color:  #DBDBDB;
+}
+
+
+
+
+
+
+/* 필요한 재료 상세 */
+/* 재료 텍스트 */
+.grow_title{
+    margin-left: 363px;
+    margin-bottom: 60px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #6A9258;
+}
+.grow_ul{
+    margin-left: 363px;
+    margin-bottom: 36px;
+}
+.grow_ul > h3{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    /* identical to box height, or 180% */
+
+
+    color: #000000;
+}
+.grow_ul > li{
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 53px;
+    /* or 180% */
+
+
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+/* 키우러가기 */
+.raise_title{
+    margin-left: 363px;
+    margin-bottom: 2px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    color: #6A9258;
+}
+
+
+/* 키우러가기 상자 */
+.raise_box{
+    margin-left: 363px;
+    margin-top: 60px;
+}
+.raise_items{
+    list-style: none;
+    float: left;
+    
+    margin-right: 30px;
+}
+.raise_name{
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #191919;
+}
