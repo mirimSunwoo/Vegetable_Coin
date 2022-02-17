@@ -14,5 +14,91 @@
     left: 0px;
     top: 0px;
 
+    /* background-color: red; */
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/my_vt_img.png');
+}
+.intro_info{
+    position: absolute;
+    width: 1194px;
+    height: 156px;
+    left: 363px;
+    top: 676px;    
+}
+.intro_info .vt_name{
+    position: absolute;
+    width: 177px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+    /* identical to box height */
+
+
+    color: #191919;
+}
+.intro_info .vt_value,.vt_date{
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    left: 0px;
+    top: 74px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    color: #191919;
+}
+.intro_info .vt_edit{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    left: 1090px;
+    top: 118px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+    /* identical to box height */
+    color: #191919;
+
+    outline: 0;
+    border: 0;
+    background-color: white;
+}
+.vt_img{
+    position: absolute;
+    width: 102px;
+    height: 38px;
+    left: 363px;
+    top: 1012px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+
+    color: #6A9258;
+}
+.vt_imgs{
+    position: absolute;
+    width: 1194px;
+    height: 790px;
+    left: 363px;
+    top: 1110px;
+
+    display: grid;
+    grid-template-columns: ;
+    background-color: red;
 }
