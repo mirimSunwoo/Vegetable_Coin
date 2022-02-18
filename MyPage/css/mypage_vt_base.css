@@ -99,6 +99,57 @@
     top: 1110px;
 
     display: grid;
-    grid-template-columns: ;
-    background-color: red;
+    grid-template-columns: repeat(3,378px);
+    grid-template-rows: repeat(2,380px);
+    column-gap: 30px;
+    row-gap: 30px;
+    /* background-color: red; */
+}
+.img > img{
+    border-top-left-radius:50px; 
+    border-bottom-right-radius:50px;
+}
+.img>img:hover{
+    /* position: absolute;
+    width: 378px;
+    height: 380px;
+    left: 771px;
+    top: 1110px; */
+
+    color: red;
+}
+.vt_imgs .img_empty{
+    position: absolute;
+    width: 378px;
+    height: 380px;
+    left: 816px;
+    top: 410px;
+
+    /* Main */
+
+    border: 2px dashed #6A9258;
+    box-sizing: border-box;
+    border-radius: 50px 0px;
+}
+.img_empty > button{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 141px;
+    top: 140px;
+
+    outline: 0;
+    border: 0;
+    /* Point */
+
+    border-radius: 150px;
+    background: #EEBB4D;
+}
+.img_empty .btn_plus{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 35.42px;
+    top: 35.42px;
+   
 }
