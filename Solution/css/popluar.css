@@ -1,0 +1,46 @@
+@font-face {
+    src: url(../../font);
+    font-family:"Gotham";
+    
+  }
+  .popluar-box{
+    /* margin-left: 363px; */
+    width: 1920px;
+    height:200px;
+    display: inline-block;
+    position:absolute;
+  }
+  .popular_title{
+    left: 363px;
+    
+    font-family: "Pretendard";
+    font-size: 26px;
+    font-style: normal;
+    position:absolute;
+    color: #6A9258;
+  }
+
+                                 /*슬라이더*/
+
+  .for_slick_slider{
+    display: flex;
+    width:1920px;
+    height : 500px;
+    margin-left: 325px;
+    margin-top: 60px;
+  }
+  .for_slick_slider .popluar_items{
+    width : 350px;
+    height: 276px;
+    margin : 36px;
+    
+  }
+  .for_slick_slider .popluar_items img{
+    width : 276px;
+    height: 379px;
+    /* margin : 36px; */
+    
+  }
+
+ 
+
