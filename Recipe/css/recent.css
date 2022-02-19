@@ -1,40 +1,30 @@
-*{
-    margin:0px;
-    padding:0px;
-    
-    /* display: block; */
-}
-@font-face {
-    src: url(../../font/English);
-    font-family:"Gotham";
-    
- }
- @font-face{
-     src: url(../../font/Korean);
-     font-family: "Pretendard"; 
- }
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+
 .recent-container{
     width : 1920px;
     height: 350px;
     margin-bottom: 265;
     display: inline-block;
     position:absolute;
-    /* background-color: rgb(201, 57, 57); */
 }
 .recent-text{
     top:10px;
     left: 363px;
     height : 31px;
-    font-family: "Pretendard";
-    font-size: 26px;
+    font-family: "Noto Sans KR";
     font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
     position:absolute;
     color: #6A9258;
 }
 .recent-box{
     width : 1194px;
     height : 234px;
-    position:absolute;
+    position:relative;
     left : 363px;
     top : 101px;
     
@@ -42,39 +32,39 @@
     border-bottom : solid 2px #6A9258;
     
 }
-.recent-img{
-    width:174px;
-    position:absolute;
-    height:174px;
-    /* max-width: 174px;
-    max-height: 174px; */
-    top:30px;
-    
-}
+
+
 .recent-items:hover .delete{
     opacity: 100;
 }
 .delete{
+    display: inline;
+    /* border: 1px solid blue; */
     width:32px;
     height:32px;
-    margin-left: 150px;
-    position:absolute;
-    top : 20px;
+    position: absolute;
+    top: 15px;
+    left: 153px;
     opacity: 0;
 }
+.recent_li{
+    list-style: none;
+}
 .recent-items{
-    position:absolute;
+    display: inline;
+    position: relative;
+    float: left;
+    width:190px;
+    height:234px;
+    /* margin-top: 30px; */
+    margin-right:30px;
+    /* border: 1px solid black; */
 }
-.item2{
-    left:204px;
+.recent-img{
+    display: inline;
+    width:174px ;
+    height:174px;
+    margin-top: 30px;
+    /* border: 1px solid #6A9258;
+    border-radius: 10px; */
 }
-.item3{
-    left:408px;
-}
-.item4{
-    left:612px;
-}
-.item5{
-    left:816px;
-}
-
