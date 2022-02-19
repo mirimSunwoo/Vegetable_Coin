@@ -109,14 +109,14 @@
     border-top-left-radius:50px; 
     border-bottom-right-radius:50px;
 }
-.img>img:hover{
-    /* position: absolute;
-    width: 378px;
-    height: 380px;
-    left: 771px;
-    top: 1110px; */
-
-    color: red;
+img:hover .remove{
+    opacity:0.6;
+    text-align:justify;
+    color:#000000;
+    font-size:20px;
+    font-weight:700;
+    font-family:"Times New Roman", Times, serif;
+    padding:30px;
 }
 .vt_imgs .img_empty{
     position: absolute;
@@ -147,9 +147,53 @@
 }
 .img_empty .btn_plus{
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 35.42px;
-    top: 35.42px;
-   
+    width: 100px;
+    height: 100px;
+    left: 141px;
+    top: 140px;
+
+    box-shadow: 0px 4px 16px rgba(238, 187, 77, 0.3);
+}
+.img_empty button:hover{
+    background-color: rgba(238, 187, 77, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
+}
+.remove{
+    /* left: 288px;
+    top: 20px; */
+
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 378px;
+    height: 380px;
+
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50px 0px;
+}
+
+.pic1{ 
+    width:338px; 
+    height:284px; 
+    background: url(이미지이름.jpg) no-repeat; 
+} 
+.text{ 
+    width:338px; 
+    height:285px; 
+    background:#000000; opacity:0; 
+} 
+.pic1:hover.text {
+    opacity:0.6; 
+    text-align:justify; 
+    color:#fff; 
+    font-size:20px; 
+    font-weight:700; 
+    font-family:"맑은 고딕"; 
+    padding:30px; 
 }
