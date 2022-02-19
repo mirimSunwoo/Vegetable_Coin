@@ -25,28 +25,16 @@
   height : 500px;
 }
 .for_slick_slider .popluar-items{
-  /* width : 276px; */
+  width : 276px;
   height: 276px;
-  margin : 130px;
+  margin : 100px;
   
 }
 
 .for_slick_slider .popluar-items .popluar-img{
-  width : 276px;
-  height: 276px;
-  border-radius: 50px 0px 50px 0px;
+  width : 278px;
+  height: 280px;
 }
 .for_slick_slider .slick-center .popluar-img{
   transform : scale(1.2);
-}
-.popular-text{
-  text-align: center;
-  /* vertical-align: middle; */
-  margin-top: 35px;
-  position: relative;
-  color: #191919;
-  font-family:"Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
 }
