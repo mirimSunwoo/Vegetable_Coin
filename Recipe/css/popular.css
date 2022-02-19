@@ -36,6 +36,9 @@
 .for_slick_slider .popluar-items .popluar-img{
   width : 278px;
   height: 280px;
+  border-radius: 30px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1) ;
+  
 }
 .for_slick_slider .slick-center .popluar-img{
   transform : scale(1.2);
