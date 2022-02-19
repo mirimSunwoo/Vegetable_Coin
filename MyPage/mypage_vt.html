@@ -50,7 +50,7 @@
         <!-- 사진추가 팝업될 레이어 -->
         <div class="img_add_modal">
             <div class="modal-content">
-                <span class="close-button"><img src="./image/btn_close.png"></span>
+                <span class="img-close-button"><img src="./image/btn_close.png"></span>
                 <h1 class="title">사진 추가하기</h1>
                 <p class="line"></p>
                 <form action="#post.php" methos="POST">
@@ -65,7 +65,7 @@
         <script type="text/javascript">
             var modal = document.querySelector(".img_add_modal");
             var vt_edit = document.querySelector(".vt_edit");
-            var closeButton = document.querySelector(".close-button");
+            var img_closeButton = document.querySelector(".img-close-button");
     
             function toggleModal() {
                 modal.classList.toggle("show-modal");
@@ -77,7 +77,7 @@
                 }
             }
             vt_edit.addEventListener("click", toggleModal);
-            closeButton.addEventListener("click", toggleModal);
+            img_closeButton.addEventListener("click", toggleModal);
             window.addEventListener("click", windowOnClick); 
         </script>
     </div>
