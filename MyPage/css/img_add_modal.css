@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+.img_add_modal{
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden;  
+    transform: scale(1.1); 
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
+}
+.img_add_modal .modal-content{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff; 
+    /* padding: 1rem 1.5rem;  */
+    width: 582px;
+    height: 784px;
+    
+    border-radius: 30px; 
+}
+.img_add_modal .title{
+    position: absolute;
+    width: 394px;
+    height: 48px;
+
+    top: 16px;
+    left: 94px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+
+    text-align: center;
+
+    color: #6A9258;
+}
+.add_modal .line{
+    position: absolute;
+    width: 578px;
+    height: 0px;
+    top: 80px;
+
+    border: 1px solid #AAAAAA;
+}
+.add_modal .close-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    left: 522px;
+    top: 20px;
+    color: #6A9258;
+}
+.plant_img_add{
+    position: absolute;
+    width: 502px;
+    height: 504px;
+    left: 40px;
+    top: 130px;
+
+    border: 2px dashed #6A9258;
+    box-sizing: border-box;
+    border-radius: 30px 0px;
+}
