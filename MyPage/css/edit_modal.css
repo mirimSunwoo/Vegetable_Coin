@@ -26,7 +26,7 @@
     background-color: #ffffff; 
     /* padding: 1rem 1.5rem;  */
     width: 582px;
-    height: 804px;
+    height: 872px;
     
     border-radius: 30px; 
 }
@@ -92,7 +92,7 @@
     width: 502px;
     height: 56px;
 
-    top: 165px;
+    top: 374px;
     left: 40px;
     
     border: 1px solid #6A9258;
@@ -106,22 +106,7 @@
     width: 502px;
     height: 56px;
 
-    top: 306px;
-    left: 40px;
-    
-    border: 1px solid #6A9258;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 26px;
-    padding-left: 20px;
-
-}
-.input_id{
-    position: absolute;
-    width: 502px;
-    height: 56px;
-
-    top: 447px;
+    top: 515px;
     left: 40px;
     
     border: 1px solid #6A9258;
@@ -136,7 +121,7 @@
     width: 502px;
     left: 40px;
 
-    top: 588px;
+    top: 656px;
     height: 56px;
     
     border: 1px solid #6A9258;
@@ -145,4 +130,22 @@
     font-size: 26px;
     padding-left: 20px;
 
+}
+.profile_img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    left: 231px;
+    top: 120px;
+    background: #91C95D;
+
+    border-radius: 150px;
+}
+.profile_img > img{
+    position: absolute;
+    width: 106.09px;
+    height: 113.99px;
+    left: 6.96px;
+    top: 3.01px;
 }

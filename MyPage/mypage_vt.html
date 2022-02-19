@@ -64,7 +64,7 @@
         </div>
         <script type="text/javascript">
             var modal = document.querySelector(".img_add_modal");
-            var vt_edit = document.querySelector(".vt_edit");
+            var btn_plus = document.querySelector(".btn_plus");
             var img_closeButton = document.querySelector(".img-close-button");
     
             function toggleModal() {
@@ -76,7 +76,7 @@
                     toggleModal();
                 }
             }
-            vt_edit.addEventListener("click", toggleModal);
+            btn_plus.addEventListener("click", toggleModal);
             img_closeButton.addEventListener("click", toggleModal);
             window.addEventListener("click", windowOnClick); 
         </script>
