@@ -1,3 +1,10 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+@font-face {
+    src: url(../../font);
+    font-family:"Gotham";
+    
+  }
 *{
     margin:0;
     padding:0;
@@ -6,7 +13,7 @@
 .category-text{ /* Recipe */
     margin-left:363px;
     margin-bottom: 60px;
-    font-family: "Pretendard";
+    font-family: "Gotham";
     font-style: normal;
     font-weight: 600;
     font-size: 26px;
@@ -58,41 +65,57 @@ form > select:hover{
 }
 
 /* 카테고리 박스 */
-ul > li{
+.category_box > .category_items > li{
     list-style: none;
 }
-
-#content_box{
+.recipe_img{
+    border-radius: 10px;
+}
+.category_box{
+    /* display: flex; */
     margin-left: 363px;
     margin-top: 30px;
     width: 1250px;
+    height: 1746px;
+    /* border: 1px solid darkcyan; */
     
 }
 .category_items{
+    width: 378px;
+    height: 517px;
+    /* display: flex; */
     float: left;
     margin-right: 30px;
+    /* border: 1px solid palevioletred; */
+    
 }
-.recipe_title{
-    margin-top: 20px;
-}
+
 .recipe_name{
+    position: absolute;
+    margin-top: 20px;
     display: inline-block;
     width: 310px;
     font-size: 24px;
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: bold;
+    /* border: 1px solid khaki; */
 }
 .recipe_favorite{
-    display: inline;
-    margin-right: 8px;
+    display: flex;
+    position:absolute;
+    margin-top: 30px;
+    margin-left: 320px;
+    /* border: 1px solid navy; */
 
 }
 
 .recipe_favorite_num{
-    display: inline;
-    width: 300px;
-    margin-left: 8px;
+    display: flex;
+    position:absolute;
+    margin-top: 25px;
+    margin-left: 345px;
+    /* border: 1px solid rosybrown; */
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight:500;
@@ -101,23 +124,12 @@ ul > li{
     color: #191919;
 }
 
-.one{
-    position: absolute;
-    top: 650px;
-}
-
-.two{
-    position: absolute;
-    top: 1170px;
-}
-
-.three{
-    position: absolute;
-    top: 1688px;
-}
 
 .recipe_theme{
-    margin-bottom: 55px;
+    display: inline-block;
+    margin-top: 60px;
+    width: 310px;
+    /* border: 1px solid chocolate; */
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: 500;
