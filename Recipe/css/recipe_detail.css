@@ -1,0 +1,11 @@
+/* .main-item{
+    border: 2px solid blue;
+} */
+.wrapper { 
+    display: grid;
+    grid-template-rows: 332px 683px 584px 584px 577px 810px;
+    grid-template-columns: 1920px;
+    height : 100vh;  
+    /* align-items: center; */
+    /* justify-content: center; */
+}
