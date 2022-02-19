@@ -13,9 +13,11 @@
   top:10px;
   left: 363px;
   
-  font-family: "Pretendard";
-  font-size: 26px;
+  font-family: "Gotham";
   font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
   position:absolute;
   color: #6A9258;
 }
