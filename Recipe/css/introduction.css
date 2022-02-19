@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
 
 .introduction{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 /* li{
@@ -144,7 +144,15 @@
 
 
 
+
+
 /* 필요한 재료 상세 */
+.material_box{
+    width: 1494px;
+}
+.way{
+    width: 1494px;
+}
 /* 재료 텍스트 */
 .material_title{
     margin-left: 363px;
