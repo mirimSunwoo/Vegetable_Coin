@@ -5,9 +5,10 @@
 } */
 .wrapper { 
     display: grid;
-    grid-template-rows: 300px 800px 500px 2000px 810px;
+    grid-template-rows: 338px 800px 500px 2000px 810px;
     grid-template-columns: 1920px;
     height : 100vh;  
+    
     /* align-items: center; */
     /* justify-content: center; */
 }
