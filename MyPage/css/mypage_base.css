@@ -195,7 +195,7 @@
     width: 502px;
     height: 60px;    
 
-    top: 704px;
+    /* top: 704px; */
     left: 40px;
     background: #6A9258;
     border-radius: 10px;
@@ -208,7 +208,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 
     border: 0;
-
 }
 #submit:hover{
     background: rgba(106, 146, 88, 0.9);
@@ -219,7 +218,7 @@ input::placeholder{
     line-height: 29px;
     font-family: 'Noto Sans KR', sans-serif;
     left: 30px;
-    top: 17px;
+    top: 13px;
 }
 #date{
     width: 500px;

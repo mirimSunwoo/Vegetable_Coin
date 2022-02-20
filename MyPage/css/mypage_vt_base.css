@@ -197,3 +197,32 @@ img:hover .remove{
     font-family:"맑은 고딕"; 
     padding:30px; 
 }
+.show-modal { 
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+} 
+#submit{
+    position: absolute;
+    width: 502px;
+    height: 60px;    
+
+    top: 704px;
+    left: 40px;
+    background: #6A9258;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+
+    border: 0;
+
+}
+#submit:hover{
+    background: rgba(106, 146, 88, 0.9);
+}

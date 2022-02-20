@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
 
-.edit_modal{
-    /* position: absolute;
-    width: 1194px;
-    height: 1302px;
-
-    background: #FFFFFF;
-    border-radius: 30px; */
+.add_modal{
     position: fixed; 
     left: 0; 
     top: 0; 
@@ -14,11 +8,11 @@
     height: 100%; 
     background-color: rgba(0, 0, 0, 0.5); 
     opacity: 0; 
-    visibility: hidden; 
+    visibility: hidden;  
     transform: scale(1.1); 
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
 }
-.edit_modal .modal-content{
+.add_modal .modal-content{
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -26,17 +20,11 @@
     background-color: #ffffff; 
     /* padding: 1rem 1.5rem;  */
     width: 582px;
-    height: 872px;
+    height: 702px;
     
     border-radius: 30px; 
 }
-.show-modal { 
-    opacity: 1; 
-    visibility: visible; 
-    transform: scale(1.0); 
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
-} 
-.edit_modal .title{
+.add_modal .title{
     position: absolute;
     width: 394px;
     height: 48px;
@@ -52,19 +40,18 @@
     text-align: center;
 
     color: #6A9258;
-
 }
-.edit_modal .line{
+.add_modal .line{
     position: absolute;
     width: 578px;
     height: 0px;
     top: 80px;
 
-    border: 2px solid #AAAAAA;
+    border: 1px solid #AAAAAA;
 }
-.edit_modal .little_title{
+.add_modal .little_title{
     position: absolute;
-    width: 74px;
+    width: 157px;
     height: 29px;
 
     left: 44px;
@@ -74,78 +61,121 @@
     font-size: 20px;
     line-height: 29px;
 
-    /* Main */
-
     color: #6A9258;
 }
-.edit_modal .close-button{
+.add_modal .close-button{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+
+    left: 1101px;
+    top: 43px;
+    color: #6A9258;
+}
+.input_vt_name{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 165px;
+    left: 40px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 26px;
+}
+.input_value{
+    position: absolute;
+    width: 200px;
+    height: 56px;
+
+    top: 306px;
+    left: 40px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #8f8f8f;
+    /* padding-right: 13px; */
+    
+
+}
+.input_date{
+    position: absolute;
+    width: 262px;
+    height: 56px;
+
+    top: 306px;
+    left: 280px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #8f8f8f;
+
+}
+.plant_img{
+    position: absolute;
+    width: 501px;
+    height: 160px;
+    left: 40px;
+    top: 402px;
+
+    background-repeat: no-repeat;
+    background-image: url(../image/myplant_img_1.png);
+    border: 2px dashed #6A9258;
+    box-sizing: border-box;
+    border-radius: 30px 0px;
+}
+.plant_img .btn_img_add{
+    position: absolute;
+    width: 216px;
+    height: 29px;
+
+    top: 65px;
+    left: 143px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #606060;
+}
+.add-show-modal{
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+}
+.add_modal .add-close-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
 
     left: 522px;
     top: 20px;
-    color: #6A9258;
+    color: #6A9258; 
 }
-.input_name{
-    position: absolute;
-    width: 502px;
-    height: 56px;
-
-    top: 374px;
-    left: 40px;
-    
-    border: 1px solid #6A9258;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding-left: 20px;
-    font-size: 26px;
-}
-.input_email{
-    position: absolute;
-    width: 502px;
-    height: 56px;
-
-    top: 515px;
-    left: 40px;
-    
-    border: 1px solid #6A9258;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 26px;
-    padding-left: 20px;
-
-}
-.input_password{
-    position: absolute;
-    width: 502px;
-    left: 40px;
-
-    top: 656px;
-    height: 56px;
-    
-    border: 1px solid #6A9258;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-size: 26px;
-    padding-left: 20px;
-
-}
-.profile_img{
-    position: absolute;
-    width: 120px;
-    height: 120px;
-
-    left: 231px;
-    top: 120px;
-    background: #91C95D;
-
-    border-radius: 150px;
-}
-.profile_img > img{
-    position: absolute;
-    width: 106.09px;
-    height: 113.99px;
-    left: 6.96px;
-    top: 3.01px;
+input::placeholder{
+    color: #8f8f8f;
+    font-size: 20px;
+    line-height: 29px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 30px;
+    top: 13px;
 }
