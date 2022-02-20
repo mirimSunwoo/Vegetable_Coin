@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/img_add_modal.css"">
+    <link rel="stylesheet" href="./css/img_add_modal.css">
+    <link rel="stylesheet" href="./css/vt_edit_modal.css">
 
     <link rel="stylesheet" href="./css/mypage_vt_base.css"">
     <title>내 식물 페이지</title>
@@ -47,6 +48,80 @@
                 </button>
             </div>
         </div>
+         <!-- 식물추가 팝업될 레이어 -->
+        <div class="add_modal">
+            <div class="modal-content">
+                <span class="add-close-button"><img src="./image/btn_close.png"></span>
+                <h1 class="title">내 식물 수정</h1>
+                <p class="line"></p>
+                <form action="#post.php" methos="POST">
+                    <label for="vt_name" class="little_title" style="top: 120px;">내 식물 이름</label>
+                    <input type="vt_name" name="vt_name" class="input_vt_name" placeholder="케빈스키" required="required">
+                    <label for="value" class="little_title" style="top: 261px;">채소 종류</label>
+                    <select type="value" name="value" class="input_value" placeholder="방울토마토"required="required">
+                        <option value="a">깻잎</option>
+                        <option value="a">옥수수</option>
+                        <option value="a">딸기</option>
+                        <option value="a">머위</option>
+                        <option value="a">무</option>
+                        <option value="a">부추</option>
+
+                        <option value="a">아스파라거스</option>
+                        <option value="a">우엉</option>
+                        <option value="a">콩나물</option>
+                        <option value="a">토란</option>
+                        <option value="a">파</option>
+                        <option value="a">고구마</option>
+
+                        <option value="a">상추</option>
+                        <option value="a">오이</option>
+                        <option value="a">가지</option>
+                        <option value="a">고추</option>
+                        <option value="a">강낭콩</option>
+                        <option value="a">호박</option>
+
+                        <option value="a">당근</option>
+                        <option value="a">방울토마토</option>
+                        <option value="a">감자</option>
+                        <option value="a">시금치</option>
+                        <option value="a">양배추</option>
+                        <option value="a">배추</option>
+
+                        <option value="a">미나리</option>
+                        <option value="a">양파</option>
+                        <option value="a">피망</option>
+                        <option value="a">샐러리</option>
+                        <option value="a">브로콜리</option>
+                        <option value="a">순무</option>
+
+                        <option value="a">토마토</option>
+                        <option value="a">청경채</option>
+                    </select>                
+                    <label for="date" class="little_title" id="date" style="top: 261px; left: 280px;">키우기 시작한 날짜</label>
+                    <input type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">
+                    <div class="plant_img"></div>
+                    <input type="submit" id="submit" style="top:602px" value="추가하기">
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var vt_add_modal = document.querySelector(".add_modal");
+            var vt_edit = document.querySelector(".vt_edit");
+            var add_closeButton = document.querySelector(".add-close-button");
+
+            function toggleModal() {
+                vt_add_modal.classList.toggle("add-show-modal");
+            }
+
+            function windowOnClick(event) {
+                if (event.target === vt_add_modal) {
+                    toggleModal();
+                }
+            }
+            vt_edit.addEventListener("click", toggleModal);
+            add_closeButton.addEventListener("click", toggleModal);
+            window.addEventListener("click", windowOnClick); 
+        </script>
         <!-- 사진추가 팝업될 레이어 -->
         <div class="img_add_modal">
             <div class="modal-content">
