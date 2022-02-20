@@ -83,7 +83,7 @@ ul > li{
 }
 /* 맨 위에 아이템들은 위에 여백 없앰 */
 .top_item{
-    margin-top: 0px;
+    margin-top: 0px; 
 }
 /* 식물 이름 */
 .recipe_title{
