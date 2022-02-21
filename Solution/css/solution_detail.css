@@ -265,3 +265,46 @@
 
     color: #191919;
 }
+
+
+
+
+/* 설명 */
+.word_explanation{
+	z-index:100;
+	position: relative;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: #7F7F7F solid 1px;
+	position: absolute;
+	font-size: 16px;
+	text-align: left;
+	}
+    .word_explanation:after 
+	{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 16px 20px 17.5px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -18.5px; 
+	left: 49px; 
+	}
+    .word_explanation:before 
+	{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 16px 20px 17.5px;
+	border-color: #7F7F7F transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	top: -20px;
+	left: 49px;
+	}
