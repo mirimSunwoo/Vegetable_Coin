@@ -8,13 +8,31 @@
     <link rel="stylesheet" href="./css/img_add_modal.css">
     <link rel="stylesheet" href="./css/vt_edit_modal.css">
 
+    <link rel="stylesheet" href="./css/header_mypage.css"">
     <link rel="stylesheet" href="./css/mypage_vt_base.css"">
+    <link rel="stylesheet" href="./css/footer.css"">
     <title>내 식물 페이지</title>
 </head>
 <body>
     <div class="wrap">
         <div class="intro">
             <!-- 내 채소 사진 -->
+            <div class="header">
+                <div class="header_logo">
+                    <a href="./main.html"><img src="./image/logo_white.png"></a>
+                </div>
+                <ul class="nav">
+                    <li class="slide1"></li>
+                    <li class="slide2"></li>
+                    <li><a href="../Solution/solution_main.html">채소 키우기</a></li>
+                    <li><a href="../Recipe/recipe_main.html">레시피</a></li>
+                    <li><a href="../vbti/vbti.html">VBTI</a></li>
+                    <li><a href="./mypage.html">마이페이지</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#"><img src="./image/search_icon.png"></a></li>
+                </ul>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+            </div>
         </div>
         <div class="intro_info">
             <h1 class="vt_name">케빈스키</h1>
@@ -24,7 +42,7 @@
         </div>
         <p class="vt_img">식물 사진</p>
         <div class="vt_imgs">
-            <div class="remove">삭제하기</div>
+            <!-- <div class="remove">삭제하기</div> -->
             <div class="img">
                 <img src="./image/my_plant_ex_1.png">
             </div>
@@ -131,7 +149,7 @@
                 <form action="#post.php" methos="POST">
                     <div class="plant_img_add">
                         <p class="btn_img_add">사진을 여기에 끌어다 놓으세요</p>
-                        <button class="img_choice">컴퓨터에서 선택</button>
+                        <input class="upload-name" value="컴퓨터에서 선택" disabled="disabled">
                     </div>
                     <input type="submit" id="submit" style="top:684px" value="추가하기">
                 </form>
@@ -155,6 +173,35 @@
             img_closeButton.addEventListener("click", toggleModal);
             window.addEventListener("click", windowOnClick); 
         </script>
+        <div class="footer" style="margin-top: 2150px;">
+            <div>
+                <p class="team-title">VEGETABLE COIN TEAM</p>
+                <p class="period-title">PERIOD</p>
+            </div>
+    
+            <div style="margin-bottom: 0;">
+                <p class="designer-team">DESIGNER</p>
+                <p class="designer-period">DESIGN</p>
+            </div>
+            
+            <div>
+                <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+                <p class="design-date">2022. 01</p>
+            </div>
+            
+            <div>
+                <p class="developer-team">DEVELOPER</p>
+                <p class="develop-period">DEVELOP</p>
+            </div>
+    
+            <div>
+                <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+                <p class="develop-date">2022. 02</p>
+            </div>
+            <hr class="line">
+            <p class="contact">Contact</p>
+            <p class="email">vegatable@mirim.hs.kr</p>
+        </div>
     </div>
 </body>
 </html>
