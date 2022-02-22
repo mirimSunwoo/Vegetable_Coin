@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/mypage_base.css"">
 
+    <link rel = " stylesheet" href="./css/header_mypage.css">
     <link rel = " stylesheet" href="./css/footer.css"">
 
     <title>마이 페이지</title>
@@ -18,7 +19,23 @@
 <body>
     <div class=" wrap">
     <div class="intro">
-        <!-- 사용자가 직접 추가할 배경 -->
+        <!-- <img src="./image/mypage_top_img.png"> -->
+        <div class="header">
+            <div class="header_logo">
+                <a href="./main.html"><img src="./image/logo_white.png"></a>
+            </div>
+            <ul class="nav">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li><a href="../Solution/solution_main.html">채소 키우기</a></li>
+                <li><a href="../Recipe/recipe_main.html">레시피</a></li>
+                <li><a href="../vbti/vbti.html">VBTI</a></li>
+                <li><a href="./mypage.html">마이페이지</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#"><img src="./image/search_icon.png"></a></li>
+            </ul>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+        </div>
     </div>
     <div class="intro_info">
         <img src="./image/list_2.png">
@@ -29,7 +46,12 @@
 
     <div class="my_plant">
         <h1 class="title">My Plant</h1>
-        <div class="myplants">
+        <div class="myplants"  onclick='newPage()'>
+            <script>
+                function newPage()  {
+                    window.location.href = './mypage_vt.html'
+                }
+            </script>
             <!-- <img src="./image/plant_1.png"> -->
             <p class="plant_name">케빈스키</p>
             <p class="plant_class">방울토마토</p>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 폰트 불러오기 */
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+
+        body{
+            background-color: black;
+        }
+        .menu-box-1{
+        position: absolute;
+        width: 1920px;
+        height: 100%;
+        /* top: 95px; */
+        }
+        .menu-box-1{
+            position :absolute;
+            width: 1250px;
+            margin: auto;
+            /* background: rgb(212, 212, 212); */
+            height: 80px;
+            top: 96px;
+            left: 384px;
+        }
+        .header_logo{
+            position: absolute;
+            width: 118px;
+            height: 80px;
+            /* background: green; */
+            border-radius: 5px;
+            padding-top: 40px;
+            /* z-index: -1;
+            position: relative; */
+        }
+
+        .row {
+            margin-left:408px;
+            position: relative;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            border: none;
+            border-radius: 10em;
+            display: -webkit-box;
+            display: flex;
+            list-style: none;
+            /* padding: 10px; */
+        }
+        .row li {
+            margin-right: 30px;
+        }
+        .row li a {
+            position: relative;
+            padding: 0.6em 1em;
+            font-size: 20px;
+            line-height: 29px;
+            border: none;
+            outline: none;
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 0px;
+            z-index: 3;
+        }
+        .row .slide1,
+        .row .slide2 {
+            position: absolute;
+            display: inline-block;
+            height: 3em;
+            border-radius: 10em;
+            -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+        }
+        .row .slide1 {
+            /* background-color: rgba(255, 255, 255,0.2); */
+            z-index: 0;
+        }
+        .row .slide2 {
+            opacity: 0;
+            background: rgba(255, 255, 255,0.2);
+            z-index: 1;
+        }
+        .row .squeeze {
+            -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+            /* background-color: #e0e0e0; */
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.5;
+        }
+
+        /* 탑바 시작 */
+        .top-bar {
+            /* margin-top:30px; */
+        }
+
+        /* 탑바 - 메뉴 박스 1 시작 */
+        .top-bar > .menu-box-1 > ul > li:not(.logo-cell) {
+            width:calc((100% - 216px) / 6);
+        }
+
+        .top-bar > .menu-box-1 > ul > li:not(.logo-cell) > a {
+            /* background-color:#484d50; */
+            padding:13px 0;
+            color:gold;
+            font-weight:bold;
+            text-align:center;
+        }
+        .top-bar > .menu-box-1 > ul > li.logo-cell > a {
+            margin-bottom:-9px;
+            position:relative;
+            z-index:1;
+        }
+
+        /* 탑바 - 서브메뉴배경 시작 */
+
+        /* 탑바 - 서브메뉴배경의 래퍼(wrapper) */
+        .top-bar > .sub-menu-bg > div {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            overflow:hidden;
+            height:0;
+            transition:height 0.3s;
+        }
+
+        /* 탑바 - 서브메뉴배경 */
+        .top-bar > .sub-menu-bg > div > div {
+            position:absolute;
+            top:0;
+            left:10px;
+            width:calc(100% - 20px);
+            height:470px;
+            background-color: white;
+            background-repeat:no-repeat;
+            background-position:center;
+            transform:translateY(-100%);
+            transition:transform 0.3s;
+        }
+
+        /* .top-bar > .sub-menu-bg > div > div::before, .top-bar > .sub-menu-bg > div > div::after {
+            display:block;
+            content:"";
+            top:0;
+            left:-10px;
+            width:0;
+            height:0;
+            border-top:10px solid #484d50;
+            border-left:10px solid transparent;
+            z-index:-1;
+            position:absolute;
+        } */
+
+        .top-bar > .sub-menu-bg > div > div::after {
+            left:auto;
+            right:-10px;
+            transform:rotateY(180deg);
+        }
+
+        .top-bar:hover > .sub-menu-bg > div > div {
+            transform:translateY(0);
+        }
+
+        .top-bar:hover > .sub-menu-bg > div {
+            height:470px;
+        }
+
+        /* 탑바 - 서브메뉴 - 시작 */
+        .top-bar > .menu-box-1 > ul > li:first-child > div {
+            margin-left:10px;
+        }
+
+        .top-bar > .menu-box-1 > ul > li:last-child > div {
+            margin-right:10px;
+        }
+
+        .top-bar > .menu-box-1 > ul > li > div {
+            z-index:1;
+        }
+
+        .top-bar > .menu-box-1 > ul > li > div > div {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:0;
+            overflow:hidden;
+            transition:height 0.3s;
+        }
+
+        /* .top-bar:hover > .menu-box-1 > ul > li > div > div {
+            height:470px;
+        }
+
+        .top-bar > .menu-box-1 > ul > li > div > div > ul {
+            height:470px;
+            transform:translateY(-100%);
+            transition:transform 0.3s;
+        }
+
+        .top-bar:hover > .menu-box-1 > ul > li > div > div > ul {
+            transform:translateY(0);
+        }
+
+        .top-bar > .menu-box-1 > ul > li > div > div > ul > li > a {
+            color:white;
+            padding:8px 8px;
+            white-space:nowrap;
+            font-size:0.9rem;
+            overflow-x:hidden;
+            text-overflow:ellipsis;
+        } */
+
+        /* .top-bar > .menu-box-1 > ul > li > div > div > ul > li:hover > a {
+            background-color:rgba(0,0,0,0.2);
+            color:white;
+            text-decoration:underline;
+        } */
+
+        /* 탑바 - 메뉴 박스 1 끝 */
+        /* 탑바 끝 */
+    </style>
+</head>
+<body>
+    <div class="top-bar con">
+        <nav class="menu-box-1">
+            <div class="header_logo">
+                <a href="./main.html"><img src="../header/image/header.png"></a>
+            </div>
+            <ul class="row">
+                <li class="slide1"></li>
+                <li class="slide2"></li>
+                <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
+                <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
+                <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
+                <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
+                <li class="cell"><a href="#" class="block">로그인</a></li>
+                <liclass="cell"><a href="#" class="block"><img src="./image/search_icon.png"></a></li>
+            </ul>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+        </nav>
+        <!-- 유령의 집, 단순한 기준점, 높이 : 항상 0 -->
+        <div class="sub-menu-bg relative">
+            <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+            <div>
+                <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
