@@ -36,16 +36,20 @@
 }
 /* 정렬 */
 .sort{
-    margin-left: 1495px;
+    margin-left: 1470px;
     margin-bottom: 10px;
     margin-top: 70px;
-    width: 50px;
-    height: 23px;
-    font-size: 24px;
+    width: 100px;
+    height: 28px;
+
+    
     font-family: "Noto Sans KR";
     font-style: normal;
     font-weight: bold;
-    
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
 }
 
 form > select{
@@ -83,7 +87,7 @@ ul > li{
 }
 /* 맨 위에 아이템들은 위에 여백 없앰 */
 .top_item{
-    margin-top: 0px;
+    margin-top: 0px; 
 }
 /* 식물 이름 */
 .recipe_title{
