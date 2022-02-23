@@ -99,3 +99,29 @@
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.5;
   }
+
+  .header > .sub-menu-bg > div > div {
+    position:absolute;
+    top:0;
+    /* left:10px; */
+    width:1200px;
+    height:700px;
+    background-color: rgb(207, 196, 196);
+    background-repeat:no-repeat;
+    background-position:center;
+    transform:translateY(-100%);
+    transition:transform 0.3s;
+  } 
+  .header > .sub-menu-bg > div > div::after {
+    left:auto;
+    right:-10px;
+    transform:rotateY(180deg);
+  }
+
+  .header:hover > .sub-menu-bg > div > div {
+    transform:translateY(0);
+  }
+
+  .header:hover > .sub-menu-bg > div {
+    height:470px;
+  }
