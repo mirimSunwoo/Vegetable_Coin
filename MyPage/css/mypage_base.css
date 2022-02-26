@@ -224,3 +224,6 @@ input::placeholder{
     width: 500px;
     height: 500px;
 }
+option:hover .option-bg{
+    background-color: black;
+}
