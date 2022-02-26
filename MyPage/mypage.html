@@ -20,21 +20,40 @@
     <div class=" wrap">
     <div class="intro">
         <!-- <img src="./image/mypage_top_img.png"> -->
-        <div class="header">
+        <div class="header con">
             <div class="header_logo">
                 <a href="./main.html"><img src="./image/logo_white.png"></a>
             </div>
             <ul class="nav">
                 <li class="slide1"></li>
                 <li class="slide2"></li>
-                <li><a href="../Solution/solution_main.html">채소 키우기</a></li>
-                <li><a href="../Recipe/recipe_main.html">레시피</a></li>
-                <li><a href="../vbti/vbti.html">VBTI</a></li>
-                <li><a href="./mypage.html">마이페이지</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#"><img src="./image/search_icon.png"></a></li>
+                <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
+                <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
+                <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
+                <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
+                <li class="cell"><a href="#" class="block">로그인</a></li>
+                <li class="search con"><a href="#" class="search con"><img src="./image/search_icon.png"></a></li>
             </ul>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+            <div class="sub-menu-bg relative">
+                <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+                <div>
+                    <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                    <div></div>
+                    <div class="search">
+                        <div class="header_logo">
+                            <a href="./main.html"><img src="../header/image/header.png"></a>
+                        </div>
+                        <div class="search_btn">
+                            <a href="#"><img src="./image/search_btn.png"></a>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="search" placeholder="검색">
+                        </div>
+                        <p class="line"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="intro_info">
@@ -182,6 +201,7 @@
 
                     <option value="a">토마토</option>
                     <option value="a">청경채</option>
+                    <div id="option-bg"></div>
                 </select>                
                 <label for="date" class="little_title" id="date" style="top: 261px; left: 280px;">키우기 시작한 날짜</label>
                 <input type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">

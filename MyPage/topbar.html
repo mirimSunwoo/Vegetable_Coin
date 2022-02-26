@@ -114,32 +114,33 @@
         }
 
         /* 탑바 시작 */
-        .top-bar {
-            /* margin-top:30px; */
-        }
+        /* .top-bar {
+            margin-top:30px;
+        } */
 
         /* 탑바 - 메뉴 박스 1 시작 */
-        .top-bar > .menu-box-1 > ul > li:not(.logo-cell) {
+        /* .top-bar > .menu-box-1 > ul > li:not(.logo-cell) {
             width:calc((100% - 216px) / 6);
-        }
+        } */
 
-        .top-bar > .menu-box-1 > ul > li:not(.logo-cell) > a {
+        /* .top-bar > .menu-box-1 > ul > li:not(.logo-cell) > a {
             /* background-color:#484d50; */
-            padding:13px 0;
+            /* padding:13px 0;
             color:gold;
             font-weight:bold;
             text-align:center;
-        }
-        .top-bar > .menu-box-1 > ul > li.logo-cell > a {
+        } */
+
+        /* .top-bar > .menu-box-1 > ul > li.logo-cell > a {
             margin-bottom:-9px;
             position:relative;
             z-index:1;
-        }
+        } */
 
         /* 탑바 - 서브메뉴배경 시작 */
 
         /* 탑바 - 서브메뉴배경의 래퍼(wrapper) */
-        .top-bar > .sub-menu-bg > div {
+        /* .top-bar > .sub-menu-bg > div {
             position:absolute;
             top:0;
             left:0;
@@ -147,7 +148,7 @@
             overflow:hidden;
             height:0;
             transition:height 0.3s;
-        }
+        } */
 
         /* 탑바 - 서브메뉴배경 */
         .top-bar > .sub-menu-bg > div > div {
@@ -156,7 +157,7 @@
             left:10px;
             width:calc(100% - 20px);
             height:470px;
-            background-color: white;
+            background-color: rgb(201, 187, 187);
             background-repeat:no-repeat;
             background-position:center;
             transform:translateY(-100%);
@@ -190,7 +191,7 @@
             height:470px;
         }
 
-        /* 탑바 - 서브메뉴 - 시작 */
+        /* 탑바 - 서브메뉴 - 시작
         .top-bar > .menu-box-1 > ul > li:first-child > div {
             margin-left:10px;
         }
@@ -211,7 +212,7 @@
             height:0;
             overflow:hidden;
             transition:height 0.3s;
-        }
+        } */
 
         /* .top-bar:hover > .menu-box-1 > ul > li > div > div {
             height:470px;
@@ -248,22 +249,20 @@
 </head>
 <body>
     <div class="top-bar con">
-        <nav class="menu-box-1">
-            <div class="header_logo">
-                <a href="./main.html"><img src="../header/image/header.png"></a>
-            </div>
-            <ul class="row">
-                <li class="slide1"></li>
-                <li class="slide2"></li>
-                <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
-                <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
-                <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
-                <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
-                <li class="cell"><a href="#" class="block">로그인</a></li>
-                <liclass="cell"><a href="#" class="block"><img src="./image/search_icon.png"></a></li>
-            </ul>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-        </nav>
+        <div class="header_logo">
+            <a href="./main.html"><img src="../header/image/header.png"></a>
+        </div>
+        <ul class="nav">
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
+            <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
+            <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
+            <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
+            <li class="cell"><a href="#" class="block">로그인</a></li>
+            <li class="cell"><a href="#" class="block"><img src="./image/search_icon.png"></a></li>
+        </ul>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
         <!-- 유령의 집, 단순한 기준점, 높이 : 항상 0 -->
         <div class="sub-menu-bg relative">
             <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
