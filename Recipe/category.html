@@ -13,11 +13,16 @@
 <body>
     <p class="category-text">Recipe</p>
     <div class="ctg-btn">
-        <input class="western btn" type="button" value="샐러드">
-        <input class="western btn" type="button" value="양식">
-        <input class="juice btn" type="button" value="주스">
-        <input class="side-dish btn" type="button" value="반찬">
-        <input class="etc btn" type="button" value="기타">
+        <input class="salad menu-btn" id="salad" type="radio" name="ctg-btn" checked>
+        <label for="salad" class="btn-label">샐러드</label>
+        <input class="western menu-btn" id="western" type="radio" name="ctg-btn">
+        <label for="western" class="btn-label">양식</label>
+        <input class="juice menu-btn" id="juice" type="radio" name="ctg-btn">
+        <label for="juice" class="btn-label">주스</label>
+        <input class="side-dish menu-btn" id="side-dish" type="radio" name="ctg-btn">
+        <label for="side-dish" class="btn-label">반찬</label>
+        <input class="etc menu-btn" id="etc" type="radio" name="ctg-btn">
+        <label for="etc" class="btn-label">기타</label>
     </div>
 
     <form >
@@ -27,7 +32,76 @@
         </select>
     </form>
 
-    <div class="category_box">
+    <div class="category_box tab1">
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_avocado_salad.png"></li>
+            <li><span class="recipe_name">아보카도 샐러드</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">125</span></li>
+            <li ><span class="recipe_theme">샐러드, 양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_tomato_caprese.png"></li>
+            <li><span class="recipe_name">토마토 카프리제</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_white.png"></li>
+            <li><span class="recipe_favorite_num">96</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_potato_soup.png"></li>
+            <li><span class="recipe_name">감자 스프</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">117</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_cucumber_pickle.png"></li>
+            <li><span class="recipe_name">오이 피클</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">55</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_carrot_cake.png"></li>
+            <li><span class="recipe_name">당근 케이크</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_white.png"></li>
+            <li><span class="recipe_favorite_num">148</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_tomato_soup.png"></li>
+            <li><span class="recipe_name">토마토 스프</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">107</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_strawberry_zam.png"></li>
+            <li><span class="recipe_name">딸기 쨈</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">131</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_sweet_pumkin_soup.png"></li>
+            <li><span class="recipe_name">단호박 스프</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_white.png"></li>
+            <li><span class="recipe_favorite_num">98</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        <ul class="category_items">
+            <li><img class="recipe_img" src="./image/category_potato wedges.png"></li>
+            <li><span class="recipe_name">웨지 감자</span></li>
+            <li><img class="recipe_favorite" src="./image/favorite_red.png"></li>
+            <li><span class="recipe_favorite_num">143</span></li>
+            <li ><span class="recipe_theme">양식</span></li>
+        </ul>
+        
+        
+    </div>
+
+
+    <div class="category_box tab2">
         <ul class="category_items">
             <li><img class="recipe_img" src="./image/category_avocado_salad.png"></li>
             <li><span class="recipe_name">아보카도 샐러드</span></li>

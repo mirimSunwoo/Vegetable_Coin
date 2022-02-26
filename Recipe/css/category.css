@@ -21,11 +21,20 @@
     /* background-color: #EEBB4D; */
 }
 
+
+
+
 .ctg-btn{/* 카태고리 선택 박스 */
-    margin-left: 677px;
+    margin-left: 660px;
 }
 
-.btn{/* 카테고리 선택 버튼 */
+.menu-btn[type="radio"]{
+    display: none;
+}
+.menu-btn[type="radio"]:checked + label{
+    color: #EEBB4D;
+}
+.btn-label{/* 카테고리 선택 버튼 */
     display: inline-block;
     margin-right: 84px;
     cursor: pointer;
@@ -37,9 +46,12 @@
     border: 0px;
     background-color: white;
 }
-.btn:hover{
+
+.btn-label:hover{
     color: #EEBB4D;
 }
+
+
 .sort{
     margin-left: 1470px;
     margin-bottom: 10px;
@@ -61,18 +73,6 @@
     
 
 }
-/* .sort{
-    margin-left: 1495px;
-    margin-bottom: 10px;
-    margin-top: 70px;
-    width: 50px;
-    height: 23px;
-    font-size: 24px;
-    font-family: "Noto Sans KR";
-    font-style: normal;
-    font-weight: bold;
-    
-} */
 
 form > select{
     border: 0px;
@@ -84,7 +84,10 @@ form > select:hover{
     border: 0px;
 }
 
+
+
 /* 카테고리 박스 */
+
 .category_box > .category_items > li{
     list-style: none;
 }
@@ -92,7 +95,7 @@ form > select:hover{
     border-radius: 10px;
 }
 .category_box{
-    /* display: flex; */
+    /* display: none; */
     margin-left: 363px;
     margin-top: 30px;
     width: 1250px;
@@ -100,6 +103,12 @@ form > select:hover{
     /* border: 1px solid darkcyan; */
     
 }
+
+/* 누르면 보이게 하기 */
+/* input[id="salad"]:checked ~ .tab1{display: block;}
+input[id="western"]:checked ~ .tab2{display: block;}
+input[id="juice"]:checked ~ .tab3{display: block;} */
+
 .category_items{
     width: 378px;
     height: 517px;
@@ -157,3 +166,5 @@ form > select:hover{
     line-height: 29px;
     color: #ABABAB;
 }
+
+
