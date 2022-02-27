@@ -24,19 +24,16 @@
 
 
 
-.ctg-btn{/* 카태고리 선택 박스 */
-    margin-left: 660px;
-}
-
 .menu-btn[type="radio"]{
     display: none;
 }
 .menu-btn[type="radio"]:checked + label{
     color: #EEBB4D;
 }
+
 .btn-label{/* 카테고리 선택 버튼 */
     display: inline-block;
-    margin-right: 84px;
+    margin-right: 80px;
     cursor: pointer;
     font-family: "Noto Sans KR";
     font-style: normal;
@@ -46,17 +43,20 @@
     border: 0px;
     background-color: white;
 }
-
+label[id="salad"]{
+    margin-left: 677px;
+}
 .btn-label:hover{
     color: #EEBB4D;
 }
 
 
 .sort{
-    margin-left: 1470px;
+    position:absolute;
+    margin-left: 1450px;
     margin-bottom: 10px;
-    margin-top: 70px;
-    width: 100px;
+    margin-top: 40px;
+    width: 120px;
     height: 28px;
 
     
@@ -95,19 +95,17 @@ form > select:hover{
     border-radius: 10px;
 }
 .category_box{
-    /* display: none; */
+    /* margin: 0 auto; */
+    display: none;
     margin-left: 363px;
-    margin-top: 30px;
+    margin-top: 98px;
     width: 1250px;
     height: 1746px;
     /* border: 1px solid darkcyan; */
     
 }
 
-/* 누르면 보이게 하기 */
-/* input[id="salad"]:checked ~ .tab1{display: block;}
-input[id="western"]:checked ~ .tab2{display: block;}
-input[id="juice"]:checked ~ .tab3{display: block;} */
+
 
 .category_items{
     width: 378px;
@@ -168,3 +166,6 @@ input[id="juice"]:checked ~ .tab3{display: block;} */
 }
 
 
+/* 누르면 보이게 하기 */
+input[id="salad"]:checked ~ .tab1{display: inline-block;}
+input[id="western"]:checked ~ .tab2{display: inline-block;}
