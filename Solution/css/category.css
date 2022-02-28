@@ -14,13 +14,16 @@
     /* background-color: #EEBB4D; */
 }
 
-.ctg-btn{/* 카태고리 선택 박스 */
-    margin-left: 586px;
+.menu-btn[type="radio"]{
+    display: none;
+}
+.menu-btn[type="radio"]:checked + label{
+    color: #EEBB4D;
 }
 
-.btn{/* 카테고리 선택 버튼 */
+.btn-label{/* 카테고리 선택 버튼 */
     display: inline-block;
-    margin-right: 84px;
+    margin-right: 80px;
     cursor: pointer;
     font-family: "Noto Sans KR";
     font-style: normal;
@@ -30,8 +33,10 @@
     border: 0px;
     background-color: white;
 }
-/* 마우스 올렸을 떄 */
-.btn:hover{
+label[id="leaf"]{
+    margin-left: 677px;
+}
+.btn-label:hover{
     color: #EEBB4D;
 }
 /* 정렬 */
@@ -62,15 +67,17 @@ form > select:hover{
     border: 0px;
 }
 
+
 /* 카테고리 박스 */
 ul > li{
     list-style: none;
 }
 
-#content_box{
+.content_box{
     margin-left: 363px;
     margin-top: 30px;
     width: 1250px;
+    display: none;
     /* border: 1px solid black; */
     
 }
@@ -114,3 +121,10 @@ ul > li{
     line-height: 29px;
     color: #ABABAB;
 }
+
+/* 누르면 보이게 하기 */
+input[id="leaf"]:checked ~ .tab1{display: inline-block;}
+input[id="fruit"]:checked ~ .tab2{display: inline-block;}
+input[id="root"]:checked ~ .tab3{display: inline-block;}
+input[id="stem"]:checked ~ .tab4{display: inline-block;}
+input[id="etc"]:checked ~ .tab5{display: inline-block;}
