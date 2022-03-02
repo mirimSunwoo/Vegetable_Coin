@@ -74,6 +74,9 @@ body{
     top: 113.58px;
     left: 637px;
 }
+.login{
+
+}
 .input_value{
     position: absolute;
     width: 529px;
@@ -197,4 +200,62 @@ input::placeholder{
 
     border: 1px solid #DADADA;
     transform: rotate(90deg);
+}
+.sign_up{
+    position: absolute;
+    width: 529px;
+    height: 444px;
+    background-color: #FFFFFF;  
+    
+    left: 636px;
+    top: 202px;
+}
+.input_join{
+    position: absolute;
+    width: 529px;
+    height: 60px;
+    /* top: 399px; */
+
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #191919;
+
+    padding-left: 17px;
+}
+.input_already{
+    position: absolute;
+    width: 529px;
+    height: 26px;
+    top: 420px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+    /* display: flex; */
+    align-items: center;
+
+    color: #6A9258;
+
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+}
+.input_already:hover{
+    color: rgba(106, 146, 88, 0.9);
 }
