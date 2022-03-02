@@ -22,7 +22,7 @@
                     <input type="password" class="input_value" style="top:280px" placeholder="비밀번호를 입력하세요." required="required">
                     <label class="checkbox"><input class="checkbox_input" type="checkbox" class="rememver"> 아이디 저장</label>
                     <input type="submit" id="submit" class="input_button" value="로그인">
-                    <input type="submit" style="left: 715px;" class="sub_button" value="회원가입하기">
+                    <input type="submit" style="left: 715px;" id="join" class="sub_button" value="회원가입하기">
                     <p class="line"></p>
                     <input type="submit" style="left: 959px;" class="sub_button" value="아이디 / 비밀번호 찾기">
                 </div>
@@ -34,9 +34,27 @@
                     <input type="password" name="re_password" class="input_join" style="top: 160px;" placeholder="비밀번호 재확인"required="required">
                     <input type="text" name="nickname" class="input_join" style="top: 240px;" placeholder="닉네임"required="required">
                     <input type="submit" id="submit" class="input_button"value="가입하기" style="top: 330px; left: 0px;">
-                    <input type="button" class="input_already" value="이미 채소코인 회원이신가요?">
+                    <input type="button" class="input_already" id="login" value="이미 채소코인 회원이신가요?">
                 </div>
             </form>
+            <script type="text/javascript">
+                var modal = document.querySelector(".sign_up");
+                var profile_edit = document.querySelector(".sub_button");
+                var closeButton = document.querySelector(".input_already");
+        
+                function toggleModal() {
+                    modal.classList.toggle("join-show-modal");
+                }
+        
+                function windowOnClick(event) {
+                    if (event.target === modal) {
+                        toggleModal();
+                    }
+                }
+                profile_edit.addEventListener("click", toggleModal);
+                closeButton.addEventListener("click", toggleModal);
+                window.addEventListener("click", windowOnClick); 
+            </script>
         </div>
     </div>
 </body>

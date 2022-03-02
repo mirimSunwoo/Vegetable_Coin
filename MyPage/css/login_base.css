@@ -209,6 +209,8 @@ input::placeholder{
     
     left: 636px;
     top: 202px;
+
+    visibility: hidden;  
 }
 .input_join{
     position: absolute;
@@ -258,4 +260,10 @@ input::placeholder{
 }
 .input_already:hover{
     color: rgba(106, 146, 88, 0.9);
+}
+.join-show-modal{
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1.0); 
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
