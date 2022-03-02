@@ -178,8 +178,8 @@ input::placeholder{
     width: 27px;
     height: 0px;
     /* 수정필요 */
-    left: 880px; 
-    top: 532px;
+    left: 902px; 
+    top: 538px;
 
     border: 1px solid #DADADA;
     transform: rotate(90deg);
