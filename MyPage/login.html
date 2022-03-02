@@ -15,29 +15,28 @@
                 <p class="text_kor">지금 로그인하고<br>최적의 <span>채소 키우기 환경</span>을<br>경험하세요.</p>
                 <p class="text_eng">Welcome to Vegetable Coin</p>
             </div>
-            <div class="login">
-                <a class="login_logo" href="./main.html"><img src="./image/login_logo.png"></a>
-                <label>
+            <form action="#post.php" methos="POST">
+                <div class="login">
+                    <a class="login_logo" href="./main.html"><img src="./image/login_logo.png"></a>
                     <input type="text" class="input_value" style="top:202px" placeholder="아이디를 입력하세요." required="required">
-                </label>
-                <label>
                     <input type="password" class="input_value" style="top:280px" placeholder="비밀번호를 입력하세요." required="required">
-                </label>
-                <label class="checkbox">
-                    <input class="checkbox_input" type="checkbox" class="rememver"> 
-                    아이디 저장
-                </label>
-                <label>
+                    <label class="checkbox"><input class="checkbox_input" type="checkbox" class="rememver"> 아이디 저장</label>
                     <input type="submit" id="submit" class="input_button" value="로그인">
-                </label>
-                <label>
                     <input type="submit" style="left: 715px;" class="sub_button" value="회원가입하기">
-                </label>
-                <p class="line"></p>
-                <label>
+                    <p class="line"></p>
                     <input type="submit" style="left: 959px;" class="sub_button" value="아이디 / 비밀번호 찾기">
-                </label>
-            </div>
+                </div>
+            </form>
+            <form action="#post.php" methos="POST">
+                <div class="sign_up">
+                    <input type="email" name="email" class="input_email" placeholder="이메일" required="required">
+                    <input type="password" name="password" class="input_password" placeholder="비밀번호"required="required">
+                    <input type="password" name="re_password" class="input_re_password" placeholder="비밀번호 재확인"required="required">
+                    <input type="text" name="nickname" class="input_nickname" placeholder="닉네임"required="required">
+                    <input type="submit" id="submit" value="가입하기" style="top: 772px;">
+                    <input type="button" class="input_already" value="이미 채소코인 회원이신가요?">
+                </div>
+            </form>
         </div>
     </div>
 </body>

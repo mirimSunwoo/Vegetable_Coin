@@ -84,6 +84,20 @@ body{
     border: 1px solid #6A9258;
     box-sizing: border-box;
     border-radius: 10px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #191919;
+
+    padding-left: 17px;
 }
 input::placeholder{
     font-family: 'Noto Sans KR', sans-serif;
@@ -92,7 +106,7 @@ input::placeholder{
     font-size: 18px;
     line-height: 26px;
 
-    padding-left: 17px;
+    /* padding-left: 17px; */
     display: flex;
     align-items: center;
 

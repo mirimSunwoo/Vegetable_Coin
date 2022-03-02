@@ -11,12 +11,18 @@
   position:absolute;
 }
 .popular_title{
-  left: 363px;
+  margin-left: 363px;
   
-  font-family: "Pretendard";
-  font-size: 26px;
+  font-family: "Noto Sans KR";
   font-style: normal;
-  position:absolute;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+  /* identical to box height */
+
+
+  /* Main */
+
   color: #6A9258;
 }
 
@@ -25,7 +31,7 @@
 .for_slick_slider{
   display: flex;
   width:1557px;
-  height : 500px;
+  height : 400px;
   margin-left: 325px;
   margin-top: 60px;
   /* border: 1px solid firebrick; */
@@ -76,3 +82,14 @@
   color: #AAAAAA;
 }
 
+/* 슬라이더 현황 막대 */
+.range_box{
+  width: 1190px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: 365px;
+  /* border: 1px solid indianred; */
+}
+.slider_range{
+  width: 1190px;
+}
