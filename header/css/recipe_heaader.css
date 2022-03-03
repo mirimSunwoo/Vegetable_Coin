@@ -51,7 +51,7 @@
     line-height: 29px;
     border: none;
     outline: none;
-    color: #fff;
+    color: #6A9258;
     display: inline-block;
     text-decoration: none;
     margin-top: 0px;
@@ -93,7 +93,7 @@
     /* left:10px; */
     width:calc(100%);
     height:700px;
-    background-color: rgb(255, 255, 255);
+    background-color: #6A9258;
     background-repeat:no-repeat;
     background-position:center;
     transform:translateY(-100%);
@@ -108,10 +108,10 @@
     transform:translateY(0);
   }
   .header:hover > .nav li a{
-      color: rgba(106, 146, 88, 1);
+      color: #FFFFFF;
   }
   .header:hover >.nav .slide2{
-    background: rgba(106, 146, 88, 0.1);;
+    background: rgba(255, 255, 255, 0.2);  
   }
   .header:hover{
     box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
@@ -137,7 +137,7 @@
     height:0px;
     left: 363px;
     top: 364px;
-    border: 1px solid #6A9258;
+    border: 1px solid #FFFFFF;
   }
   .sub-menu-bg .search .input >input{
     position: absolute;
@@ -154,6 +154,8 @@
 
     outline: 0;
     border: 0;
+    color: #e6e6e6;
+
     background-color: transparent;
   }
   .sub-menu-bg .search .search_btn{
@@ -171,19 +173,6 @@
     line-height: 43px;
     /* text-align: center; */
     
-    color: #AAAAAA;
+    color: #e6e6e6;
     
   }
-
-/* 1. 본인의 수상내역(이름, 날짜, 기관)
-2. 그동안 들었던 방과후 학교 수업 / 개별강좌
-3. 내가 그동안 진행했던 프로젝트 정리(명칭, 분야, 역할, 몇명, 기간)
-4. 중학교 입학/졸업 날짜
-5. 그동안 땄던 자격증
-6. 외부활동(공모전, 봉사) 
-7. 생기부 사진(여권, 반명함)
-내가 회사를 볼때 중요하다고 생각하는 5가지 기준정하기
-
-야근하는 사람을 주의깊게봐라(그분야의 핵심인물)
-
-자가진단 알람설정*/
