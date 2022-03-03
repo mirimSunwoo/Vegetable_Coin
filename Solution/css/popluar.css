@@ -83,13 +83,17 @@
 }
 
 /* 슬라이더 현황 막대 */
-.range_box{
-  width: 1190px;
-  height: 20px;
-  margin-top: 50px;
-  margin-left: 365px;
-  /* border: 1px solid indianred; */
-}
-.slider_range{
-  width: 1190px;
-}
+
+  .slick-dots {
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    margin: 20px;
+    margin-left: 524px;
+    margin-top: 460px;
+    padding-right: 20px;
+
+    
+    
+  }
+

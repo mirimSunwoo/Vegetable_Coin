@@ -3,7 +3,8 @@ $(function (){
         infinite: false,
         slidesToShow: 4.5,
         slidesToScroll: 1,
-        variableWidth: true
+        variableWidth: true,
+        dots : true
         
     })
 })
