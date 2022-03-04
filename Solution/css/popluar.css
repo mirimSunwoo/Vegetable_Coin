@@ -84,16 +84,29 @@
 
 /* 슬라이더 현황 막대 */
 
-  .slick-dots {
-    position: absolute;
-    display: flex;
-    /* justify-content: center; */
-    margin: 20px;
-    margin-left: 524px;
-    margin-top: 460px;
-    padding-right: 20px;
-
+.slick-dots {
+  position: absolute;
+  display: flex;
+  /* justify-content: center; */
+  margin: 20px;
+  margin-left: 524px;
+  margin-top: 460px;
+  padding-right: 20px;
     
-    
-  }
+}
+.slick-dots > li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0 6px;
+  background: #6A9258;
+  opacity: 0.3;
 
+}
+
+.slick-dots > li > slick-active{
+  background: #6A9258;
+}
+.slick-dots > li > button{
+  display: none;
+}
