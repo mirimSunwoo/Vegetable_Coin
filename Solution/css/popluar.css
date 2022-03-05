@@ -85,28 +85,55 @@
 /* 슬라이더 현황 막대 */
 
 .slick-dots {
+  bottom: -60px;
+  width: 100%;
+  list-style: none;
+  text-align: center;
   position: absolute;
-  display: flex;
-  /* justify-content: center; */
-  margin: 20px;
-  margin-left: 524px;
-  margin-top: 460px;
-  padding-right: 20px;
-    
+  /* right: 15px; */
+  padding: 0;
 }
-.slick-dots > li{
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /*margin: 1px;*/
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
   width: 10px;
   height: 10px;
-  border-radius: 50px;
-  margin: 0 6px;
-  background: #6A9258;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+}
+
+.slick-dots li button:before {
+  font-size: 2.7rem;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .75;
+  color: #6A9258;
   opacity: 0.3;
-
 }
 
-.slick-dots > li > slick-active{
-  background: #6A9258;
-}
-.slick-dots > li > button{
-  display: none;
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #6A9258;
 }
