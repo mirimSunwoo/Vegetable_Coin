@@ -9,13 +9,9 @@
     <link rel="stylesheet" href="css/recent.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/sloution_main.css">
-    <link rel="stylesheet" href="../header/css/header_2.css">
+    <link rel="stylesheet" href="../header/css/recipe_heaader.css">
     <link rel="stylesheet" href="../footer/css/footer.css">
-    <script src="js/popluar.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/popluar.js"></script>
+   
     
     <title>Document</title>
 </head>
@@ -33,26 +29,40 @@
 
             <!-- 슬라이더 -->
             <div class="for_slick_slider multiple-items">
-                <div class="popluar_items">
-                    <img src="image/month_popluar.png">
+                <div class="popluar_items first_slider">
+                    <div class="slider_bg">
+                        <div class="slider_text_box">
+                            <p class="slider_text1">이번달 인기채소를 만나보세요!</p>
+                            <p class="slider_text2">Popular veggies</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="popluar_items">
-                    <img src="image/popluar_carrot.png">
+                    <img src="image/popluar_img/popluar_carrot.png">
                 </div>
                 <div class="popluar_items">
-                    <img src="image/popluar_egg_plant.png">
+                    <img src="image/popluar_img/popluar_egg_plant.png">
                 </div>
                 <div class="popluar_items">
-                    <img src="image/popluar_corn.png">
+                    <img src="image/popluar_img/popluar_corn.png">
                 </div>
                 <div class="popluar_items">
-                    <img src="image/popluar_cu-cumber.png">
+                    <img src="image/popluar_img/popluar_cu-cumber.png">
                 </div>
                 <div class="popluar_items">
-                    <img src="image/popluar_tomato.png">
+                    <img src="image/popluar_img/popluar_tomato.png">
                 </div>
             </div>
+
+            
+            <!-- 슬라이더 현황 표시 -->
+            <!-- <div class="range_box">
+                <input class="slider_range" type="range" value="20" min="0" max="100">
+               
+            </div> -->
         </div>
+
+        
 
         <!-- 최근 본 식물 -->
         <div id="recent" class="main-item">
@@ -63,26 +73,26 @@
             <div class="recent-box">
                 <li class="recent_li">
                     <div class="recent-items">
-                        <img class="recent-img" src="image/recent_cucumber.png">
-                        <input class="delete" type="image" src="image/button.png">
+                        <img class="recent-img" src="image/recent_img/recent_cucumber.png">
+                        <input class="delete" type="image" src="image/recent_img/button.png">
                     </div>
                 </li>
                 <li class="recent_li">
                     <div class="recent-items">
-                        <img class="recent-img" src="image/recent_broccoli.png">
-                        <input class="delete" type="image" src="image/button.png">
+                        <img class="recent-img" src="image/recent_img/recent_broccoli.png">
+                        <input class="delete" type="image" src="image/recent_img/button.png">
                     </div>
                 </li>
                 <li class="recent_li">
                     <div class="recent-items">
-                        <img class="recent-img" src="image/recent_pepper.png">
-                        <input class="delete" type="image" src="image/button.png">
+                        <img class="recent-img" src="image/recent_img/recent_pepper.png">
+                        <input class="delete" type="image" src="image/recent_img/button.png">
                     </div>
                 </li> 
                 <li class="recent_li">
                     <div class="recent-items">
-                        <img class="recent-img" src="image/recent_corn.png">
-                        <input class="delete" type="image" src="image/button.png">
+                        <img class="recent-img" src="image/recent_img/recent_corn.png">
+                        <input class="delete" type="image" src="image/recent_img/button.png">
                     </div>
                 </li>  
             </div>
@@ -90,79 +100,225 @@
         
         <!-- 카테고리 -->
         <div id="category" class="main-item">
-            <p class="category-text">Recipe</p>
-            <div class="ctg-btn">
-                <input class="western btn" type="button" value="잎채소">
-                <input class="western btn" type="button" value="열매채소">
-                <input class="juice btn" type="button" value="뿌리채소">
-                <input class="side-dish btn" type="button" value="종자채소">
-                <input class="etc btn" type="button" value="줄기채소">
-            </div>
+            <p class="category-text">Plant</p>
+            <div class="con-box">
+                <!-- <div class="ctg-btn"> -->
+                <input class="leaf menu-btn" id="leaf" type="radio" name="ctg-btn" checked >
+                <label for="leaf" class="btn-label" id="leaf">잎채소</label>
 
-            <form >
-                <select name="sort" type="sort" required="required" class="sort">
-                    <option value="views">조회수</option>
-                    <option value="views">좋아요수</option>
-                </select>
-            </form>
+                <input class="fruit menu-btn" id="fruit" type="radio" name="ctg-btn" >
+                <label for="fruit" class="btn-label">열매채소</label>
 
-            <section id="content_box">
-                <div class="box">
+                <input class="root menu-btn" id="root" type="radio" name="ctg-btn" >
+                <label for="root" class="btn-label">뿌리채소</label>
+
+                <input class="stem menu-btn" id="stem" type="radio" name="ctg-btn" >
+                <label for="stem" class="btn-label">줄기채소</label>
+
+                <input class="etc menu-btn" id="etc" type="radio" name="ctg-btn"  >
+                <label for="etc" class="btn-label">기타</label>
+        
+                <form>
+                    <select name="sort" type="sort" required="required" class="sort">
+                        <option value="views">인기순</option>
+                        <option value="views">난이도순</option>
+                    </select>
+                </form>
+                
+                <!-- 잎채소 -->
+                <div class="content_box tab1">
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/cucumber.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">오이</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/napa_cabbage.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">배추</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
 
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/cherry_tomato.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">방울토마토</span></li>
-                        <li><img class="level" src="./image/two_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/sesame.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">깻잎</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/egg_plant.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">가지</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/bok_choy.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">청경채</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/corn.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">옥수수</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/cabbage.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">양배추</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/peper.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">고추</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/spinach.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">시금치</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/pea.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">완두콩</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/coltsfoot.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">머위</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/tomato.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">토마토</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/water_parsley.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">미나리</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/broccoli.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">브로콜리</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
-                    </ul>
-                    <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/carrot.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">당근</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
-                    </ul>
-                    <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/pimento.png"></li>
-                        <li class="recipe_title"><span class="recipe_name">피망</span></li>
-                        <li><img class="level" src="./image/max_circle.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/lettuce.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">상추</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     
                 </div>
-            </section>
+
+
+                <!-- 열매채소 -->
+                <div class="content_box tab2">
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/cucumber.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">오이</span></li>
+                        <li><img class="level" src="./image/level/level4.png"></li>
+                    </ul>
+
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/cherry_tomato.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">방울토마토</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/egg_plant.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">가지</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/corn.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">옥수수</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/peper.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">고추</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/pea.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">강낭콩</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/tomato.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">토마토</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/strawberry.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">딸기</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/squash.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">애호박</span></li>
+                        <li><img class="level" src="./image/level/level5.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/fruit/paprika.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">파프리카</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                </div>
+
+
+                <!-- 뿌리채소 -->
+                <div class="content_box tab3">
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/root/sweet_potato.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">고구마</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/root/carrot.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">당근</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/root/burdock.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">우엉</span></li>
+                        <li><img class="level" src="./image/level/level5.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/root/potato.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">감자</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/root/taro.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">토란</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/root/turnip.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">순무</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/root/radish.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">무</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                </div>
+
+
+                <!-- 줄기채소 -->
+                <div class="content_box tab4">
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/stem/onion.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">양파</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/stem/green_onion.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">파</span></li>
+                        <li><img class="level" src="./image/level/level1.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/stem/chives.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">부추</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/stem/salary.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">샐러리</span></li>
+                        <li><img class="level" src="./image/level/level2.png"></li>
+                    </ul>
+                    <ul class="category_items">
+                        <li><img class="recipe_img" src="./image/category_img/stem/asparagus.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">아스파라거스</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                </div>
+
+
+                <!-- 기타 채소 -->
+                <div class="content_box tab5">
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/etc/bean_sprouts.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">콩나물</span></li>
+                        <li><img class="level" src="./image/level/level1.png"></li>
+                    </ul>
+
+                    <ul class="category_items top_item">
+                        <li><img class="recipe_img" src="./image/category_img/etc/broccoli.png"></li>
+                        <li class="recipe_title"><span class="recipe_name">브로콜리</span></li>
+                        <li><img class="level" src="./image/level/level3.png"></li>
+                    </ul>
+                    
+                </div>
+
+            </div>
         </div>
+        
 
         <div id="footer" class="main-item"></div>
     </div>

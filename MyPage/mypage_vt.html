@@ -8,13 +8,50 @@
     <link rel="stylesheet" href="./css/img_add_modal.css">
     <link rel="stylesheet" href="./css/vt_edit_modal.css">
 
+    <link rel="stylesheet" href="./css/header_mypage.css"">
     <link rel="stylesheet" href="./css/mypage_vt_base.css"">
+    <link rel="stylesheet" href="./css/footer.css"">
     <title>내 식물 페이지</title>
 </head>
 <body>
     <div class="wrap">
         <div class="intro">
             <!-- 내 채소 사진 -->
+            <div class="header con">
+                <div class="header_logo">
+                    <a href="./main.html"><img src="./image/logo_white.png"></a>
+                </div>
+                <ul class="nav">
+                    <li class="slide1"></li>
+                    <li class="slide2"></li>
+                    <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
+                    <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
+                    <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
+                    <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
+                    <li class="cell"><a href="./login.html" class="block">로그인</a></li>
+                    <li class="search con"><a href="#" class="search con"><img src="./image/search_icon.png"></a></li>
+                </ul>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+                <div class="sub-menu-bg relative">
+                    <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+                    <div>
+                        <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                        <div></div>
+                        <div class="search">
+                            <div class="header_logo">
+                                <a href="./main.html"><img src="../header/image/header.png"></a>
+                            </div>
+                            <div class="search_btn">
+                                <a href="#"><img src="./image/search_btn.png"></a>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="search" placeholder="검색">
+                            </div>
+                            <p class="line"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="intro_info">
             <h1 class="vt_name">케빈스키</h1>
@@ -24,7 +61,7 @@
         </div>
         <p class="vt_img">식물 사진</p>
         <div class="vt_imgs">
-            <div class="remove">삭제하기</div>
+            <!-- <div class="remove">삭제하기</div> -->
             <div class="img">
                 <img src="./image/my_plant_ex_1.png">
             </div>
@@ -48,6 +85,35 @@
                 </button>
             </div>
         </div>
+        <div class="footer" style="margin-top: 2150px;">
+            <div>
+                <p class="team-title">VEGETABLE COIN TEAM</p>
+                <p class="period-title">PERIOD</p>
+            </div>
+    
+            <div style="margin-bottom: 0;">
+                <p class="designer-team">DESIGNER</p>
+                <p class="designer-period">DESIGN</p>
+            </div>
+            
+            <div>
+                <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+                <p class="design-date">2022. 01</p>
+            </div>
+            
+            <div>
+                <p class="developer-team">DEVELOPER</p>
+                <p class="develop-period">DEVELOP</p>
+            </div>
+    
+            <div>
+                <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+                <p class="develop-date">2022. 02</p>
+            </div>
+            <hr class="line">
+            <p class="contact">Contact</p>
+            <p class="email">vegatable@mirim.hs.kr</p>
+        </div>
          <!-- 식물추가 팝업될 레이어 -->
         <div class="add_modal">
             <div class="modal-content">
@@ -56,7 +122,7 @@
                 <p class="line"></p>
                 <form action="#post.php" methos="POST">
                     <label for="vt_name" class="little_title" style="top: 120px;">내 식물 이름</label>
-                    <input type="vt_name" name="vt_name" class="input_vt_name" placeholder="케빈스키" required="required">
+                    <input type="text" id="vt_name" name="vt_name" class="input_vt_name" placeholder="케빈스키" required="required">
                     <label for="value" class="little_title" style="top: 261px;">채소 종류</label>
                     <select type="value" name="value" class="input_value" placeholder="방울토마토"required="required">
                         <option value="a">깻잎</option>
@@ -98,7 +164,7 @@
                         <option value="a">청경채</option>
                     </select>                
                     <label for="date" class="little_title" id="date" style="top: 261px; left: 280px;">키우기 시작한 날짜</label>
-                    <input type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">
+                    <input id="date" type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">
                     <div class="plant_img"></div>
                     <input type="submit" id="submit" style="top:602px" value="추가하기">
                 </form>
@@ -131,7 +197,7 @@
                 <form action="#post.php" methos="POST">
                     <div class="plant_img_add">
                         <p class="btn_img_add">사진을 여기에 끌어다 놓으세요</p>
-                        <button class="img_choice">컴퓨터에서 선택</button>
+                        <input type="file" accept="image/jpeg,.txt" class="upload-name" value="컴퓨터에서 선택">
                     </div>
                     <input type="submit" id="submit" style="top:684px" value="추가하기">
                 </form>

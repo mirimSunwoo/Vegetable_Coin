@@ -56,7 +56,7 @@
 }
 .edit_modal .line{
     position: absolute;
-    width: 578px;
+    width: 582px;
     height: 0px;
     top: 80px;
 
@@ -99,7 +99,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     padding-left: 20px;
-    font-size: 26px;
+    font-size: 20px;
 }
 .input_email{
     position: absolute;
@@ -112,7 +112,7 @@
     border: 1px solid #6A9258;
     box-sizing: border-box;
     border-radius: 10px;
-    font-size: 26px;
+    font-size: 20px;
     padding-left: 20px;
 
 }
@@ -127,7 +127,7 @@
     border: 1px solid #6A9258;
     box-sizing: border-box;
     border-radius: 10px;
-    font-size: 26px;
+    font-size: 20px;
     padding-left: 20px;
 
 }
