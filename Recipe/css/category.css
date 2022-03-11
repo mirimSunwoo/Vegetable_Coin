@@ -43,7 +43,7 @@
     border: 0px;
     background-color: white;
 }
-label[id="salad"]{
+label[id="tab1"]{
     margin-left: 677px;
 }
 .btn-label:hover{
@@ -167,5 +167,8 @@ form > select:hover{
 
 
 /* 누르면 보이게 하기 */
-input[id="salad"]:checked ~ .tab1{display: inline-block;}
-input[id="western"]:checked ~ .tab2{display: inline-block;}
+input[id="tab1"]:checked ~ .content1{display: inline-block;}
+input[id="tab2"]:checked ~ .content2{display: inline-block;}
+input[id="tab3"]:checked ~ .content3{display: inline-block;}
+input[id="tab4"]:checked ~ .content4{display: inline-block;}
+input[id="tab5"]:checked ~ .content5{display: inline-block;}
