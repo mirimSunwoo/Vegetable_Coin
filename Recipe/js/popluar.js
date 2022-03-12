@@ -1,7 +1,7 @@
 $(function (){
   $('.multiple-items').slick({
     infinite : true,
-    slidesToShow : 3,
+    slidesToShow : 4,
     slidesToScoll : 1,
     arrows : true,
     autoplay : true,
