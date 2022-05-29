@@ -1,2 +1,2 @@
-<?php include_once("../Vegetable_Coin/MyPage/main.html");?>
+<?php include_once("/MyPage/main.html");?>
 
