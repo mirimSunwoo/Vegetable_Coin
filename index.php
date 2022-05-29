@@ -1,2 +1,2 @@
-<?php include_once("/MyPage/main.html");?>
+<?php include_once("main.html");?>
 
