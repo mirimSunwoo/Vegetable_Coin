@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ko"> 
+    <!-- ko로 바꾸면 창을 열었을때 번역하라고 뜨지 않는다 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/home/login.css">
+
+    <script src="/js/home/login.js" defer></script>
+
+    <title>login</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="login_box">
+            <div class="intro">
+                <p class="text_kor">지금 로그인하고<br>최적의 <span>채소 키우기 환경</span>을<br>경험하세요.</p>
+                <p class="text_eng">Welcome to Vegetable Coin</p>
+            </div>
+            <form action="#post.php" methos="POST">
+                <div class="login">
+                    <a class="login_logo" href="./main.html"><img src="/css/home/img/login_logo.png"></a>
+                    <input type="text" id="id" class="input_value" style="top:202px" placeholder="아이디를 입력하세요." required="required">
+                    <input type="password" id = "psword" class="input_value" style="top:280px" placeholder="비밀번호를 입력하세요." required="required">
+                    <!-- <div class="checkbox"> -->
+                        <label class="checkbox"><input class="checkbox_input" type="checkbox"> 아이디 저장</label>
+                    <!-- </div> -->
+                    <input type="submit" id="button" class="input_button" value="로그인">
+                    <a href="/register"><input type="button" style="left: 715px;" id="join" class="sub_button" value="회원가입하기"></a>
+                    <p class="line"></p>
+                    <a href="#"><input type="button" style="left: 959px;" class="sub_button" value="아이디 / 비밀번호 찾기"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko"> 
+    <!-- ko로 바꾸면 창을 열었을때 번역하라고 뜨지 않는다 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/css/home/login.css">
+
+    <script src="/js/home/register.js" defer></script>
+
+    <title>login</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="login_box">
+            <div class="intro">
+                <p class="text_kor">지금 로그인하고<br>최적의 <span>채소 키우기 환경</span>을<br>경험하세요.</p>
+                <p class="text_eng">Welcome to Vegetable Coin</p>
+            </div>
+            <form action="#post.php" methos="POST">
+                <a class="login_logo" href="./main.html"><img src="/css/home/img/login_logo.png" ></a>
+                <div class="sign_up">
+                    <input type="text" id="id" class="input_join" placeholder="이메일" required="required">
+                    <input type="password" id="psword" class="input_join" style="top: 80px;" placeholder="비밀번호"required="required">
+                    <input type="password" id="confirm-psword" class="input_join" style="top: 160px;" placeholder="비밀번호 재확인"required="required">
+                    <input type="text" id="nickname" class="input_join" style="top: 240px;" placeholder="닉네임"required="required">
+                    <input type="submit" id="button" class="input_button"value="가입하기" style="top: 330px; left: 0px;">
+                    <a href="/login"><input type="button" class="input_already" id="login" value="이미 채소코인 회원이신가요?"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
