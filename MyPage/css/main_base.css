@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
 
 @font-face {
     src: url(/font);
@@ -38,7 +39,7 @@
     left: 359px;
     top: 414px;
 
-    font-family: 'Anton', sans-serif;    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
     /* font-family:Georgia, 'Times New Roman', Times, serif; */
     font-style: normal;
     /* font-weight: 900; */
@@ -63,7 +64,7 @@
     left: 344px;
     top: 1429px;
 
-    font-family: 'Anton', sans-serif;    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
     /* font-family:"Gotham"; */
     font-style: normal;
     font-weight: 900px;
