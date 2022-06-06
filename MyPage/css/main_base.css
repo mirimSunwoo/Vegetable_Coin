@@ -20,6 +20,7 @@
 
 /* 배경 */
 .intro_bg{
+
     background-image: url("../image/main_intro_bg.png");
     background-repeat: no-repeat;
     width: 100%;
@@ -37,7 +38,7 @@
     width: 1202px;
     height: 336px;
     left: 359px;
-    top: 358px;
+    top: 340px;
 
     font-family: 'Montserrat', sans-serif;
     /* font-family:Georgia, 'Times New Roman', Times, serif; */
