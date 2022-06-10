@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+
+.wrapper{
+    text-align: center;
+    width:100%;
+    left:0; 
+    right:0; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+.w3-continaer{
+    margin-left: 343px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 80%;
+    /* top: 549px; */
+    top: 400px;
+} 
+/* .w3-continaer iframe{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+} */
+div{
+    /* position: relative; */
+    border: 1px;
+    width: 1200px;
+    height: 1000px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 549px; */
+    /* display: none; */
+}
+iframe{
+    position: relative;
+    width: 1200px;
+    height: 1850px;
+    top: -1500px;
+    left: -355px;
+    right: -400px;
+    bottom: -250px;
+}
+nav {
+    position: relative;
+    display: flex;
+    width: 876px;
+    margin: 4em auto;
+    margin-left: 363px;
+    top: 426px;
+    margin-top: 0;
+}
+nav a{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: block;
+    /* width: 6%; */
+    /* 기본 마우스 모양 */
+    cursor: default; 
+    margin-right: 40px;
+    padding: .75em 0;
+    color: #8D8D8D;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.nav-underline {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 3.5%;
+    height: 2px;
+    background: #6A9258;
+    transition: all .3s ease-in-out;
+}
+nav a:hover{
+    color: #6A9258;
+}
+nav a:nth-child(1):hover ~ .nav-underline {
+    left: 0;
+}
+nav a:nth-child(2):hover ~ .nav-underline {
+    left: 8%;
+}
+nav a:nth-child(3):hover ~ .nav-underline {
+    left: 16%;
+}
+nav a:nth-child(4):hover ~ .nav-underline {
+    left: 24%;
+    width: 5%;
+}
+nav a:nth-child(5):hover ~ .nav-underline {
+    left: 34%;
+}
+nav a:nth-child(6):hover ~ .nav-underline {
+    left: 42%;
+    width: 5%;
+}
+nav a:nth-child(7):hover ~ .nav-underline {
+    left: 51.5%;
+    width: 5%;
+}
+nav a:nth-child(8):hover ~ .nav-underline {
+    left: 61%;
+    width: 2%;
+}
+nav a:nth-child(9):hover ~ .nav-underline {
+    left: 67.5%;
+}
+nav a:nth-child(10):hover ~ .nav-underline {
+    left: 75.5%;
+    width: 5%;
+}
+.coin_title{
+    position: absolute;
+    width: 319px;
+    height: 49px;
+    left: 363px;
+    top: 264px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+
+    color: #6A9258;
+}
+.coin_title_info{
+    position: absolute;
+    width: 261px;
+    height: 24px;
+    left: 364px;
+    top: 333px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #191919;
+}
