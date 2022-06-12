@@ -2,8 +2,8 @@
     position: absolute;
     width: 72px;
     height: 38px;
-    left: 363px;
     top: 362px;
+    left: 363px;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -11,7 +11,6 @@
     font-size: 26px;
     line-height: 38px;
     /* identical to box height */
-
 
     /* Main */
 
@@ -146,7 +145,7 @@
     left: 669px;
 }
 
-#sweetPatotoImg {
+#sweetPotatoImg {
     position: absolute;
     width: 223px;
     height: 223px;
