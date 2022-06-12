@@ -23,11 +23,12 @@
     width: 100%;
     height: 100%;
 } */
-div{
-    /* position: relative; */
+.w3-container .w3-continaer{
+    position: relative;
+    padding-left: 343px;
     border: 1px;
     width: 1200px;
-    height: 1000px;
+    height: 450px;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -42,7 +43,7 @@ iframe{
     height: 1850px;
     top: -1500px;
     left: -355px;
-    right: -400px;
+    right: -450px;
     bottom: -250px;
 }
 nav {
@@ -50,7 +51,7 @@ nav {
     display: flex;
     width: 876px;
     margin: 4em auto;
-    margin-left: 363px;
+    margin-left: 350px;
     top: 426px;
     margin-top: 0;
 }
@@ -73,7 +74,7 @@ nav a{
     left: 0;
     bottom: -2px;
     width: 3.5%;
-    height: 2px;
+    height: 3px;
     background: #6A9258;
     transition: all .3s ease-in-out;
 }
@@ -144,4 +145,161 @@ nav a:nth-child(10):hover ~ .nav-underline {
     line-height: 24px;
 
     color: #191919;
+}
+.coin_title_buying{
+    position: absolute;
+    width: 244px;
+    height: 49px;
+    left: 363px;
+    top: 1336px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    /* identical to box height */
+
+
+    color: #6A9258;
+}
+.title_buying_info{
+    position: absolute;
+    /* width: 302px; */
+    height: 24px;
+    left: 364px;
+    top: 1405px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #191919;
+}
+.coin_list{
+    position: absolute;
+    width: 1300px;
+    height: 794px;
+    left: 363px;
+    top: 1482px;
+}
+.coin_list li{
+    /* position: absolute; */
+    width: 276px;
+    height: 382px;
+    background-color: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;  
+    margin-right: 28px;
+    margin-bottom: 30px;
+}
+ul li{
+    list-style-type: none;
+    float: left;
+}
+.buying_link{
+    position: absolute;
+    width: 161px;
+    height: 29px;
+    left: 1384px;
+    top: 1385px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #6A9258;
+}
+.link_button{
+    position: absolute;
+    /* width: 18px;
+    height: 9px; */
+    left: 1550px;
+    top: 1392px;
+/* 
+    border: 2px solid #6A9258;
+    transform: rotate(-90deg); */
+}
+.coin img{
+    text-align: center;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
+}
+.product-info{
+    height: 131px;
+    margin-top: 21px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.product-name{
+    /* position: absolute; */
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 23px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #191919;
+}
+.product-e-name{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #191919;
+}
+.product-button{
+    /* position: absolute; */
+    width: 236px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+
+    background: #EEBB4D;
+    box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+/* Quantity */
+.quantity{
+    position : absolute;
+    width: 65px;
+    height: 26px;
+    margin-left: 191px;
+    margin-top: 22px;
+    /* margin-bottom: 200px; */
+    /* left: 1164px;
+    top: 1755px; */
+    border: 0.5px solid #191919;
+    filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
+    border-radius: 100px;
+}
+.quantity button{
+    border: none;
+    background-color: transparent;
 }
