@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="buying.css">
+    <link rel="stylesheet" href="./buy_modal.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
                 <div class="object one">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">60</span>
                     </div>
                     <div class="Vimg">
                         <img id="potatoImg" src="img/potato.png">
@@ -25,7 +26,7 @@
                     <div class="rec">
                         <span class="Vname">감자</span>
                         <span class="VEname">Potato</span>
-                        <button class="buy">구매하기</button>
+                        <button class="profile_edit">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -33,7 +34,7 @@
                 <div class="object two">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">60</span>
                     </div>
                     <div class="Vimg">
                         <img id="sweetPotatoImg" src="img/sweetPotato.png">
@@ -49,7 +50,7 @@
                 <div class="object three">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">36</span>
                     </div>
                     <div class="Vimg">
                         <img id="carrotImg" src="img/carrot.png">
@@ -65,7 +66,7 @@
                 <div class="object four">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">23</span>
                     </div>
                     <div class="Vimg">
                         <img id="radishImg" src="img/Radish.png">
@@ -83,7 +84,7 @@
                 <div class="object five">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">18</span>
                     </div>
                     <div class="Vimg">
                         <img id="lettuceImg" src="img/lettuce.png">
@@ -99,7 +100,7 @@
                 <div class="object six">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">25</span>
                     </div>
                     <div class="Vimg">
                         <img id="spinachImg" src="img/spinach.png">
@@ -115,7 +116,7 @@
                 <div class="object seven">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">20</span>
                     </div>
                     <div class="Vimg">
                         <img id="onionImg" src="img/onion.png">
@@ -131,7 +132,7 @@
                 <div class="object eight">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">10</span>
                     </div>
                     <div class="Vimg">
                         <img id="cucumberImg" src="img/cucumber.png">
@@ -149,13 +150,13 @@
                 <div class="object nine">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">26</span>
                     </div>
                     <div class="Vimg">
                         <img id="beanImg" src="img/beanSprouts.png">
                     </div>
                     <div class="rec">
-                        <span class="Vname">숙주</span>
+                        <span class="Vname">콩나물</span>
                         <span class="VEname">Bean<br>Sprouts</span>
                         <button class="buy">구매하기</button>
                     </div>
@@ -165,7 +166,7 @@
                 <div class="object ten">
                     <div class="prices">
                         <img class="dollar" src="img/dollar.png">
-                        <span class="price">5</span>
+                        <span class="price">50</span>
                     </div>
                     <div class="Vimg">
                         <img id="tomatoImg" src="img/tomato.png">
@@ -179,6 +180,73 @@
             </td>
         </tr>
     </table>
-</body>
+    <!-- 구매하기팝업모달창 -->
+    <!-- <div class="buy_modal">
+        <div class="modal-content">
+            <span class="close-button"><img src="../MyPage/image/btn_close.png"></span>
+            <h1 class="title">구매하시겠습니까?</h1>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var modal = document.querySelector(".buy_modal");
+        var buy = document.querySelector(".buy");
+        var buy_closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("buy-show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        buy.addEventListener("click", toggleModal);
+        buy_closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick); 
+    </script> -->
+    <div class="edit_modal">
+        <div class="modal-content">
+            <span class="close-button"><img src="./image/btn_close.png"></span>
+            <h1 class="title">내 정보 수정</h1>
+            <p class="line"></p>
+            <form action="#post.php" methos="POST">
+                <div class="profile_img">
+                    <img src="./image/list_2.png">
+                </div>
+                <label for="img" class="little_title" style="top: 250px; width: 157px; left: 212.5px;">프로필 사진 바꾸기</label>
+                <label for="name" class="little_title" style="top: 329px;">이름</label>
+                <input type="name" name="name" class="input_name" placeholder="강낭콩" required="required">
+                <label for="email" class="little_title" style="top: 470px;">이메일</label>
+                <input type="email" name="email" class="input_email" placeholder="gangnangkong@gmail.com"required="required">
+                <label for="password" class="little_title" style="top: 611px;">비밀번호</label>
+                <input type="password" name="password" class="input_password" placeholder="gangnangkong1234"required="required">
+                <input type="submit" id="submit" value="추가하기" style="top: 772px;">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var modal = document.querySelector(".edit_modal");
+        var profile_edit = document.querySelector(".profile_edit");
+        var closeButton = document.querySelector(".close-button");
+
+        function toggleModal() {
+            modal.classList.toggle("show-modal");
+        }
+
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+        }
+        profile_edit.addEventListener("click", toggleModal);
+        closeButton.addEventListener("click", toggleModal);
+        window.addEventListener("click", windowOnClick); 
+    </script>
+    </body>
+
+<script>
+    includeHTML();
+</script>
 
 </html>
