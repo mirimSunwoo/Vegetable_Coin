@@ -20,39 +20,43 @@
 </head>
 <body>
     <div class=" wrap">
-    <div class="intro">
-        <!-- <img src="./image/mypage_top_img.png"> -->
-        <div class="header con">
-            <div class="header_logo">
-                <a href="../main.html"><img src="./image/logo_white.png"></a>
-            </div>
-            <ul class="nav">
-                <li class="slide1"></li>
-                <li class="slide2"></li>
-                <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
-                <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
-                <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
-                <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
-                <li class="cell"><a href="./login.html" class="block">로그인</a></li>
-                <li class="search con"><a href="#" class="search con"><img src="./image/search_icon.png"></a></li>
-            </ul>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-            <div class="sub-menu-bg relative">
-                <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
-                <div>
-                    <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
-                    <div></div>
-                    <div class="search">
-                        <div class="header_logo">
-                            <a href="../main.html"><img src="../header/image/header.png"></a>
+        <head>
+            <script src="/footer/includeHTML.js"></script>
+        </head>
+        <div class="intro">
+            <!-- <img src="./image/mypage_top_img.png"> -->
+            <div class="header con">
+                <div class="header_logo">
+                    <a href="../main.html"><img src="./image/logo_white.png"></a>
+                </div>
+                <ul class="nav">
+                    <li class="slide1"></li>
+                    <li class="slide2"></li>
+                    <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
+                    <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
+                    <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
+                    <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
+                    <li class="cell"><a href="./login.html" class="block">로그인</a></li>
+                    <li class="search con"><a href="#" class="search con"><img src="./image/search_icon.png"></a></li>
+                </ul>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+                <div class="sub-menu-bg relative">
+                    <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
+                    <div>
+                        <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
+                        <div></div>
+                        <div class="search">
+                            <div class="header_logo">
+                                <a href="../main.html"><img src="../header/image/header.png"></a>
+                            </div>
+                            <div class="search_btn">
+                                <a href="#"><img src="./image/search_btn.png"></a>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="search" placeholder="검색">
+                            </div>
+                            <p class="line"></p>
                         </div>
-                        <div class="search_btn">
-                            <a href="#"><img src="./image/search_btn.png"></a>
-                        </div>
-                        <div class="input">
-                            <input type="text" name="search" placeholder="검색">
-                        </div>
-                        <p class="line"></p>
                     </div>
                 </div>
             </div>
@@ -65,23 +69,60 @@
     <p class="profile_email">gangnangkong@gmail.com</p>
     <button class="profile_edit">수정하기 ></button>
 
-    <div class="my_plant">
-        <h1 class="title">My Plant</h1>
-        <div class="myplants"  onclick='newPage()'>
-            <script>
-                function newPage()  {
-                    window.location.href = './mypage_vt.html'
-                }
-            </script>
-            <!-- <img src="./image/plant_1.png"> -->
-            <p class="plant_name">케빈스키</p>
-            <p class="plant_class">방울토마토</p>
-        </div>
-        <div class="plant_add">
-            <button class="btn_plus"><img src="./image/btn_plus.png"></button>
-            <p class="btn_info">내 식물 추가</p>
+    <!-- content -->
+    <div class="my_point">
+        <div class="my_point_title">My Point</div>
+        <div class="my_point_box">
+            <img src="./image/point.png">
+            <span class="point">500</span>
         </div>
     </div>
+
+    <div class="my_investment">
+        <div class="my_investment_title">My Investment</div>
+        <div class="coin_list">
+            <ul class="row">
+                <li class="coin" style="text-align: center;">
+                    <div class="product_point">
+                        <img src="./image/point.png">
+                        <span>5</span>
+                    </div>
+                    <div class="img-box"><img style="margin-top: 35px;" src="/V-coin/img/토마토.png" alt=""></div>
+                    <div class="product-info">
+                        <div class="product-name">토마토<span class="product-e-name">Tomato</span></div>
+                        <button class="all-button">시가 총액</button>
+                        <button class="all-sell-button">전체 매도</button>        
+                    </div>
+                </li>
+                <li class="coin" style="text-align: center;">
+                    <div class="product_point">
+                        <img src="./image/point.png">
+                        <span>5</span>
+                    </div>
+                    <div class="img-box"><img style="margin-top: 20px;" src="/V-coin/img/오이.png" alt=""></div>
+                    <div class="product-info" style="margin-top: 11px;">
+                        <div class="product-name">오이<span class="product-e-name">Cucumber</span></div>
+                        <button class="all-button">시가 총액</button>
+                        <button class="all-sell-button">전체 매도</button>        
+                    </div>
+                </li>
+                <li class="coin" style="text-align: center;">
+                    <div class="product_point">
+                        <img src="./image/point.png">
+                        <span>5</span>
+                    </div>
+                    <div class="img-box"><img style="margin-top: 38px;" src="/V-coin/img/호박.png" alt=""></div>
+                    <div class="product-info" style="margin-top: 18px;">
+                        <div class="product-name">호박<span class="product-e-name">Pumpkin</span></div>
+                        <button class="all-button">시가 총액</button>
+                        <button class="all-sell-button">전체 매도</button>       
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
 
     <!-- footer 곧 바뀔 내용 -->
     <div class="footer" style="top:2079px;">
@@ -153,65 +194,7 @@
         closeButton.addEventListener("click", toggleModal);
         window.addEventListener("click", windowOnClick); 
     </script>
-    <!-- 식물추가 팝업될 레이어 -->
-    <div class="add_modal">
-        <div class="modal-content">
-            <span class="add-close-button"><img src="./image/btn_close.png"></span>
-            <h1 class="title">내 식물 추가</h1>
-            <p class="line"></p>
-            <form action="#post.php" methos="POST">
-                <label for="vt_name" class="little_title" style="top: 120px;">내 식물 이름</label>
-                <input type="vt_name" name="vt_name" class="input_vt_name" placeholder="내 식물 이름" required="required">
-                <label for="value" class="little_title" style="top: 261px;">채소 종류</label>
-                <select type="value" name="value" class="input_value" placeholder="내 식물 이름"required="required">
-                    <option value="a">깻잎</option>
-                    <option value="a">옥수수</option>
-                    <option value="a">딸기</option>
-                    <option value="a">머위</option>
-                    <option value="a">무</option>
-                    <option value="a">부추</option>
-
-                    <option value="a">아스파라거스</option>
-                    <option value="a">우엉</option>
-                    <option value="a">콩나물</option>
-                    <option value="a">토란</option>
-                    <option value="a">파</option>
-                    <option value="a">고구마</option>
-
-                    <option value="a">상추</option>
-                    <option value="a">오이</option>
-                    <option value="a">가지</option>
-                    <option value="a">고추</option>
-                    <option value="a">강낭콩</option>
-                    <option value="a">호박</option>
-
-                    <option value="a">당근</option>
-                    <option value="a">방울토마토</option>
-                    <option value="a">감자</option>
-                    <option value="a">시금치</option>
-                    <option value="a">양배추</option>
-                    <option value="a">배추</option>
-
-                    <option value="a">미나리</option>
-                    <option value="a">양파</option>
-                    <option value="a">피망</option>
-                    <option value="a">샐러리</option>
-                    <option value="a">브로콜리</option>
-                    <option value="a">순무</option>
-
-                    <option value="a">토마토</option>
-                    <option value="a">청경채</option>
-                    <div id="option-bg"></div>
-                </select>                
-                <label for="date" class="little_title" id="date" style="top: 261px; left: 280px;">키우기 시작한 날짜</label>
-                <input type="date" name="date" class="input_date" placeholder="gangnangkong" required="required">
-                <div class="plant_img_add">
-                    <p class="btn_img_add">채소 종류를 선택해 주세요</p>
-                </div>
-                <input type="submit" id="submit" style="top:602px" value="추가하기">
-            </form>
-        </div>
-    </div>
+    <!-- 식물추가 팝업될 레이어(삭제) --> 
     <script type="text/javascript">
         var add_modal = document.querySelector(".add_modal");
         var btn_plus = document.querySelector(".btn_plus");
@@ -233,5 +216,9 @@
     </div>
     </div>
     </div>
+    <!-- <footer include-html="/footer/footer.html" style="margin-top: 20px;"></footer></footer> -->
     </body>
+    <script>
+        includeHTML();
+    </script>
 </html>
