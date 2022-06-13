@@ -206,6 +206,7 @@ ul li{
     left: 1384px;
     top: 1385px;
 
+    text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -272,7 +273,7 @@ ul li{
     margin-top: 20px;
 
     background: #EEBB4D;
-    box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
+    box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.3);
     border-radius: 100px;
 
     font-family: 'Noto Sans KR';
@@ -284,6 +285,11 @@ ul li{
 
 
     color: #FFFFFF;
+}
+.product-button:hover{
+    background-color: rgba(238, 187, 77, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
 }
 /* Quantity */
 .quantity{
