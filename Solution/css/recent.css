@@ -23,7 +23,7 @@
     position:relative;
     left : 363px;
     top : 101px;
-    
+    cursor: pointer;
     border-top: solid 2px #6A9258;
     border-bottom : solid 2px #6A9258;
     
@@ -42,6 +42,7 @@
     top: 15px;
     left: 153px;
     opacity: 0;
+    cursor: pointer;
 }
 li{
     list-style: none;

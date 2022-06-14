@@ -90,6 +90,7 @@ ul > li{
     border: 1px solid #6A9258;
     box-sizing: border-box;
     border-radius: 10px;
+    cursor: pointer;
  
 }
 /* 맨 위에 아이템들은 위에 여백 없앰 */

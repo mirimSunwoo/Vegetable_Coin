@@ -71,8 +71,8 @@
                 <p class="recent-text">최근 본 식물</p>
             </div>
             
-            <div class="recent-box">
-                <li class="recent_li">
+            <div class="recent-box" id="recent-box">
+                <!-- <li class="recent_li">
                     <div class="recent-items">
                         <img class="recent-img" src="image/recent_img/recent_cucumber.png">
                         <input class="delete" type="image" src="image/recent_img/button.png">
@@ -95,7 +95,7 @@
                         <img class="recent-img" src="image/recent_img/recent_corn.png">
                         <input class="delete" type="image" src="image/recent_img/button.png">
                     </div>
-                </li>  
+                </li>   -->
             </div>
         </div>
         
@@ -129,43 +129,43 @@
                 <!-- 잎채소 -->
                 <div class="content_box tab1">
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/napa_cabbage.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/napa_cabbage.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">배추</span></li>
                         <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
 
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/sesame.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/sesame.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">깻잎</span></li>
                         <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/bok_choy.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/bok_choy.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">청경채</span></li>
                         <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items top_item">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/cabbage.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/cabbage.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">양배추</span></li>
                         <li><img class="level" src="./image/level/level3.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/spinach.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/spinach.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">시금치</span></li>
                         <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/coltsfoot.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/coltsfoot.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">머위</span></li>
                         <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/water_parsley.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/water_parsley.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">미나리</span></li>
                         <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
                     <ul class="category_items">
-                        <li><img class="recipe_img" src="./image/category_img/leaf/lettuce.png"></li>
+                        <li><img class="recipe_img" src="./image/category_img/leaf/lettuce.png" id="item_img" onclick="addItem(this.src)"></li>
                         <li class="recipe_title"><span class="recipe_name">상추</span></li>
                         <li><img class="level" src="./image/level/level2.png"></li>
                     </ul>
@@ -334,7 +334,9 @@
     <script src="js/slick.min.js"></script>
     <script src="js/popluar.js"></script>
     <script src="../header/script.js"></script>
-    <script src="js/solution_main.js"></script>
+    <script src="js/recent.js"></script>
+    <script src="js/solution_main.js" type="text/javascript"></script>
+    <script src="./vegetable_info.json" type="text/javascript"></script>
     
 
 </body>
