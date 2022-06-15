@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none; /*밑줄 없애기*/
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+}
+.intro{
+    position: absolute;
+    width: 1920px;
+    height: 596px;
+    left: 0px;
+    top: 0px;
+
+    /* background-color: #000000;
+    opacity: 0.3; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/mypage_top_img.png');
+
+    /* background-image: url(../image/mypage_top_img.png); */
+}
+.intro_info{
+    background-image: url(../image/profile_bg.png);
+    position: absolute;
+    width: 276px;
+    height: 276px;
+    left: 363px;
+    top: 458px;
+    border-radius: 500px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+.intro_info > img{
+    position: absolute;
+    width: 244px;
+    height: 242px;
+    left: 16px;
+    top: 17px;
+}
+.profile_name{
+    position: absolute;
+    width: 133px;
+    height: 70px;
+    left: 669px;
+    top: 616px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 70px;
+
+    color: #191919;
+}
+.profile_email{
+    position: absolute;
+    width: 308px;
+    height: 35px;
+    left: 669px;
+    top: 684px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+
+    color: #191919;
+}
+.profile_edit{
+    position: absolute;
+    width: 100px;
+    height: 28px;
+    left: 1457px;
+    top: 687px;
+
+    font-size: 19px;
+    outline: 0;
+    border: 0;
+
+    background-color: #ffffff;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.my_plant .title{
+    position: absolute;
+    width: 206px;
+    height: 70px;
+    left: 363px;
+    top: 919px;
+
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+
+    color: #6A9258;
+}
+.myplants{
+    position: absolute;
+    width: 1194px;
+    height: 380px;
+    left: 363px;
+    top: 1039px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../image/plant_1.png');
+    /* border-radius: 50px; */
+    -webkit-border-top-left-radius:50px;
+    -webkit-border-bottom-right-radius:50px;
+}
+.myplants .plant_name{
+    position: absolute;
+    width: 133px;
+    height: 52px;
+    left: 40px;
+    top: 258px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+
+    color: #FFFFFF;
+}
+.myplants .plant_class{
+    position: absolute;
+    width: 111px;
+    height: 35px;
+    left: 40px;
+    top: 310px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;    
+    
+    color: #FFFFFF;
+    
+}
+.plant_add{
+    position: absolute;
+    width: 1194px;
+    height: 380px;
+    left: 363px;
+    top: 1449px;
+
+    border: 2px dashed #6A9258;
+    box-sizing: border-box;
+    border-radius: 50px 0px;
+}
+.plant_add .btn_plus{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 537px;
+    top: 108px;
+
+    background: #EEBB4D;
+    box-shadow: 0px 4px 16px rgba(238, 187, 77, 0.3);
+    border-radius: 100px;
+    border: none;
+}
+.plant_add button:hover{
+    background-color: rgba(238, 187, 77, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
+}
+.plant_add img{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 32px;
+    top: 32px;
+}
+.plant_add .btn_info{
+    position: absolute;
+    width: 96px;
+    height: 28px;
+    left: 549px;
+    top: 248px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 28px;
+
+    color: #EEBB4D;
+}
+#submit{
+    position: absolute;
+    width: 502px;
+    height: 60px;    
+
+    /* top: 704px; */
+    left: 40px;
+    background: #6A9258;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+
+    border: 0;
+}
+#submit:hover{
+    background: rgba(106, 146, 88, 0.9);
+}
+input::placeholder{
+    color: #8f8f8f;
+    font-size: 20px;
+    line-height: 29px;
+    font-family: 'Noto Sans KR', sans-serif;
+    left: 30px;
+    top: 13px;
+}
+#date{
+    width: 500px;
+    height: 500px;
+}
+option:hover .option-bg{
+    background-color: black;
+}
+
+/* 새로운 부분 */
+.my_point .my_point_title{
+    position: absolute;
+    width: 495px;
+    height: 58px;
+    left: 365px;
+    top: 877px;
+    
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+
+    color: #6A9258;    
+}
+.my_point .my_point_box{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 276px;
+    height: 86px;
+    left: 363px;
+    top: 974px;
+
+    /* Main */
+
+    border: 1px solid #6A9258;
+    border-radius: 10px;
+}
+.my_point img{
+    margin-left: 16px;
+    margin-top: 11px;
+}
+.my_point span{
+    position: absolute;
+    width: 78px;
+    height: 49px;
+    /* left: 462px;
+    top: 992px; */
+    margin-left: 20px;
+    margin-top: 18px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+
+    color: #6A9258;
+}
+.my_investment .my_investment_title{
+    position: absolute;
+    width: 495px;
+    height: 58px;
+    left: 363px;
+    top: 1220px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+
+    color: #6A9258;
+}
+
+.my_delivery .my_delivery_title{
+    position: absolute;
+    width: 495px;
+    height: 58px;
+    left: 363px;
+    top: 1820px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+
+    color: #6A9258;
+}
+
+.coin{
+    text-align: center;
+    display: none;
+}
+
+.coin_list{
+    position: absolute;
+    width: 1300px;
+    height: 794px;
+    left: 363px;
+    top: 1338px;
+}
+.coin_list li{
+    /* position: absolute; */
+    width: 276px;
+    height: 439px;
+    background-color: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;  
+    margin-right: 28px;
+    margin-bottom: 30px;
+}
+ul li{
+    list-style-type: none;
+    float: left;
+}
+.buying_link{
+    position: absolute;
+    width: 161px;
+    height: 29px;
+    left: 1384px;
+    top: 1385px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #6A9258;
+}
+.link_button{
+    position: absolute;
+    /* width: 18px;
+    height: 9px; */
+    left: 1550px;
+    top: 1392px;
+/* 
+    border: 2px solid #6A9258;
+    transform: rotate(-90deg); */
+}
+.coin img{
+    text-align: center;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
+}
+.img-box{
+    margin-top: 35px;
+}
+.img-box img{
+    width: 195px;
+    height: 195px;
+}
+.product-info{
+    height: 188px;
+    margin-top: 21px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+.product-name{
+    /* position: absolute; */
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 23px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    color: #191919;
+}
+.product-e-name{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #191919;
+}
+.all-button{
+    width: 236px;
+    height: 44px;
+    /* border: none; */
+    text-align: center;
+    top: 22px;
+    margin-top: 16px;
+
+    background: #FFFFFF;
+    border: 2px solid #EEBB4D;
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    color: #EEBB4D;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+.all-sell-button{
+    /* position: absolute; */
+    width: 236px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    top: 22px;
+    margin-top: 16px;
+
+    background: #EEBB4D;
+    box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.all-sell-button:hover{
+    background-color: rgba(238, 187, 77, 0.9);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
+}
+.product_point{
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 16px;
+    width: 71px;
+    height: 34px;
+
+    background: #FFFFFF;
+    border-radius: 34px;
+}
+.product_point img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 0px;
+    right: 37px;
+}
+.product_point span{
+    position: relative;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 24px; */
+
+    color: #6A9258;
+
+}
