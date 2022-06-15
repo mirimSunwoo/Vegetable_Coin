@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
 
-.buy_modal{
+.edit_modal{
     /* position: absolute;
     width: 1194px;
     height: 1302px;
@@ -18,7 +18,7 @@
     transform: scale(1.1); 
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
 }
-.buy_modal .modal-content{
+.edit_modal .modal-content{
     position: absolute; 
     top: 50%; 
     left: 50%; 
@@ -26,17 +26,17 @@
     background-color: #ffffff; 
     /* padding: 1rem 1.5rem;  */
     width: 582px;
-    height: 300px;
+    height: 872px;
     
     border-radius: 30px; 
 }
-.buy-show-modal { 
+.show-modal { 
     opacity: 1; 
     visibility: visible; 
     transform: scale(1.0); 
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
 } 
-.buy_modal .title{
+.edit_modal .title{
     position: absolute;
     width: 394px;
     height: 48px;
@@ -54,7 +54,7 @@
     color: #6A9258;
 
 }
-.buy_modal .line{
+.edit_modal .line{
     position: absolute;
     width: 582px;
     height: 0px;
@@ -62,7 +62,7 @@
 
     border: 2px solid #AAAAAA;
 }
-.buy_modal .little_title{
+.edit_modal .little_title{
     position: absolute;
     width: 74px;
     height: 29px;
@@ -78,7 +78,7 @@
 
     color: #6A9258;
 }
-.buy_modal .close-button{
+.edit_modal .close-button{
     position: absolute;
     width: 40px;
     height: 40px;
@@ -86,4 +86,66 @@
     left: 522px;
     top: 20px;
     color: #6A9258;
+}
+.input_name{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 374px;
+    left: 40px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.input_email{
+    position: absolute;
+    width: 502px;
+    height: 56px;
+
+    top: 515px;
+    left: 40px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+.input_password{
+    position: absolute;
+    width: 502px;
+    left: 40px;
+
+    top: 656px;
+    height: 56px;
+    
+    border: 1px solid #6A9258;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+.profile_img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+
+    left: 231px;
+    top: 120px;
+    background: #91C95D;
+
+    border-radius: 150px;
+}
+.profile_img > img{
+    position: absolute;
+    width: 106.09px;
+    height: 113.99px;
+    left: 6.96px;
+    top: 3.01px;
 }

@@ -5,12 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>스토어</title>
     <link rel="stylesheet" href="buying.css">
-    <link rel="stylesheet" href="./buy_modal.css">
-</head>
+    <link rel="stylesheet" href="/header/css/recipe_heaader.css">
+    <link rel="stylesheet" href="/footer/css/footer.css">
+    <script src="/footer/includeHTML.js"></script>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+
+       #top-modal{
+        /* position: fixed;  */
+        display: none;
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        opacity: 0; 
+        /* visibility: hidden;  */
+        transform: scale(1.1); 
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+       }
+        #modal {
+            /* display: none; */
+            position: absolute; 
+            width: 506px;
+            height: 343px;
+            background-color: white;
+            /* background: #ffa1a1; */
+            border-radius: 20px;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+        .modal .modal-content{
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: #ffffff; 
+            width: 582px;
+            height: 872px;
+            
+            border-radius: 30px; 
+        }
+        #modal .modal_layer {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            /* background:rgba(0, 0, 0, 0.5); */
+            z-index:-1;
+        }
+        .show-modal { 
+            opacity: 1; 
+            visibility: visible; 
+            transform: scale(1.0); 
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+        } 
+        #modal .title{
+            position: absolute;
+            width: 394px;
+            height: 48px;
+
+            top: 16px;
+            left: 94px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 48px;
+
+            text-align: center;
+
+            color: #6A9258;
+
+        }
+        #modal .line{
+            position: absolute;
+            width: 505.96px;
+            height: 0px;
+            top: 80px;
+
+            border: 2px solid #AAAAAA;
+        }
+        #modal .little_title{
+            position: absolute;
+            width: 74px;
+            height: 29px;
+
+            left: 44px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+
+            color: #6A9258;
+        }
+        #modal #modal_close_btn{
+            position: absolute;
+            margin-left: 437px;
+            margin-top: 18px;
+        }
+        #modal .title{
+            position: absolute;
+            width: 342.52px;
+            height: 50.39px;
+
+            font-family: 'Noto Sans KR';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 48px;
+
+            left: 82px;
+
+            color: #6A9258;
+
+        }
+        #modal h2 {
+        margin:0;
+        }
+    
+        #modal #submit{
+            position: absolute;
+            width: 436.41px;
+            height: 62.98px;
+
+            background: #6A9258;
+            border-radius: 10px;
+
+
+            /* 구매하기 */
+            border: none;
+
+            position: absolute;
+            /* width: 401.64px;
+            height: 30.44px; */
+
+            font-family: 'Noto Sans KR';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            text-align: center;
+            left: 35px;
+
+            color: #FFFFFF;
+            top: 249px;
+        }
+        .modal-content .product-box, .quantity-box , .total-box{
+            position: absolute;
+            width: 403px;
+            height: 36px;
+            /* background-color: pink; */
+            margin-left: 63px;
+
+            font-family: 'Noto Sans KR';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 35px;
+
+            /* text-align: center; */
+
+            color: #606060;
+        }
+        .modal-content .product-box span{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .modal-content .quantity-box .num{
+            margin-left: 274px;
+        }
+        .modal-content .total-box img, .product-box img{
+            /* width: 36px; */
+            margin-left: 235px;
+            top: 0px;
+        }
+        .modal-content .quantity{
+            text-align: center;
+            position : absolute;
+            width: 65px;
+            height: 26px;
+            margin-left: 310px;
+            margin-top: 5px;
+        
+            border: 0.5px solid #191919;
+            filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
+            border-radius: 100px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .modal-content .quantity button{
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+</head>
 <body>
+    <header include-html="/header/recipe_header.html"></header>
+
     <div id="store">스토어</div>
     <table>
         <tr>
@@ -26,7 +231,7 @@
                     <div class="rec">
                         <span class="Vname">감자</span>
                         <span class="VEname">Potato</span>
-                        <button class="profile_edit">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_1">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -42,7 +247,7 @@
                     <div class="rec">
                         <span class="Vname">고구마</span>
                         <span class="VEname">Sweet<br>Potato</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_2">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -58,7 +263,7 @@
                     <div class="rec">
                         <span class="Vname">당근</span>
                         <span class="VEname">Carrot</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_3">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -74,7 +279,7 @@
                     <div class="rec">
                         <span class="Vname">무</span>
                         <span class="VEname">Radish</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_4">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -92,7 +297,7 @@
                     <div class="rec">
                         <span class="Vname">상추</span>
                         <span class="VEname">Lettuce</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_5">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -108,7 +313,7 @@
                     <div class="rec">
                         <span class="Vname">시금치</span>
                         <span class="VEname">Spinach</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_6">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -124,7 +329,7 @@
                     <div class="rec">
                         <span class="Vname">양파</span>
                         <span class="VEname">Onion</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_7">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -140,7 +345,7 @@
                     <div class="rec">
                         <span class="Vname">오이</span>
                         <span class="VEname">Cucumber</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_8">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -158,7 +363,7 @@
                     <div class="rec">
                         <span class="Vname">콩나물</span>
                         <span class="VEname">Bean<br>Sprouts</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_9">구매하기</button>
                     </div>
                 </div>
             </td>
@@ -174,79 +379,86 @@
                     <div class="rec">
                         <span class="Vname">토마토</span>
                         <span class="VEname">Tomato</span>
-                        <button class="buy">구매하기</button>
+                        <button class="buy" id="modal_opne_btn_10">구매하기</button>
                     </div>
                 </div>
             </td>
         </tr>
     </table>
     <!-- 구매하기팝업모달창 -->
-    <!-- <div class="buy_modal">
-        <div class="modal-content">
-            <span class="close-button"><img src="../MyPage/image/btn_close.png"></span>
+    <!-- <div id="top-modal"> -->
+        <div id="modal">
+            <span id="modal_close_btn"><img src="../MyPage/image/btn_close.png"></span>
             <h1 class="title">구매하시겠습니까?</h1>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var modal = document.querySelector(".buy_modal");
-        var buy = document.querySelector(".buy");
-        var buy_closeButton = document.querySelector(".close-button");
-
-        function toggleModal() {
-            modal.classList.toggle("buy-show-modal");
-        }
-
-        function windowOnClick(event) {
-            if (event.target === modal) {
-                toggleModal();
-            }
-        }
-        buy.addEventListener("click", toggleModal);
-        buy_closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick); 
-    </script> -->
-    <div class="edit_modal">
-        <div class="modal-content">
-            <span class="close-button"><img src="./image/btn_close.png"></span>
-            <h1 class="title">내 정보 수정</h1>
             <p class="line"></p>
-            <form action="#post.php" methos="POST">
-                <div class="profile_img">
-                    <img src="./image/list_2.png">
+            <div class="modal-content">
+                <div class="product-box" style="margin-top: 110px;">
+                    <span style="position:absolute; margin-left :351px;">26</span>
+                    <div>감자<span>Potato</span></div>
+                    <img src="./img/dollar.png" style="position:absolute; margin-left:305px;">
                 </div>
-                <label for="img" class="little_title" style="top: 250px; width: 157px; left: 212.5px;">프로필 사진 바꾸기</label>
-                <label for="name" class="little_title" style="top: 329px;">이름</label>
-                <input type="name" name="name" class="input_name" placeholder="강낭콩" required="required">
-                <label for="email" class="little_title" style="top: 470px;">이메일</label>
-                <input type="email" name="email" class="input_email" placeholder="gangnangkong@gmail.com"required="required">
-                <label for="password" class="little_title" style="top: 611px;">비밀번호</label>
-                <input type="password" name="password" class="input_password" placeholder="gangnangkong1234"required="required">
-                <input type="submit" id="submit" value="추가하기" style="top: 772px;">
-            </form>
+                <div class="quantity-box" style="margin-top: 150px;">
+                    <div class="quantity">
+                        <button style="margin-right: 5px;">-</button>
+                        <span>1</span>
+                        <button style="margin-left: 5px;">+</button>
+                    </div>
+                    <span>수량</span>
+                </div>
+                <div class="total-box" style="margin-top: 190px;">
+                    <span style="position:absolute; margin-left :351px; font-family: 'Montserrat';">130</span>
+                    <span>총금액</span>
+                    <img src="./img/dollar.png">
+                </div>
+            </div>
+            <input type="submit" id="submit" value="구매하기">
+            <div class="modal_layer"></div>
         </div>
-    </div>
-    <script type="text/javascript">
-        var modal = document.querySelector(".edit_modal");
-        var profile_edit = document.querySelector(".profile_edit");
-        var closeButton = document.querySelector(".close-button");
+    <!-- </div> -->
+    
+    
+    <footer include-html="/footer/footer.html" style="position: absolute; top: 2311px; left: 0px;"></footer>
 
-        function toggleModal() {
-            modal.classList.toggle("show-modal");
-        }
-
-        function windowOnClick(event) {
-            if (event.target === modal) {
-                toggleModal();
-            }
-        }
-        profile_edit.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick); 
+    <script>
+            document.getElementById("modal_opne_btn_1").onclick = function() {
+                document.getElementById("top-modal").style.display="block";
+            }
+           
+            document.getElementById("modal_opne_btn_2").onclick = function() {
+                document.getElementById("modal").style.display="block";
+            }
+            document.getElementById("modal_opne_btn_3").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_4").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_5").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_6").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_7").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_8").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_9").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_opne_btn_10").onclick = function() {
+                    document.getElementById("modal").style.display="block";
+                }
+            document.getElementById("modal_close_btn").onclick = function() {
+                document.getElementById("modal").style.display="none";
+            }   
     </script>
-    </body>
+  
+</body>
 
 <script>
     includeHTML();
 </script>
-
 </html>
