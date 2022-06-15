@@ -43,7 +43,7 @@
     font-family: 'Montserrat', sans-serif;
     /* font-family:Georgia, 'Times New Roman', Times, serif; */
     font-style: normal;
-    /* font-weight: 900; */
+    font-weight: 700;
     font-size: 200px;
     line-height: 111.07%;
     /* or 222px */
@@ -68,7 +68,7 @@
     font-family: 'Montserrat', sans-serif;
     /* font-family:"Gotham"; */
     font-style: normal;
-    font-weight: 900px;
+    font-weight: 900;
     font-size: 100px;
     line-height: 111px;
 
@@ -330,12 +330,20 @@ button:hover{
     color: #6A9258;
 }
 /* recipes */
+.recipes{
+    position: absolute;
+    width: 1194px;
+    height: 707px;
+    /* left: 365px; */
+    top: 4076px;
+
+}
 .recipes > p{
     position: absolute;
     width: 117px;
     height: 29px;
     left: 902px;
-    top: 3969px;
+    /* top: 4958px; */
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -347,11 +355,12 @@ button:hover{
 }
 .recipes > h1{
     position: absolute;
-    width: 320px;
+    width: 350px;
     height: 58px;
-    left: 800px;
-    top: 4008px;
+    left: 782px;
+    /* top: 4008px; */
 
+    margin-top: 38px;
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -364,7 +373,9 @@ button:hover{
 .ctg-btn{/* 카태고리 선택 박스 */
     position: absolute;
     left: 679px;
-    top: 4136px;
+    /* top: 4136px; */
+    width: 800px;
+    margin-top: 177px;
 }
 
 .btn{/* 카테고리 선택 버튼 */
@@ -426,7 +437,8 @@ form > select:hover{
     width: 1194px;
     height: 431px;
     left: 363px;
-    top: 4245px;
+    /* top: 4245px; */
+    margin-top: 276px;
     display: flex;
     /* font-family: 'Noto Sans KR', sans-serif; */
 
@@ -476,35 +488,13 @@ form > select:hover{
 .box .img{
     position: absolute;
 }
-.box .favorite{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin-left: 298px;
-    top: 355px;
-}
-.box .number{  
-    position: absolute;
-    width: 33px;
-    height: 24px;
-    margin-left: 325px;
-    top: 352px;
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #191919;
-}
 /* vbti */
 .vbti{
     position: absolute;
     width: 1426px;
     height: 568px;
     left: 364px;
-    top: 5094px;
+    top: 5064px;
 }
 .vbti > h1{
     position: absolute;

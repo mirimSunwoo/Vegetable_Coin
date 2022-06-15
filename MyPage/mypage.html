@@ -11,55 +11,20 @@
 
     <link rel="stylesheet" href="./css/mypage_base.css"">
 
-    <link rel = " stylesheet" href="./css/header_mypage.css">
-    <link rel = " stylesheet" href="./css/footer.css"">
+    <link rel="stylesheet" href="/header/css/header_2.css">
+    <link rel="stylesheet" href="/footer/css/footer.css">
+    <script src="/footer/includeHTML.js"></script>
 
     <link rel="icon" type="image/png" href="../imgs/goguma" sizes="251x198">
 
     <title>나만의 채소 저장소</title>
 </head>
 <body>
+
     <div class=" wrap">
-        <head>
-            <script src="/footer/includeHTML.js"></script>
-        </head>
+        <header include-html="/header/header.html"></header>
+
         <div class="intro">
-            <!-- <img src="./image/mypage_top_img.png"> -->
-            <div class="header con">
-                <div class="header_logo">
-                    <a href="../main.html"><img src="./image/logo_white.png"></a>
-                </div>
-                <ul class="nav">
-                    <li class="slide1"></li>
-                    <li class="slide2"></li>
-                    <li class="cell"><a href="../Solution/solution_main.html" class="block">채소 키우기</a></li>
-                    <li class="cell"><a href="../Recipe/recipe_main.html" class="block">레시피</a></li>
-                    <li class="cell"><a href="../vbti/vbti.html" class="block">VBTI</a></li>
-                    <li class="cell"><a href="./mypage.html" class="block">마이페이지</a></li>
-                    <li class="cell"><a href="./login.html" class="block">로그인</a></li>
-                    <li class="search con"><a href="#" class="search con"><img src="./image/search_icon.png"></a></li>
-                </ul>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
-                <div class="sub-menu-bg relative">
-                    <!-- 서브메뉴배경 래퍼, 존재이유 : overflow:hidden;, 평소 높이 : 0, 활성화 높이 : 470px -->
-                    <div>
-                        <!-- 서브메뉴배경, 높이 : 항상 470px, 평소 transform:translateY(-100%), 활성화 transform:translateY(0) -->
-                        <div></div>
-                        <div class="search">
-                            <div class="header_logo">
-                                <a href="../main.html"><img src="../header/image/header.png"></a>
-                            </div>
-                            <div class="search_btn">
-                                <a href="#"><img src="./image/search_btn.png"></a>
-                            </div>
-                            <div class="input">
-                                <input type="text" name="search" placeholder="검색">
-                            </div>
-                            <p class="line"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div class="intro_info">
@@ -133,40 +98,6 @@
             </ul>
         </div>
     </div>
-
-
-
-    <!-- footer 곧 바뀔 내용 -->
-    <div class="footer" style="top:2079px;">
-        <div>
-            <p class="team-title">VEGETABLE COIN TEAM</p>
-            <p class="period-title">PERIOD</p>
-        </div>
-
-        <div style="margin-bottom: 0;">
-            <p class="designer-team">DESIGNER</p>
-            <p class="designer-period">DESIGN</p>
-        </div>
-
-        <div>
-            <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
-            <p class="design-date">2022. 01</p>
-        </div>
-
-        <div>
-            <p class="developer-team">DEVELOPER</p>
-            <p class="develop-period">DEVELOP</p>
-        </div>
-
-        <div>
-            <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
-            <p class="develop-date">2022. 02</p>
-        </div>
-        <hr class="line">
-        <p class="contact">Contact</p>
-        <p class="email">vegatable@mirim.hs.kr</p>
-    </div>
-
     <!-- 수정하기 팝업될 레이어 -->
     <div class="edit_modal">
         <div class="modal-content">
@@ -188,6 +119,9 @@
             </form>
         </div>
     </div>
+
+    <footer include-html="/footer/footer.html" style="position: absolute; top: 2311px; left: 0px;"></footer>
+
     <script type="text/javascript">
         var modal = document.querySelector(".edit_modal");
         var profile_edit = document.querySelector(".profile_edit");
@@ -233,4 +167,5 @@
     <script>
         includeHTML();
     </script>
+    
 </html>

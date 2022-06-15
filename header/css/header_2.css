@@ -107,70 +107,15 @@
   .header:hover > .sub-menu-bg > div > div {
     transform:translateY(0);
   }
-  .header:hover > .nav li a{
+  /* .header:hover > .nav li a{
       color: rgba(106, 146, 88, 1);
-  }
-  .header:hover >.nav .slide2{
+  } */
+  /* .header:hover >.nav .slide2{
     background: rgba(106, 146, 88, 0.1);;
-  }
-  .header:hover{
+  } */
+  /* .header:hover{
     box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
     z-index : 100; 
     transition:transform 0.5s;
-    /* transform: scale(1.1);  */
-    /* transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;  */
-  }
-  .sub-menu-bg .header_logo{
-    position: absolute;
-    width: 118px;
-    height: 31px;
-    /* background: green; */
-    border-radius: 5px;
-    padding-top: 45px;
-    /* left: 384px; */
-    /* display: flex; */
-  }
-  
-  .sub-menu-bg .search .line{
-    position: absolute;
-    width: 1194px;
-    height:0px;
-    left: 363px;
-    top: 364px;
-    border: 1px solid #6A9258;
-  }
-  .sub-menu-bg .search .input >input{
-    position: absolute;
-    width: 500px;
-    height: 43px;
-    left: 373px;
-    top: 307px;
-    
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 43px;
-
-    outline: 0;
-    border: 0;
-    background-color: transparent;
-  }
-  .sub-menu-bg .search .search_btn{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 1507px;
-    top: 304px;
-  }
-  .sub-menu-bg .search ::placeholder{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 43px;
-    /* text-align: center; */
-    
-    color: #AAAAAA;
-    
-  }
+   
+  } */
