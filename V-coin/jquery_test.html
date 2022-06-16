@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="ifr">
+    <input type="text" id="txt" name="txt" value="aa" />
+    <input type="button" id="btn" value="클릭" onclick="btnClick();" />
+    </iframe>   
+    <div id="dv_1" style="width:150px;"  >이곳에 표시할 껏이다.!!</div>
+</body>
+<script type="text/javascript">
+   
+    function btnClick() {           
+        var aa = document.getElementById("txt").value;
+        alert(aa);
+    }
+
+    function window_onload() {
+        var bb = document.getElementById("ifr").innerHTML;
+        alert(bb);
+
+        document.getElementById("dv_1").innerHTML = bb;
+    }
+
+</script>
+</html>
+  

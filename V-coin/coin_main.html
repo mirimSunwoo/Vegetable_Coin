@@ -39,7 +39,7 @@
             
             <div id="VT_1" class="w3-continaer w3-hide">
                 <h1>오이 불러오는중...🕊️</h1>
-                <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0110&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
+                <iframe id="site" scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0110&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
             <div id="VT_2" class="w3-continaer w3-hide">
                 <h1>양파 불러오는중...🕊️</h1>
@@ -79,115 +79,118 @@
             </div>
         </div>
 
-        <span class="coin_title_buying">가상 채소 매수</span>
-        <span class="title_buying_info">가상의 채소를 매수/매도하여 얻은 코인으로 실제 채소를 살 수 있습니다</span>
-        <a class="buying_link" href="../V-buying/buying.html">스토어 바로가기</a>
-        <!-- <div class="link_button"></div> -->
-        <img class="link_button" src="./img/buying_link.png">
-
-        <div class="coin_list">
-            <ul class="row">
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 35px;" src="./img/토마토.png" alt=""></div>
-                    <div class="product-info">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+        <div class="top-buy">
+            <span class="coin_title_buying">가상 채소 매수</span>
+            <span class="title_buying_info">가상의 채소를 매수/매도하여 얻은 코인으로 실제 채소를 살 수 있습니다</span>
+            <a class="buying_link" href="../V-buying/buying.html">스토어 바로가기</a>
+            <!-- <div class="link_button"></div> -->
+            <img class="link_button" src="./img/buying_link.png">
+    
+            <div class="coin_list">
+                <ul class="row">
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 35px;" src="./img/토마토.png" alt=""></div>
+                        <div class="product-info">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">토마토<span class="product-e-name">Tomato</span></div>
+                            <button class="product-button">채소 매수</button>
+                            
                         </div>
-                        <div class="product-name">토마토<span class="product-e-name">Tomato</span></div>
-                        <button class="product-button">채소 매수</button>
-                        
-                    </div>
-                </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 20px;" src="./img/오이.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 11px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
-                        </div>
-                        <div class="product-name">오이<span class="product-e-name">Cucumber</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 38px;" src="./img/호박.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 18px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
-                        </div>
-                        <div class="product-name">호박<span class="product-e-name">Pumpkin</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
                     </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 38px;" src="./img/양파.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 18px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 20px;" src="./img/오이.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 11px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">오이<span class="product-e-name">Cucumber</span></div>
+                            <button class="product-button">채소 매수</button>
                         </div>
-                        <div class="product-name">양파<span class="product-e-name">Onion</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-            </ul>
-            <ul class="row">
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 38px;" src="./img/당근.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 18px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 38px;" src="./img/호박.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">호박<span class="product-e-name">Pumpkin</span></div>
+                            <button class="product-button">채소 매수</button>
                         </div>
-                        <div class="product-name">당근<span class="product-e-name">Carrot</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 38px;" src="./img/상추.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 18px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+                        </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 38px;" src="./img/양파.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">양파<span class="product-e-name">Onion</span></div>
+                            <button class="product-button">채소 매수</button>
                         </div>
-                        <div class="product-name">상추<span class="product-e-name">Lettuce</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 5px;" src="./img/감자.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 18px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 38px;" src="./img/당근.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">당근<span class="product-e-name">Carrot</span></div>
+                            <button class="product-button">채소 매수</button>
                         </div>
-                        <div class="product-name">감자<span class="product-e-name">Potato</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-                <li class="coin">
-                    <div class="img-box"><img style="margin-top: 13px;" src="./img/무.png" alt=""></div>
-                    <div class="product-info" style="margin-top: 8px;">
-                        <div class="quantity">
-                            <button style="margin-right: 5px;">-</button>
-                            <span>1</span>
-                            <button style="margin-left: 5px;">+</button>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 38px;" src="./img/상추.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">상추<span class="product-e-name">Lettuce</span></div>
+                            <button class="product-button">채소 매수</button>
                         </div>
-                        <div class="product-name">무<span class="product-e-name">Radish</span></div>
-                        <button class="product-button">채소 매수</button>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 5px;" src="./img/감자.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">감자<span class="product-e-name">Potato</span></div>
+                            <button class="product-button">채소 매수</button>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="margin-top: 13px;" src="./img/무.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 8px;">
+                            <div class="quantity">
+                                <button style="margin-right: 5px;">-</button>
+                                <span>1</span>
+                                <button style="margin-left: 5px;">+</button>
+                            </div>
+                            <div class="product-name">무<span class="product-e-name">Radish</span></div>
+                            <button class="product-button">채소 매수</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+       2
         <script>
             function tranfromChart(id){
                 var x = document.getElementById(id);
@@ -199,7 +202,7 @@
             }
         </script>
     </div>
-    <footer include-html="/footer/footer.html" style="margin-top: 2644px;"></footer>
+    <footer include-html="/footer/footer.html" style="position: relative; margin-top: 2444px;"></footer>
 
 </footer>
 </body>
