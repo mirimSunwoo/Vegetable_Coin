@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="../footer/css/footer.css">
     <link rel="stylesheet" href="../Solution/css/slick.css">
 
+    <script src="coin.js"></script>
+    <script src="/MyPage/investment.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -89,108 +92,131 @@
             <div class="coin_list">
                 <ul class="row">
                     <li class="coin">
-                        <div class="img-box"><img style="margin-top: 35px;" src="./img/토마토.png" alt=""></div>
-                        <div class="product-info">
-                            <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
-                            </div>
-                            <div class="product-name">토마토<span class="product-e-name">Tomato</span></div>
-                            <button class="product-button">채소 매수</button>
-                            
-                        </div>
-                    </li>
-                    <li class="coin">
-                        <div class="img-box"><img style="margin-top: 20px;" src="./img/오이.png" alt=""></div>
-                        <div class="product-info" style="margin-top: 11px;">
-                            <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
-                            </div>
-                            <div class="product-name">오이<span class="product-e-name">Cucumber</span></div>
-                            <button class="product-button">채소 매수</button>
-                        </div>
-                    </li>
-                    <li class="coin">
-                        <div class="img-box"><img style="margin-top: 38px;" src="./img/호박.png" alt=""></div>
+                        <div class="img-box"><img style="width: 186px; height: 228px; margin-top: 5px;" src="./img/감자.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
+                                <input class="minus" type='button' onclick='poatatocount("minus")' value='-' />
+                                <div id='result1'>0</div>
+                                <input class="plus" type='button' onclick='poatatocount("plus")' value='+' />
                             </div>
-                            <div class="product-name">호박<span class="product-e-name">Pumpkin</span></div>
-                            <button class="product-button">채소 매수</button>
+                            <div class="product-name">감자<span class="product-e-name">Potato</span></div>
+                            <input class="product-button" type="button" onclick='poatatocount("save");' value="채소 매수"/>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/고구마.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <input class="minus" type='button' onclick='sweetpotatocount("minus")' value='-' />
+                                <div id='result2'>0</div>
+                                <input class="plus" type='button' onclick='sweetpotatocount("plus")' value='+' />
+                            </div>
+                            <div class="product-name">고구마<span class="product-e-name">Sweetpotato</span></div>
+                            <input class="product-button" type="button" onclick='sweetpotatocount("save")' value="채소 매수"/>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/당근.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 18px;">
+                            <div class="quantity">
+                                <input class="minus" type='button' onclick='carrotcount("minus")' value='-' />
+                                <div id='result3'>0</div>
+                                <input class="plus" type='button' onclick='carrotcount("plus")' value='+' />
+                            </div>
+                            <div class="product-name">당근<span class="product-e-name">Carrot</span></div>
+                            <input class="product-button" type="button" onclick='carrotcount("save")' value="채소 매수"/>
                         </div>
                         </li>
                     <li class="coin">
-                        <div class="img-box"><img style="margin-top: 38px;" src="./img/양파.png" alt=""></div>
-                        <div class="product-info" style="margin-top: 18px;">
+                        <div class="img-box"><img style="width: 202px; height: 222px; margin-top: 13px;" src="./img/무.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 16px;">
                             <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
+                                <input class="minus" type='button' onclick='radishcount("minus")' value='-' />
+                                <div id='result4'>0</div>
+                                <input class="plus" type='button' onclick='radishcount("plus")' value='+' />
                             </div>
-                            <div class="product-name">양파<span class="product-e-name">Onion</span></div>
-                            <button class="product-button">채소 매수</button>
+                            <div class="product-name">무<span class="product-e-name">Radish</span></div>
+                            <input class="product-button" type="button" onclick='radishcount("save")' value="채소 매수"/>
                         </div>
                     </li>
                 </ul>
                 <ul class="row">
                     <li class="coin">
-                        <div class="img-box"><img style="margin-top: 38px;" src="./img/당근.png" alt=""></div>
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/상추.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
-                            </div>
-                            <div class="product-name">당근<span class="product-e-name">Carrot</span></div>
-                            <button class="product-button">채소 매수</button>
-                        </div>
-                    </li>
-                    <li class="coin">
-                        <div class="img-box"><img style="margin-top: 38px;" src="./img/상추.png" alt=""></div>
-                        <div class="product-info" style="margin-top: 18px;">
-                            <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
+                                <input class="minus" type='button' onclick='lettucecount("minus")' value='-' />
+                                <div id='result5'>0</div>
+                                <input class="plus" type='button' onclick='lettucecount("plus")' value='+' />
                             </div>
                             <div class="product-name">상추<span class="product-e-name">Lettuce</span></div>
-                            <button class="product-button">채소 매수</button>
+                            <input class="product-button" type="button" onclick='lettucecount("save")' value="채소 매수"/>
                         </div>
                     </li>
                     <li class="coin">
-                        <div class="img-box"><img style="margin-top: 5px;" src="./img/감자.png" alt=""></div>
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/시금치.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 20px;">
+                            <div class="quantity">
+                                <input class="minus" type='button' onclick='spinachcount("minus")' value='-' />
+                                <div id='result6'>0</div>
+                                <input class="plus" type='button' onclick='spinachcount("plus")' value='+' />
+                            </div>
+                            <div class="product-name">시금치<span class="product-e-name">Spinach</span></div>
+                            <input class="product-button" type="button" onclick='spinachcount("save")' value="채소 매수"/>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/양파.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
+                                <input class="minus" type='button' onclick='onioncount("minus")' value='-' />
+                                <div id='result7'>0</div>
+                                <input class="plus" type='button' onclick='onioncount("plus")' value='+' />
                             </div>
-                            <div class="product-name">감자<span class="product-e-name">Potato</span></div>
-                            <button class="product-button">채소 매수</button>
+                            <div class="product-name">양파<span class="product-e-name">Onion</span></div>
+                            <input class="product-button" type="button" onclick='onioncount("save")' value="채소 매수"/>
                         </div>
                     </li>
                     <li class="coin">
-                        <div class="img-box"><img style="margin-top: 13px;" src="./img/무.png" alt=""></div>
+                        <div class="img-box"><img style="width: 171px; height: 220px; margin-top: 20px;" src="./img/오이.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 11px;">
+                            <div class="quantity">
+                                <input class="minus" type='button' onclick='cucumbercount("minus")' value='-' />
+                                <div id='result8'>0</div>
+                                <input class="plus" type='button' onclick='cucumbercount("plus")' value='+' />
+                            </div>
+                            <div class="product-name">오이<span class="product-e-name">Cucumver</span></div>
+                            <input class="product-button" type="button" onclick='cucumbercount("save")' value="채소 매수"/>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="width: 195px; height: 210px; margin-top: 35px;" src="./img/콩나물.png" alt=""></div>
                         <div class="product-info" style="margin-top: 8px;">
                             <div class="quantity">
-                                <button style="margin-right: 5px;">-</button>
-                                <span>1</span>
-                                <button style="margin-left: 5px;">+</button>
+                                <input class="minus" type='button' onclick='beancount("minus")' value='-' />
+                                <div id='result9'>0</div>
+                                <input class="plus" type='button' onclick='beancount("plus")' value='+' />
                             </div>
-                            <div class="product-name">무<span class="product-e-name">Radish</span></div>
-                            <button class="product-button">채소 매수</button>
+                            <div class="product-name">콩나물<span class="product-e-name">Bean Sprouts</span></div>
+                            <input class="product-button" type="button" onclick='beancount("save")' value="채소 매수"/>
+                        </div>
+                    </li>
+                    <li class="coin">
+                        <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/토마토.png" alt=""></div>
+                        <div class="product-info" style="margin-top: 21px;">
+                            <div class="quantity">
+                                <input class="minus" type='button' onclick='tomatocount("minus")' value='-' />
+                                <div id='result10'>0</div>
+                                <input class="plus" type='button' onclick='tomatocount("plus")' value='+' />
+                            </div>
+                            <div class="product-name">토마토<span class="product-e-name">Tomato</span></div>
+                            <input class="product-button" type="button" onclick='tomatocount("save")' value="채소 매수"/>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-       2
+       
         <script>
             function tranfromChart(id){
                 var x = document.getElementById(id);
@@ -202,7 +228,7 @@
             }
         </script>
     </div>
-    <footer include-html="/footer/footer.html" style="position: relative; margin-top: 2444px;"></footer>
+    <footer include-html="/footer/footer.html" style="position: relative; margin-top: 2844px;"></footer>
 
 </footer>
 </body>

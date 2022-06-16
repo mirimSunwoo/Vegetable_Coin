@@ -1,39 +1,54 @@
-// function tomatos() {
-//     var lastData = localStorage.getItem("tomato")
-//     console.log(lastData);
+var inpotato = localStorage.getItem('potato');
+var insweetpotato = localStorage.getItem('sweetpotato');
+var incarrot = localStorage.getItem('carrot');
+var inradish = localStorage.getItem('radish');
+var inlettuce = localStorage.getItem('lettuce');
+var inspinach = localStorage.getItem('spinach');
+var inonion = localStorage.getItem('onion');
+var incucumber = localStorage.getItem('cucumber');
+var inbean = localStorage.getItem('bean');
+var intomato = localStorage.getItem('tomato');
 
-//     var test = document.getElementById('coin');
+function init(){
 
-//     var test1 = test.cloneNode(true);
+    document.getElementById('investment').style.display = 'none';
+    
+    if(inpotato && inpotato != 0){
+        potato();
+    }
+    if(insweetpotato && insweetpotato != 0){
+        sweetpotato();
+    }
+    if(incarrot && incarrot != 0){
+        carrot();
+    }
+    if(inradish && inradish != 0){
+        radish();
+    }
+    if(inlettuce && inlettuce != 0){
+        lettuce();
+    }
+    if(inspinach && inspinach != 0){
+        spinach();
+    }
+    if(inonion && inonion != 0){
+        onion();
+    }
+    if(incucumber && incucumber != 0){
+        cucumber();
+    }
+    if(inbean && inbean != 0){
+        bean();
+    }
+    if(intomato && intomato != 0){
+        tomato();
+    }
+}
 
-//     document.getElementById("product-name").innerText = lastData;
-//     // document.getElementById("product-e-name").innerText = lastData;
-//     document.getElementById("imgsd").src = "/V-coin/img/호박.png";
-//     test1.id = "coin_1";
-//     document.getElementById('appendul').appendChild(test1);
-
-// }
-
-// function pumpkin() {
-//     var lastData = localStorage.getItem("tomato")
-//     console.log(lastData);
-
-//     var test = document.getElementById('coin');
-
-//     var test1 = test.cloneNode(true);
-
-//     document.getElementById("product-name").innerText = lastData;
-//     // document.getElementById("product-e-name").innerText = lastData;
-//     document.getElementById("imgsd").src = "/V-coin/img/감자.png";
-//     // test1.id = "coin_1";
-//     document.getElementById('appendul').appendChild(test1);
-
-// }
+var ppp = 0;
 
 function potato() {
     document.getElementById("potato").style.display = "block";
-    const json = require('./test.json');
-    console.log(json);
 }
 
 function sweetpotato() {
@@ -68,6 +83,6 @@ function bean() {
     document.getElementById("bean").style.display = "block";
 }
 
-function tomatos() {
+function tomato() {
     document.getElementById("tomato").style.display = "block";
 }

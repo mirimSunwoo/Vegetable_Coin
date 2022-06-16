@@ -2,28 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
 
-.wrapper{
+.wrapper {
     text-align: center;
-    width:100%;
-    left:0; 
-    right:0; 
-    margin-left:auto; 
-    margin-right:auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
-.w3-continaer{
+
+.w3-continaer {
     margin-left: 343px;
     position: relative;
     width: 100%;
     padding-bottom: 80%;
     /* top: 549px; */
     top: 400px;
-} 
+}
+
 /* .w3-continaer iframe{
     position:absolute;
     width: 100%;
     height: 100%;
 } */
-.w3-container .w3-continaer{
+.w3-container .w3-continaer {
     position: relative;
     /* padding-left: 343px; */
     border: 1px;
@@ -38,7 +40,8 @@
     /* margin-top: 549px; */
     /* display: none; */
 }
-iframe{
+
+iframe {
     position: absolute;
     width: 1200px;
     height: 2050px;
@@ -47,11 +50,24 @@ iframe{
     right: -450px;
     bottom: -100px;
 }
-#VT_1,#VT_2,#VT_3,#VT_4,#VT_5,#VT_6,#VT_7,#VT_8,#VT_9,#VT_10{
-    position: relative; /* absolute는 부모가 relative일 때 부모를 따라간다. */
+
+#VT_1,
+#VT_2,
+#VT_3,
+#VT_4,
+#VT_5,
+#VT_6,
+#VT_7,
+#VT_8,
+#VT_9,
+#VT_10 {
+    position: relative;
+    /* absolute는 부모가 relative일 때 부모를 따라간다. */
     width: 80%;
-    padding-bottom: 40.25%; /* 16:9 비율 */
+    padding-bottom: 40.25%;
+    /* 16:9 비율 */
 }
+
 nav {
     position: relative;
     display: flex;
@@ -61,12 +77,13 @@ nav {
     top: 426px;
     margin-top: 0;
 }
-nav a{
+
+nav a {
     font-family: 'Noto Sans KR', sans-serif;
     display: block;
     /* width: 6%; */
     /* 기본 마우스 모양 */
-    cursor: default; 
+    cursor: default;
     margin-right: 40px;
     padding: .75em 0;
     color: #8D8D8D;
@@ -76,6 +93,7 @@ nav a{
     background-color: transparent;
     border: none;
 }
+
 .nav-underline {
     position: absolute;
     left: 0;
@@ -85,48 +103,61 @@ nav a{
     background: #6A9258;
     transition: all .3s ease-in-out;
 }
-nav a:hover{
+
+nav a:hover {
     color: #6A9258;
 }
-nav a:nth-child(1):hover ~ .nav-underline {
+
+nav a:nth-child(1):hover~.nav-underline {
     left: 0;
 }
-nav a:nth-child(2):hover ~ .nav-underline {
+
+nav a:nth-child(2):hover~.nav-underline {
     left: 7.5%;
 }
-nav a:nth-child(3):hover ~ .nav-underline {
+
+nav a:nth-child(3):hover~.nav-underline {
     left: 15.5%;
 }
-nav a:nth-child(4):hover ~ .nav-underline {
+
+nav a:nth-child(4):hover~.nav-underline {
     left: 23%;
     width: 5%;
 }
-nav a:nth-child(5):hover ~ .nav-underline {
+
+nav a:nth-child(5):hover~.nav-underline {
     left: 32.4%;
 }
-nav a:nth-child(6):hover ~ .nav-underline {
+
+nav a:nth-child(6):hover~.nav-underline {
     left: 40%;
     width: 5%;
 }
-nav a:nth-child(7):hover ~ .nav-underline {
+
+nav a:nth-child(7):hover~.nav-underline {
     left: 49.4%;
     width: 5%;
 }
-nav a:nth-child(8):hover ~ .nav-underline {
+
+nav a:nth-child(8):hover~.nav-underline {
     left: 58.5%;
     width: 2%;
 }
-nav a:nth-child(9):hover ~ .nav-underline {
+
+nav a:nth-child(9):hover~.nav-underline {
     left: 64.7%;
 }
-nav a:nth-child(10):hover ~ .nav-underline {
+
+nav a:nth-child(10):hover~.nav-underline {
     left: 72.5%;
     width: 5%;
 }
-.top-buy{
+
+.top-buy {
     margin-top: 200px;
 }
-.coin_title{
+
+.coin_title {
     position: absolute;
     width: 319px;
     height: 49px;
@@ -141,7 +172,8 @@ nav a:nth-child(10):hover ~ .nav-underline {
 
     color: #6A9258;
 }
-.coin_title_info{
+
+.coin_title_info {
     position: absolute;
     width: 261px;
     height: 24px;
@@ -156,7 +188,8 @@ nav a:nth-child(10):hover ~ .nav-underline {
 
     color: #191919;
 }
-.coin_title_buying{
+
+.coin_title_buying {
     position: absolute;
     width: 244px;
     height: 49px;
@@ -173,7 +206,8 @@ nav a:nth-child(10):hover ~ .nav-underline {
 
     color: #6A9258;
 }
-.title_buying_info{
+
+.title_buying_info {
     position: absolute;
     /* width: 302px; */
     height: 24px;
@@ -188,28 +222,32 @@ nav a:nth-child(10):hover ~ .nav-underline {
 
     color: #191919;
 }
-.coin_list{
+
+.coin_list {
     position: absolute;
     width: 1300px;
     height: 794px;
     left: 363px;
     top: 1482px;
 }
-.coin_list li{
+
+.coin_list li {
     /* position: absolute; */
     width: 276px;
     height: 382px;
     background-color: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;  
+    border-radius: 20px;
     margin-right: 28px;
     margin-bottom: 30px;
 }
-ul li{
+
+ul li {
     list-style-type: none;
     float: left;
 }
-.buying_link{
+
+.buying_link {
     position: absolute;
     width: 161px;
     height: 29px;
@@ -226,27 +264,30 @@ ul li{
 
     color: #6A9258;
 }
-.link_button{
+
+.link_button {
     position: absolute;
     /* width: 18px;
     height: 9px; */
     left: 1550px;
     top: 1392px;
-/* 
+    /* 
     border: 2px solid #6A9258;
     transform: rotate(-90deg); */
 }
-.coin img{
+
+.coin img {
     text-align: center;
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
 }
-.product-info{
+
+.product-info {
     height: 131px;
-    margin-top: 21px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
 }
-.product-name{
+
+.product-name {
     /* position: absolute; */
     text-align: left;
     margin-left: 20px;
@@ -261,7 +302,8 @@ ul li{
 
     color: #191919;
 }
-.product-e-name{
+
+.product-e-name {
     position: absolute;
     margin-top: 5px;
     margin-left: 10px;
@@ -274,7 +316,8 @@ ul li{
 
     color: #191919;
 }
-.product-button{
+
+.product-button {
     /* position: absolute; */
     width: 236px;
     height: 44px;
@@ -296,14 +339,16 @@ ul li{
 
     color: #FFFFFF;
 }
-.product-button:hover{
+
+.product-button:hover {
     background-color: rgba(238, 187, 77, 0.9);
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
 }
+
 /* Quantity */
-.quantity{
-    position : absolute;
+.quantity {
+    position: absolute;
     width: 65px;
     height: 26px;
     margin-left: 191px;
@@ -315,7 +360,32 @@ ul li{
     filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
     border-radius: 100px;
 }
-.quantity button{
+
+.quantity button {
     border: none;
     background-color: transparent;
+}
+
+.plus,
+.minus {
+    margin-left: 7px;
+    margin-top: 2px;
+    float: left;
+    border: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.plus:hover,
+.minus:hover {
+    cursor: pointer;
+}
+
+#result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #result10 {
+    margin-left: 7px;
+    margin-top: 2px;
+    float: left;
 }

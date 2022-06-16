@@ -10,63 +10,70 @@
     <link rel="stylesheet" href="/header/css/recipe_heaader.css">
     <link rel="stylesheet" href="/footer/css/footer.css">
     <script src="/footer/includeHTML.js"></script>
+    <script src="buying.js"></script>
+    <script src="/MyPage/investment.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
 
-       #top-modal{
+        #top-modal {
             /* position: fixed;  */
             display: none;
-            left: 0; 
-            top: 0; 
-            width: 100%; 
-            height: 100%; 
-            background-color: rgba(0, 0, 0, 0.5); 
-            opacity: 0; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
             /* visibility: hidden;  */
-            transform: scale(1.1); 
+            transform: scale(1.1);
             transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-       }
+        }
+
         #modal {
             /* display: none; */
             display: none;
-            position: absolute; 
+            position: absolute;
             width: 506px;
             height: 343px;
             background-color: white;
             /* background: #ffa1a1; */
             border-radius: 20px;
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-        .modal .modal-content{
-            position: absolute; 
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            background-color: #ffffff; 
+
+        .modal .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
             width: 582px;
             height: 872px;
-            
-            border-radius: 30px; 
+
+            border-radius: 30px;
         }
+
         #modal .modal_layer {
-            position:fixed;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             /* background:rgba(0, 0, 0, 0.5); */
-            z-index:-1;
+            z-index: -1;
         }
-        .show-modal { 
-            opacity: 1; 
-            visibility: visible; 
-            transform: scale(1.0); 
-            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
-        } 
-        #modal .title{
+
+        .show-modal {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.0);
+            transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        }
+
+        #modal .title {
             position: absolute;
             width: 394px;
             height: 48px;
@@ -84,7 +91,8 @@
             color: #6A9258;
 
         }
-        #modal .line{
+
+        #modal .line {
             position: absolute;
             width: 505.96px;
             height: 0px;
@@ -92,7 +100,8 @@
 
             border: 2px solid #AAAAAA;
         }
-        #modal .little_title{
+
+        #modal .little_title {
             position: absolute;
             width: 74px;
             height: 29px;
@@ -106,12 +115,18 @@
 
             color: #6A9258;
         }
-        #modal #modal_close_btn{
+
+        #modal #modal_close_btn {
             position: absolute;
             margin-left: 437px;
             margin-top: 18px;
         }
-        #modal .title{
+
+        #modal_close_btn:hover{
+            cursor: pointer;
+        }
+
+        #modal .title {
             position: absolute;
             width: 342.52px;
             height: 50.39px;
@@ -127,11 +142,12 @@
             color: #6A9258;
 
         }
+
         #modal h2 {
-        margin:0;
+            margin: 0;
         }
-    
-        #modal #submit{
+
+        #modal #submit {
             position: absolute;
             width: 436.41px;
             height: 62.98px;
@@ -158,7 +174,14 @@
             color: #FFFFFF;
             top: 249px;
         }
-        .modal-content .product-box, .quantity-box , .total-box{
+
+        #submit:hover{
+            cursor: pointer;
+        }
+
+        .modal-content .product-box,
+        .quantity-box,
+        .total-box {
             position: absolute;
             width: 403px;
             height: 36px;
@@ -175,29 +198,34 @@
 
             color: #606060;
         }
-        .modal-content .product-box span{
+
+        .modal-content .product-box span {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             margin-left: 10px;
         }
-        .modal-content .quantity-box .num{
+
+        .modal-content .quantity-box .num {
             margin-left: 274px;
         }
-        .modal-content .total-box img, .product-box img{
+
+        .modal-content .total-box img,
+        .product-box img {
             /* width: 36px; */
             margin-left: 235px;
             top: 0px;
         }
-        .modal-content .quantity{
+
+        .modal-content .quantity {
             text-align: center;
-            position : absolute;
+            position: absolute;
             width: 65px;
             height: 26px;
             margin-left: 310px;
             margin-top: 5px;
-        
+
             border: 0.5px solid #191919;
             filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
             border-radius: 100px;
@@ -205,15 +233,45 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
             font-size: 16px;
             line-height: 20px;
+            line-height: 20px;
         }
-        .modal-content .quantity button{
+
+        .modal-content .quantity button {
             border: none;
             background-color: transparent;
         }
+
+        .plus,
+        .minus {
+            margin-left: 10px;
+            margin-top: 2px;
+            float: left;
+            border: none;
+            background-color: transparent;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .plus:hover, .minus:hover{
+            cursor: pointer;
+        }
+
+        #result {
+            margin-left: 10px;
+            margin-top: 2px;
+            float: left;
+        }
     </style>
 </head>
+
 <body>
     <header include-html="/header/recipe_header.html"></header>
 
@@ -388,78 +446,82 @@
     </table>
     <!-- 구매하기팝업모달창 -->
     <!-- <div id="top-modal"> -->
-        <div id="modal">
-            <span id="modal_close_btn"><img src="../MyPage/image/btn_close.png"></span>
-            <h1 class="title">구매하시겠습니까?</h1>
-            <p class="line"></p>
-            <div class="modal-content">
-                <div class="product-box" style="margin-top: 110px;">
-                    <span style="position:absolute; margin-left :351px;">26</span>
-                    <div>감자<span>Potato</span></div>
-                    <img src="./img/dollar.png" style="position:absolute; margin-left:305px;">
-                </div>
-                <div class="quantity-box" style="margin-top: 150px;">
-                    <div class="quantity">
-                        <button style="margin-right: 5px;">-</button>
-                        <span>1</span>
-                        <button style="margin-left: 5px;">+</button>
-                    </div>
-                    <span>수량</span>
-                </div>
-                <div class="total-box" style="margin-top: 190px;">
-                    <span style="position:absolute; margin-left :351px; font-family: 'Montserrat';">130</span>
-                    <span>총금액</span>
-                    <img src="./img/dollar.png">
-                </div>
+    <div id="modal">
+        <span id="modal_close_btn"><img src="../MyPage/image/btn_close.png"></span>
+        <h1 class="title">구매하시겠습니까?</h1>
+        <p class="line"></p>
+        <div class="modal-content">
+            <div class="product-box" style="margin-top: 110px;">
+                <span style="position:absolute; margin-left :351px;">26</span>
+                <div>감자<span>Potato</span></div>
+                <img src="./img/dollar.png" style="position:absolute; margin-left:305px;">
             </div>
-            <input type="submit" id="submit" value="구매하기">
-            <div class="modal_layer"></div>
+            <div class="quantity-box" style="margin-top: 150px;">
+                <div class="quantity">
+                    <input class="plus" type='button' onclick='count("minus")' value='-' />
+                    <div id='result'>0</div>
+                    <input class="minus" type='button' onclick='count("plus")' value='+' />
+                    <!-- <button style="margin-right: 5px;">-</button>
+                        <span>1</span>
+                        <button style="margin-left: 5px;">+</button> -->
+                </div>
+                <span>수량</span>
+            </div>
+            <div class="total-box" style="margin-top: 190px;">
+                <span style="position:absolute; margin-left :351px; font-family: 'Montserrat';">130</span>
+                <span>총금액</span>
+                <img src="./img/dollar.png">
+            </div>
         </div>
+        <input type="submit" id="submit" value="구매하기">
+        <div class="modal_layer"></div>
+    </div>
     <!-- </div> -->
-    
-    
+
+
     <footer include-html="/footer/footer.html" style="position: absolute; top: 2311px; left: 0px;"></footer>
 
     <script>
-            document.getElementById("modal_opne_btn_1").onclick = function() {
-                document.getElementById("modal").style.display="block";
-            }
-           
-            document.getElementById("modal_opne_btn_2").onclick = function() {
-                document.getElementById("modal").style.display="block";
-            }
-            document.getElementById("modal_opne_btn_3").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_4").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_5").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_6").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_7").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_8").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_9").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_opne_btn_10").onclick = function() {
-                    document.getElementById("modal").style.display="block";
-                }
-            document.getElementById("modal_close_btn").onclick = function() {
-                document.getElementById("modal").style.display="none";
-            }   
+        document.getElementById("modal_opne_btn_1").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+
+        document.getElementById("modal_opne_btn_2").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_3").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_4").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_5").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_6").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_7").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_8").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_9").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_opne_btn_10").onclick = function () {
+            document.getElementById("modal").style.display = "block";
+        }
+        document.getElementById("modal_close_btn").onclick = function () {
+            document.getElementById("modal").style.display = "none";
+        }
     </script>
-  
+
 </body>
 
 <script>
     includeHTML();
 </script>
+
 </html>

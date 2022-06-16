@@ -49,7 +49,7 @@
 .price {
     position: absolute;
     top: 5px;
-    left: 44px;
+    left: 37px;
 
     /* 폰트 적용 안됨 */
     font-family: 'Montserrat';
@@ -131,7 +131,7 @@
 
 .one {
     top: 460px;
-    left: 383px;
+    left: 363px;
 }
 
 #potatoImg {
@@ -185,7 +185,7 @@
 
 .five {
     top: 825px;
-    left: 383px;
+    left: 363px;
 }
 
 #lettuceImg {
@@ -241,7 +241,7 @@
 
 .nine {
     top: 1190px;
-    left: 383px;
+    left: 363px;
 }
 
 #beanImg {
