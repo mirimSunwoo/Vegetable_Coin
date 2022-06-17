@@ -16,7 +16,11 @@ function poatatocount(type) {
 				localStorage.potato = 1;
 			}
 		} else if (type === 'save'){
-			alert('감자를 총 ' + localStorage.potato + '개 매수하시겠습니까?');
+			if(confirm('감자를 총 ' + localStorage.potato + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result1").innerHTML = localStorage.potato;
@@ -44,7 +48,12 @@ function sweetpotatocount(type) {
 				localStorage.sweetpotato = 1;
 			}
 		} else if (type === 'save'){
-			alert('고구마를 총 ' + localStorage.sweetpotato + '개 매수하시겠습니까?');
+			if(confirm('고구마를 총 ' + localStorage.sweetpotato + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
+			
 		}
 
 		document.getElementById("result2").innerHTML = localStorage.sweetpotato;
@@ -71,7 +80,11 @@ function carrotcount(type) {
 				localStorage.carrot = 1;
 			}
 		} else if (type === 'save'){
-			alert('당근을 총 ' + localStorage.carrot + '개 매수하시겠습니까?');
+			if(confirm('당근을 총 ' + localStorage.carrot + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result3").innerHTML = localStorage.carrot;
@@ -95,10 +108,14 @@ function radishcount(type) {
 					localStorage.radish = Number(localStorage.radish) - 1;
 				}
 			} else {
-				localStorage.potato = 1;
+				localStorage.radish = 1;
 			}
 		} else if (type === 'save'){
-			alert('무를 총 ' + localStorage.radish + '개 매수하시겠습니까?');
+			if(confirm('무를 총 ' + localStorage.radish + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result4").innerHTML = localStorage.radish;
@@ -125,7 +142,11 @@ function lettucecount(type) {
 				localStorage.lettuce = 1;
 			}
 		} else if (type === 'save'){
-			alert('상추를 총 ' + localStorage.lettuce + '개 매수하시겠습니까?');
+			if(confirm('상추를 총 ' + localStorage.lettuce + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result5").innerHTML = localStorage.lettuce;
@@ -152,7 +173,11 @@ function spinachcount(type) {
 				localStorage.spinach = 1;
 			}
 		} else if (type === 'save'){
-			alert('시금치를 총 ' + localStorage.spinach + '개 매수하시겠습니까?');
+			if(confirm('시금치를 총 ' + localStorage.spinach + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result6").innerHTML = localStorage.spinach;
@@ -179,7 +204,11 @@ function onioncount(type) {
 				localStorage.onion = 1;
 			}
 		} else if (type === 'save'){
-			alert('양파를 총 ' + localStorage.onion + '개 매수하시겠습니까?');
+			if(confirm('양파를 총 ' + localStorage.onion + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result7").innerHTML = localStorage.onion;
@@ -206,7 +235,11 @@ function cucumbercount(type) {
 				localStorage.cucumber = 1;
 			}
 		} else if (type === 'save'){
-			alert('오이를 총 ' + localStorage.cucumber + '개 매수하시겠습니까?');
+			if(confirm('오이를 총 ' + localStorage.cucumber + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result8").innerHTML = localStorage.cucumber;
@@ -233,7 +266,11 @@ function beancount(type) {
 				localStorage.bean = 1;
 			}
 		} else if (type === 'save'){
-			alert('콩나물을 총 ' + localStorage.bean + '개 매수하시겠습니까?');
+			if(confirm('콩나물을 총 ' + localStorage.bean + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result9").innerHTML = localStorage.bean;
@@ -249,7 +286,7 @@ function tomatocount(type) {
 				localStorage.tomato = Number(localStorage.tomato) + 1;
 
 			} else {
-				localStorage.potato = 1;
+				localStorage.tomato = 1;
 			}
 		} else if (type === 'minus') {
 			if (localStorage.tomato) {
@@ -260,7 +297,11 @@ function tomatocount(type) {
 				localStorage.tomato = 1;
 			}
 		} else if (type === 'save'){
-			alert('토마토를 총 ' + localStorage.tomato + '개 매수하시겠습니까?');
+			if(confirm('토마토를 총 ' + localStorage.tomato + '개 매수하시겠습니까?')){
+				alert("매수되었습니다.");
+			}else{
+				alert("취소되었습니다.");
+			}
 		}
 
 		document.getElementById("result10").innerHTML = localStorage.tomato;
