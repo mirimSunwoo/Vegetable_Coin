@@ -9,8 +9,8 @@ var incucumber = localStorage.getItem('cucumber');
 var inbean = localStorage.getItem('bean');
 var intomato = localStorage.getItem('tomato');
 
-var point = document.getElementById('point');
 var mypoint = 0;
+localStorage.setItem("mypoint", mypoint);
 
 function init() {
 
@@ -54,15 +54,14 @@ function potato() {
 
 function investpotato() {
 
-    mypoint = mypoint + parseInt(parseInt(inpotato) * (5880 / 100));
+    mypoint = mypoint + parseInt(parseInt(inpotato) * (5880 / 100));  
 
     if (confirm("매수한 감자 수(" + parseInt(inpotato) + ") X 현재 시세(5880/100)= " + mypoint + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('potato');
-        document.getElementById('potato').style.display = 'none';
+        document.getElementById('potato').style.display = 'none';        
 
-        console.log(point);
-        point.document.getElementById("point").innerHTML;
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -74,10 +73,14 @@ function sweetpotato() {
 }
 
 function investsweetpotato() {
+    mypoint = mypoint + parseInt(parseInt(inpotato) * (5880 / 100));
+
     if (confirm("매수한 고구마 수(" + parseInt(insweetpotato) + ") X 현재 시세(5880/100)= " + parseInt(parseInt(insweetpotato) * (5880 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('sweetpotato');
         document.getElementById('sweetpotato').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -89,10 +92,14 @@ function carrot() {
 }
 
 function investcarrot() {
+    mypoint = mypoint + parseInt(parseInt(incarrot) * (3480 / 100));
+
     if (confirm("매수한 당근 수(" + parseInt(incarrot) + ") X 현재 시세(3480/100)= " + parseInt(parseInt(incarrot) * (3480 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('carrot');
         document.getElementById('carrot').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -104,10 +111,14 @@ function radish() {
 }
 
 function investradish() {
+    mypoint = mypoint + parseInt(parseInt(inradish) * (1980 / 100));
+
     if (confirm("매수한 무 수(" + parseInt(inradish) + ") X 현재 시세(1980/100)= " + parseInt(parseInt(inradish) * (1980 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('radish');
         document.getElementById('radish').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -119,10 +130,14 @@ function lettuce() {
 }
 
 function investlettuce() {
+    mypoint = mypoint + parseInt(parseInt(inlettuce) * (890 / 100));
+
     if (confirm("매수한 상추 수(" + parseInt(inlettuce) + ") X 현재 시세(890/100)= " + parseInt(parseInt(inlettuce) * (890 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('lettuce');
         document.getElementById('lettuce').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -134,10 +149,14 @@ function spinach() {
 }
 
 function investspinach() {
+    mypoint = mypoint + parseInt(parseInt(inspinach) * (2480 / 100));
+
     if (confirm("매수한 시금치 수(" + parseInt(inspinach) + ") X 현재 시세(2480/100)= " + parseInt(parseInt(inspinach) * (2480 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('spinach');
         document.getElementById('spinach').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -149,10 +168,14 @@ function onion() {
 }
 
 function investonion() {
+    mypoint = mypoint + parseInt(parseInt(inonion) * (2220 / 100));
+
     if (confirm("매수한 양파 수(" + parseInt(inonion) + ") X 현재 시세(2220/100)= " + parseInt(parseInt(inonion) * (2220 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('onion');
         document.getElementById('onion').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -164,10 +187,14 @@ function cucumber() {
 }
 
 function investcucumber() {
+    mypoint = mypoint + parseInt(parseInt(incucumber) * (1090 / 100));
+
     if (confirm("매수한 오이 수(" + parseInt(incucumber) + ") X 현재 시세(1090/100)= " + parseInt(parseInt(incucumber) * (1090 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('cucumber');
         document.getElementById('cucumber').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -179,10 +206,14 @@ function bean() {
 }
 
 function investbean() {
+    mypoint = mypoint + parseInt(parseInt(inbean) * (2590 / 100));
+
     if (confirm("매수한 콩나물 수(" + parseInt(inbean) + ") X 현재 시세(2590/100)= " + parseInt(parseInt(inbean) * (2590 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('bean');
         document.getElementById('bean').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }
@@ -194,10 +225,14 @@ function tomato() {
 }
 
 function investtomato() {
+    mypoint = mypoint + parseInt(parseInt(intomato) * (4920 / 100));
+
     if (confirm("매수한 토마토 수(" + parseInt(intomato) + ") X 현재 시세(4920/100)= " + parseInt(parseInt(intomato) * (4920 / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('tomato');
         document.getElementById('tomato').style.display = 'none';
+
+        document.getElementById('label-container').innerHTML = mypoint;
     } else {
         return;
     }

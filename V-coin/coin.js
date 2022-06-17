@@ -16,12 +16,22 @@ function poatatocount(type) {
 				localStorage.potato = 1;
 			}
 		} else if (type === 'save'){
-			if(confirm('감자를 총 ' + localStorage.potato + '개 매수하시겠습니까?')){
+			if(confirm('감자 수 총 (' + localStorage.potato + ')개 X 현재 시세(5880/100) = ' + parseInt(localStorage.potato * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
 				alert("매수되었습니다.");
 			}else{
 				alert("취소되었습니다.");
 			}
 		}
+
+		// if (confirm("매수한 감자 수(" + parseInt(inpotato) + ") X 현재 시세(5880/100)= " + mypoint + "포인트입니다.\n매도하시겠습니까?") == true) {
+		// 	alert("매도되었습니다.");
+		// 	localStorage.removeItem('potato');
+		// 	document.getElementById('potato').style.display = 'none';        
+	
+		// 	document.getElementById('label-container').innerHTML = mypoint;
+		// } else {
+		// 	return;
+		// }
 
 		document.getElementById("result1").innerHTML = localStorage.potato;
 	} else {
