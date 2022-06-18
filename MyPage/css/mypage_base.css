@@ -305,28 +305,12 @@ option:hover .option-bg {
     color: #6A9258;
 }
 
-.my_investment .my_investment_title {
+.my_investment .my_investment_title, .my_delivery .my_delivery_title {
     position: absolute;
     width: 495px;
     height: 58px;
     left: 363px;
     top: 1220px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-
-    color: #6A9258;
-}
-
-.my_delivery .my_delivery_title {
-    position: absolute;
-    width: 495px;
-    height: 58px;
-    left: 363px;
-    top: 1820px;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -350,20 +334,43 @@ option:hover .option-bg {
     top: 1338px;
 }
 
-.investment-img img {
-    margin-top: 25px;
+.investment-img, .delivery-img{
+    border-radius: 20px;
+}
+
+.investment-img img{
+    margin-top: 30px;
     margin-left: 39px;
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
 }
 
-.product {
+.delivery-img img{
+    width: 220px;
+    height: 220px;
+    margin-top: 25px;
+}
+
+.product{
     width: 276px;
     height: 101px;
+    margin-top: -15px;
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
 }
 
-.invebutton{
+#delivery{
+    margin-left: 23.4%;
+}
+
+.delivery{
+    width: 276px;
+    height: 101px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 5px;
+}
+
+.invebutton {
     width: 236px;
     height: 44px;
     border: none;
@@ -380,7 +387,29 @@ option:hover .option-bg {
     font-size: 18px;
     line-height: 26px;
 
-    color: black; margin-top: 25px;
+    color: black;
+    margin-top: 25px;
+}
+
+.deliverybutton{
+    width: 236px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+
+    background: white;
+    border: 2px solid #BEBEBE;
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: black;
+    margin-top: 25px;
 }
 
 .coin_list li {
@@ -545,14 +574,12 @@ ul li {
 
 }
 
-#investment {
+#investment, #delivery {
     position: absolute;
     text-align: center;
     width: 276px;
     height: 352px;
 
-    /* position: absolute; */
-    width: 276px;
     background-color: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
@@ -677,4 +704,123 @@ ul li {
 
 .buy:hover {
     cursor: pointer;
+}
+
+.raise {
+    text-align: left;
+    position: absolute;
+    width: 276px;
+    height: 439px;
+
+    background: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.raise:hover {
+    cursor: pointer;
+    background: #EEBB4D;
+}
+
+.raise:hover>.raisetxt {
+    color: #FFFFFF;
+}
+
+.raise:hover>.raisetxt2 {
+    color: #FFFFFF;
+}
+
+.raise:hover .raisetxt3{
+    color: #FFFFFF;
+}
+
+.raise:hover #first {
+    display: none;
+}
+
+.raise:hover #second {
+    display: inline-block;
+}
+
+.raisetxt {
+    position: absolute;
+    width: 111px;
+    height: 35px;
+    top: 30px;
+    left: 20px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    color: #191919;
+}
+
+#first, #second {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    right: 29px;
+}
+
+#second{
+    display: none;
+}
+
+.raisetxt2 {
+    position: absolute;
+    width: 218px;
+    height: 88px;
+    top: 247px;
+    left: 20px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 44px;
+
+    color: #191919;
+}
+
+.raisetxt2_1{
+    position: absolute;
+    width: 218px;
+    height: 88px;
+    top: 200px;
+    left: 20px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 44px;
+
+    color: #191919;
+}
+
+.raisetxt3{
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    top: 371px;
+    left: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #AAAAAA;
+}
+
+.purchase:hover{
+    background-color: #6A9258;
+}
+
+.purchase:hover .raisetxt2_1{
+    color: #FFFFFF;
 }
