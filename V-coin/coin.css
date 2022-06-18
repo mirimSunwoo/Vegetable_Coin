@@ -384,8 +384,190 @@ ul li {
     cursor: pointer;
 }
 
-#result1, #result2, #result3, #result4, #result5, #result6, #result7, #result8, #result9, #result10 {
+#result1,
+#result2,
+#result3,
+#result4,
+#result5,
+#result6,
+#result7,
+#result8,
+#result9,
+#result10 {
     margin-left: 7px;
     margin-top: 2px;
     float: left;
+}
+
+.myInfo {
+    position: fixed;
+    margin-left: 85%;
+    width: 244px;
+    height: 366px;
+
+    background: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.myInfoTitle {
+    position: absolute;
+    top: 17px;
+    left: 27px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #191919;
+}
+
+.myInfoPoint {
+    position: absolute;
+    top: 59px;
+    left: 28px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #6A9258;
+}
+
+.myInfoPointBox {
+    position: absolute;
+    top: 89px;
+    left: 18px;
+    width: 208px;
+    height: 51.11px;
+
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.myInfoDollarImg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 96px;
+    left: 28px;
+}
+
+#myInfoPointNum {
+    position: absolute;
+    top: 94px;
+    left: 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #6A9258;
+}
+
+.myInfoInves {
+    position: absolute;
+    top: 140px;
+    left: 28px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #6A9258;
+
+}
+
+.myInfoInvesBox {
+    position: absolute;
+    top: 168px;
+    left: 18px;
+    width: 208px;
+    height: 51.11px;
+
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.myInfoTomatoImg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 174px;
+    left: 28px;
+}
+
+#myInfoInveCnt {
+    position: absolute;
+    top: 174px;
+    left: 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #6A9258;
+}
+
+.myInfoMypage {
+    position: absolute;
+    top: 235px;
+    left: 18px;
+    width: 208.64px;
+    height: 44px;
+
+    background: #6A9258;
+    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border-radius: 100px;
+    border: #6A9258;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    padding-top: 9px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.myInfoStore {
+    position: absolute;
+    top: 295px;
+    left: 18px;
+    width: 208.64px;
+    height: 44px;
+
+    background: #6A9258;
+    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border-radius: 100px;
+    border: #6A9258;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    padding-top: 9px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.myInfoMypage:hover,
+.myInfoStore:hover {
+    background-color: transparent;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6A9258;
+
+    border: 2px solid #6A9258;
 }
