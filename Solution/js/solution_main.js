@@ -21,7 +21,7 @@ function detail(ename){
             localStorage.setItem("kname",item.kname);
             localStorage.setItem("ename",item.ename);
             localStorage.setItem("click", item.click);
-            localStorage.setItem("imgsrc",item.ingsrc);
+            localStorage.setItem("imgsrc",item.imgsrc);
             localStorage.setItem("level", item.level);
             localStorage.setItem("shortEx", item.shortEx);
             localStorage.setItem("water",item.water);
@@ -32,6 +32,7 @@ function detail(ename){
             localStorage.setItem("step2",item.step2);
             localStorage.setItem("step3",item.step3);
             // show_item(item);
+            console.log(item.imgsrc);
         }
     }
     // window.open('solution_detail.html');
