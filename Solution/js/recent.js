@@ -15,6 +15,9 @@ function addItem(_src){
 
     let n = JSON.parse(localStorage.getItem('img_collection'));
     console.log(n.length);
+    if(n.length == 6){
+        n.splice(1);
+    }
     for(let i = 1; i< n.length; i++){
         if(_src == n[i]){
             return;
@@ -45,6 +48,7 @@ function show_recent(){
         //add css
         li.classList.add('recent_li');
         li.id = 'recent_li';
+        // recent_img.id = 'recent_img';
         recent_items.classList.add('recent-items');
         recent_img.classList.add('recent-img');
         recent_img.id = 'recent-img';
@@ -66,7 +70,19 @@ function show_recent(){
 }
 function removeItem(){
     let li = document.getElementById('recent_li');
+    let recent_img = document.getElementById('recent-img');
+    let img_src = recent_img.src;
+
+    let img_collection = JSON.parse(localStorage.getItem('img_collection'));
+    console.log(img_collection);
+    for(let i = 0; i < img_collection.length; i++ ){
+        if(img_src == img_collection[i]){
+            img_collection.splice(i,1);
+            localStorage.setItem('img_collection',JSON.stringify(img_collection));
+        }
+    }
     li.remove();
+
 }
 
 
