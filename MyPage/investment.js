@@ -15,6 +15,9 @@ localStorage.setItem("mypoint", mypoint);
 function init() {
 
     document.getElementById('investment').style.display = 'none';
+    document.getElementById('delivery').style.display = 'none';
+    document.getElementById('my_inventory_title').style.display = 'none';
+    document.getElementById('my_investment_title').style.display = 'block';
 
     if (inpotato && inpotato != 0) {
         potato();
@@ -50,6 +53,8 @@ function init() {
 
 function potato() {
     document.getElementById("potato").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investpotato() {
@@ -70,6 +75,8 @@ function investpotato() {
 
 function sweetpotato() {
     document.getElementById("sweetpotato").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investsweetpotato() {
@@ -89,6 +96,8 @@ function investsweetpotato() {
 
 function carrot() {
     document.getElementById("carrot").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investcarrot() {
@@ -108,6 +117,8 @@ function investcarrot() {
 
 function radish() {
     document.getElementById("radish").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investradish() {
@@ -127,6 +138,8 @@ function investradish() {
 
 function lettuce() {
     document.getElementById("lettuce").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investlettuce() {
@@ -146,6 +159,8 @@ function investlettuce() {
 
 function spinach() {
     document.getElementById("spinach").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investspinach() {
@@ -165,6 +180,8 @@ function investspinach() {
 
 function onion() {
     document.getElementById("onion").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investonion() {
@@ -184,6 +201,8 @@ function investonion() {
 
 function cucumber() {
     document.getElementById("cucumber").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investcucumber() {
@@ -203,6 +222,8 @@ function investcucumber() {
 
 function bean() {
     document.getElementById("bean").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investbean() {
@@ -222,6 +243,8 @@ function investbean() {
 
 function tomato() {
     document.getElementById("tomato").style.display = "block";
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
 }
 
 function investtomato() {
@@ -237,4 +260,15 @@ function investtomato() {
         return;
     }
 
+}
+
+function purchase(){
+    document.getElementById('my_investment').style.display = 'none';
+    document.getElementById('my_delivery').style.display = 'block';
+}
+
+function delivery(){
+    document.getElementById('my_investment').style.display = 'none';
+    document.getElementById('delivery').style.display = 'none';
+    document.getElementById('my_delivery').style.display = 'block';
 }
