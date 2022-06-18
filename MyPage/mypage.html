@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
     <div class="wrap">
         <header include-html="/header/header.html"></header>
@@ -53,7 +53,8 @@
         </div>
 
         <div class="my_investment" id="my_investment">
-            <div class="my_investment_title">My Investment</div>
+            <div class="my_investment_title" id="my_inventory_title">My Inventory</div>
+            <div class="my_investment_title" id="my_investment_title" style="display: none;">My Investment</div>
             <div class="coin_list">
 
                 <li id="investment">
@@ -211,18 +212,18 @@
 
         <div class="my_delivery" id="my_delivery" style="display: none;">
             <div class="my_delivery_title">My Delivery</div>
-            <div class="coin_list">
+            <div class="coin_list" style="overflow-x: hidden;">
 
                 <div class="swiper-container" style="width: 300px;">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" >
                         <div class="swiper-slide">
                             <div id="one">
                                 <div class="prices">
                                     <img class="dollar" src="/V-buying/img/dollar.png">
-                                    <span class="price">5</span>
+                                    <span class="price">60</span>
                                 </div>
                                 <div class="Vimg">
-                                    <img src="/V-buying/img/potato.png">
+                                    <img src="/V-buying/img/potato.png" style="width: 199px; height: 199px; position: absolute; top: 15px; left: 41px;">
                                 </div>
                                 <div class="rec">
                                     <span class="Vname">감자</span>
@@ -231,22 +232,151 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="swiper-slide">
+                        <div class="swiper-slide">
                             <div id="one">
                                 <div class="prices">
                                     <img class="dollar" src="/V-buying/img/dollar.png">
-                                    <span class="price">5</span>
+                                    <span class="price">60</span>
                                 </div>
                                 <div class="Vimg">
-                                    <img src="/V-buying/img/potato.png">
+                                    <img src="/V-buying/img/sweetPotato.png" style="width: 223px; height: 223px; position: absolute; top: 3px; left: 20px;">
                                 </div>
                                 <div class="rec">
-                                    <span class="Vname">감자</span>
-                                    <span class="VEname">Potato</span>
+                                    <span class="Vname">고구마</span>
+                                    <span class="VEname">Sweet<br>Potato</span>
                                     <button class="buy">구매하기</button>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">36</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/carrot.png" style="width: 194px; height: 194px; position: absolute; top: 24px; left: 49px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">당근</span>
+                                    <span class="VEname">Carrot</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">23</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/Radish.png" style="width: 225px; height: 225px; position: absolute; top: 1px; left: 30px; transform: rotate(9.27deg);">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">무</span>
+                                    <span class="VEname">Radish</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">18</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/lettuce.png" style="width: 208px; height: 208px; position: absolute; top: 8px; left: 35px; transform: rotate(6.52deg);">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">상추</span>
+                                    <span class="VEname">Lettuce</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">25</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/spinach.png" style="width: 227px; height: 227px; position: absolute; top: 14px; left: 29px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">시금치</span>
+                                    <span class="VEname">Spinach</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">20</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/onion.png" style="width: 226px; height: 226px; position: absolute; top: 3px; left: 30px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">양파</span>
+                                    <span class="VEname">Onion</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">10</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/cucumber.png" style="width: 192px; height: 192px; position: absolute; top: 28px; left: 41px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">오이</span>
+                                    <span class="VEname">Cucumber</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">26</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/beanSprouts.png" style="width: 225px; height: 225px; position: absolute; top: 9px; left: 24px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">콩나물</span>
+                                    <span class="VEname">Bean<br>Sprouts</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div id="one">
+                                <div class="prices">
+                                    <img class="dollar" src="/V-buying/img/dollar.png">
+                                    <span class="price">50</span>
+                                </div>
+                                <div class="Vimg">
+                                    <img src="/V-buying/img/tomato.png" style="width: 206px; height: 206px; position: absolute; top: 19px; left: 41px;">
+                                </div>
+                                <div class="rec">
+                                    <span class="Vname">토마토</span>
+                                    <span class="VEname">Tomato</span>
+                                    <button class="buy">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 

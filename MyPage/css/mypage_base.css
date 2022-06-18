@@ -620,7 +620,7 @@ ul li {
 .price {
     position: absolute;
     top: 5px;
-    left: 44px;
+    left: 38px;
 
     /* 폰트 적용 안됨 */
     font-family: 'Montserrat';
@@ -631,13 +631,13 @@ ul li {
     color: #6A9258;
 }
 
-.Vimg {
+/* .Vimg {
     position: absolute;
     width: 199px;
     height: 199px;
     left: 41px;
     top: 15px;
-}
+} */
 
 .rec {
     position: absolute;

@@ -16,6 +16,8 @@ function init() {
 
     document.getElementById('investment').style.display = 'none';
     document.getElementById('delivery').style.display = 'none';
+    document.getElementById('my_inventory_title').style.display = 'none';
+    document.getElementById('my_investment_title').style.display = 'block';
 
     if (inpotato && inpotato != 0) {
         potato();
