@@ -1,3 +1,20 @@
+// if(cnt != 0){
+// 	if(confirm(Swal.fire({
+// 		title: parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?',
+// 		text: '감자 수 총 (' + cnt + ')개 X 현재 시세(5880/100)',
+// 		icon: 'question',
+// 		confirmButtonColor: '#3085d6',
+// 		cancelButtonColor: '#d33',
+// 		confirmButtonText: '승인',
+// 		cancelButtonText: '취소'
+// 	}) == true)){
+// 		alert(Swal.fire("매수되었습니다.",'','success'));
+// 		localStorage.potato = Number(localStorage.potato) + Number(cnt);
+// 		cnt = 0;
+
+const { default: Swal } = require("sweetalert2");
+
+// 	}
 function poatatocount(type) {
 	if (typeof (Storage) !== "undefined") {
 
@@ -18,24 +35,37 @@ function poatatocount(type) {
 		} else if (type === 'save'){
 
 			if(cnt != 0){
-				if(confirm('감자 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.potato = Number(localStorage.potato) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
+				Swal.fire({
+					title: parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?',
+					text: '감자 수 총 (' + cnt + ')개 X 현재 시세('+5880+'/100)',
+					icon: 'question',
+					showCancelButton: true,
+					confirmButtonColor: '#3085d6',
+					cancelButtonColor: '#d33',
+					confirmButtonText: '매수',
+					cancelButtonText: '취소'
+				}).then((result) => {
+					if (result.isConfirmed) {
+						Swal.fire(
+							'매수가 완료되었습니다.',
+							'마이페이지에서 확인할 수 있습니다',
+							'success'
+						)
+					}
+				})
+			}else{
+				Swal.fire(
+					'수량을 선택해주세요',
+					'',
+					'warning'
+				)
 			}
-
 		}
 		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
 
+	} else {
+	document.getElementById("result").innerHTML = "web storage 지원 X.";
+	}
 }
 
 function sweetpotatocount(type) {
