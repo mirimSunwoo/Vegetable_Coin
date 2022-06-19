@@ -1,6 +1,3 @@
-// let array= ['abc'];
-// let img_collection = localStorage.setItem("img_collection", JSON.stringify(array));
-// localStorage.clear();
 function addItem(_src){
     // localStorage 저장
     
@@ -40,7 +37,7 @@ function show_recent(){
             let recent_items = document.createElement('div'); //item div element 추가
             let recent_img = document.createElement("img"); //item img element 추가
             recent_img.src = n[i]; //추가할 이미지 주소 넣음
-            let delete_btn = document.createElement('input');
+            let delete_btn = document.createElement('img');
             delete_btn.src = './image/recent_img/button.png';
             console.log(delete_btn.src);
             delete_btn.addEventListener('click',function(delete_btn){
@@ -71,10 +68,6 @@ function show_recent(){
             console.log(img_collection);
             localStorage.setItem('img_collection',JSON.stringify(img_collection));
         }
-        // console.log(1);
-        // console.log(li.className);
-        // console.log(recent_img.src);
-        // console.log(delete_btn.src);
         
     }
     
@@ -83,10 +76,6 @@ function removeItem(btn){
     
     console.log(btn.target);
     let delete_btn = btn.target;
-    // let recent_li = document.getElementById(li_id);
-    // let recent_img = document.getElementById(img_id);
-    // let img_src = recent_img.src;
-    // let delete_btn = document.getElementById(btn_id);
 
 
     //형제 요소
@@ -108,28 +97,8 @@ function removeItem(btn){
         }
     }
     console.log(img_collection);
-    
-
-    // let li = document.getElementById('recent_li');
-    
-
-    
-    //
-
-    
-    // console.log(img_collection);
-    // for(let i = 0; i < img_collection.length; i++ ){
-    //     if(img_src == img_collection[i]){
-    //         img_collection.splice(i,1);
-    //         console.log(img_collection);
-    //         localStorage.setItem('img_collection',JSON.stringify(img_collection));
-    //     }
-    // }
-    // li.remove();
 
 }
-
-
 show_recent();
 
 
