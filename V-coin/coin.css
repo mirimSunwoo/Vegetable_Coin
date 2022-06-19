@@ -571,3 +571,29 @@ ul li {
 
     border: 2px solid #6A9258;
 }
+.product-price{
+    position: absolute;
+    width: 71px;
+    height: 34px;
+    background-color: white;
+    margin-top: 18px;
+    border-radius: 34px;
+    margin-left: 189px;
+}
+.product-price .img_coin{
+    position: absolute;
+    /* text-align: left; */
+    padding-right: 30px;
+    padding-top: 2px;
+}
+.product-price .price{
+    position: relative;
+    margin-top: 5px;
+    margin-right: 25px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6A9258;
+}

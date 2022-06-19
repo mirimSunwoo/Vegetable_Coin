@@ -21,7 +21,7 @@
 /* 배경 */
 .intro_bg{
 
-    background-image: url("../image/main_intro_bg_final.png");
+    background-image: url("./MyPage/image/main_intro_bg_final.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 1726px;
@@ -250,82 +250,27 @@ button:hover{
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(238, 187, 77, 0.6);
 }
-/* award */
-.awards{
+/* coin_ad */
+.coin_ad{
     position: absolute;
-    background-image: url("../image/award_bg.png");
+    background-image: url("./MyPage/image/coin_ad_bg.png");
     width: 100%;
     height: 600px;
     top: 3239px;
 }
-.awards > p{
+.ad_title{
     position: absolute;
-    width: 134px;
-    height: 34px;
-    left: 892px;
-    top: 73px;
+    width: 567px;
+    height: 166px;
 
-    font-family: Gotham;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 34px;
-    text-align: center;
-
-    color: #EEBB4D;
-}
-.awards > h1{
-    position: absolute;
-    width: 431px;
-    height: 71px;
-    left: 744px;
-    top: 107px;
-    /* transform: translate(-50%, -50%); */
+    /* margin-top:3380px; */
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 48px;  /*바꿔야함 48*/
-    line-height: 71px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    /* or 83px */
 
-    text-align: center;
-
-    color: #6A9258;
-}
-/* 명단 사람들 */
-.list{
-    position: absolute;
-    width: 902px;
-    height: 234px;
-    left: 510px;
-    top: 219px;
-    display: flex;
-    /* background-color: orange; */
-}
-.list > li{
-    flex: 1;
-    height: 234px;
-    /* background-color: blue; */
-    background-image: url("../image/list_bg.png");
-}
-.list > li:not(:last-child){
-    margin-right: 100px;
-}
-/* list이름 */
-.list .list_name{
-    position: absolute;
-    width: 89px;
-    height: 29px;
-    margin-left: 72px;
-    top: 260px;
-    
-
-    font-family: 'Noto Sans KR', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px; /*바꿔야힘 24*/
-    line-height: 29px;
-
-    text-align: center;
 
     color: #6A9258;
 }
