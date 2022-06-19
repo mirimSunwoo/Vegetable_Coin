@@ -19,13 +19,13 @@
         <!-- 채소 소개 -->
         <div class="introduction main-item">
             <!-- 소개 이미지 -->
-            <img src="./image/intro_cucumber.png" class="intro_img">
+            <img src="./image/intro_cucumber.png" class="intro_img" id="intro_img">
             <!-- 이미지 옆 소개 내용 -->
             <ul class="intro_content">
-                <li><div class="vegetable_english_name">Cucumber</div></li>
-                <li class="recipe_explanation"><div >오이는 박과의 한해살이 덩굴식물로, 많은 품종이 개발되어 전 세계적으로 과일로 재배되고 있다.
+                <li><div class="vegetable_english_name" id="ename">Cucumber</div></li>
+                <li class="recipe_explanation" id="shortEx"><div >오이는 박과의 한해살이 덩굴식물로, 많은 품종이 개발되어 전 세계적으로 과일로 재배되고 있다.
                     학명은 'Cucumis sativus'이며, 인도가 원산지이다.</div></li>
-                    <div class="name_and_level"><p class="vegetable_name">오이</p><img src="./image/max_circle.png" class="intro_level"></div>
+                    <div class="name_and_level"><p class="vegetable_name" id="kname">오이</p><img src="./image/max_circle.png" class="intro_level" id="level"></div>
             </ul>
             
 
@@ -40,25 +40,25 @@
                 <ul class="water_box">
                     <li><img src="./image/water.png" class="info_img"></li>
                     <li class="info_title">물 주는 주기</li>
-                    <li class="info_name">여름 - 매일 / 겨울 - 3~4일</li>
+                    <li class="info_name" id="water">여름 - 매일 / 겨울 - 3~4일</li>
                 </ul>
                 <!-- 햇빛 양 -->
                 <ul class="light_box">
                     <li><img src="./image/light.png" class="info_img"></li>
                     <li class="info_title">햇빛 양</li>
-                    <li class="info_name">광합성을 위한 적당한 빛</li>
+                    <li class="info_name" id="sun">광합성을 위한 적당한 빛</li>
                 </ul>
                 <!-- 심는 시기 -->
                 <ul class="shovel_box">
                     <li><img src="./image/shovel.png" class="info_img"></li>
                     <li class="info_title">심는 시기</li>
-                    <li class="info_name">파종 - 5~6월 / 모종 - 6~7월</li>
+                    <li class="info_name" id="plant">파종 - 5~6월 / 모종 - 6~7월</li>
                 </ul>
                 <!-- 재배공간 -->
                 <ul class="flowerpot_box">
                     <li><img src="./image/flowerpot.png" class="info_img"></li>
                     <li class="info_title">재배공간</li>
-                    <li class="info_name">야외 텃밭 권장</li>
+                    <li class="info_name" id="place">야외 텃밭 권장</li>
                 </ul>
             </div>
 
@@ -73,51 +73,24 @@
             
             <ol class="grow_ul">
                 <h3>1.모종심기</h3>
-                <li class="grow_content">1) 오이모종을 심기 전 오이지지대와 오이망을 설치한다.
-                    <br>- 2M 정도의 긴 지지대를 이용해 일자로 세우거나 A자로 세워 쓰러지지 않도록 단단히 흙에 박는다.
-                </li>
-                <li class="grow_content">2) 오이 모종은 너무 깊게 심으면 <span class="word">활착</span><div class="word_explanation">설명</div>이 늦어지므로 폿트 지면이 지면보다 다소 높거나 같은 깊이로 심는다.</li>
-                <li class="grow_content">3) 여러개를 심을 경우 간격은 30cm정도의 간격을 둔다.</li>
-                <li class="grow_content">4) 심을 때 모를 눌러 심으면 병에 걸리기 쉬우므로 폿트 주위로만 흙을 잘 모아주고 누르거나 폿트위로 흙을 덮지 않도록 한다.</li>
+                <li class="grow_content" id="step1"></li>
             </ol>
            
             <ol class="grow_ul">
                 <h3>2.키우기</h3>
-                <li class="grow_content">1) 오이는 건조하면 기형과가 많이 생기기 때문에 흙이 촉촉하면 물을 주지 않고 건조할 때 습기가 느껴지지 않을 정도로 물을 뿌린다.</li>
-                <li class="grow_content">2) 뻗어나는 오이줄기를 오이 지지대에 집게로 고정시킨다.</li>
-                <li class="grow_content">3) 곁순제거(꽃이나 열매가 지나치게 많으면 영양분이 부족하여 건실하게 자랄 수 없게 되는걸 방지하기 위하여 줄기에서 뻗어 나오는 가지를
-                    줄여 주거나 꽃과 열매의 개체수를 줄이기 위해 생장점이 있는 새순을 잘라 제거하는 것)</li>
+                <li class="grow_content" id="step2"></li>
+
             </ol>
             
             <ol class="grow_ul">
                 <h3>3.수확하기</h3>
-                <li class="grow_content">1) 오이는 6월 초부터 8월까지 수확할 수 있다.</li>
+                <li class="grow_content" id="step3"></li>
             </ol>
             
         </div>
 
 
-        <!-- 관련 레시피 -->
-        <div class="raise main-item">
-            <!-- 제목 -->
-            <p class="raise_title">키우러 가기</p>
 
-
-            <div class="raise_box">
-                <li class="raise_items">
-                    <img src="./image/box.png" alt="" class="raise_img">
-                    <div class="raise_name">오이피클</div>
-                </li>
-                <li class="raise_items">
-                    <img src="./image/box.png" alt="" class="raise_img">
-                    <div class="raise_name">오이냉국</div>
-                </li>
-                <li class="raise_items">
-                    <img src="./image/box.png" alt="" class="raise_img">
-                    <div class="raise_name">오이생채</div>
-                </li>
-            </div>
-        </div>
 
         <!-- 푸터 -->
         <div id="footer" class="main-item"></div>
@@ -127,5 +100,6 @@
     <script src="./js/recipe_main.js"></script>
     <script src="js/solution_main.js"></script>
     <script src="../header/script.js"></script>
+    <script src="./js/solution_detail.js"></script>
 </body>
 </html>
