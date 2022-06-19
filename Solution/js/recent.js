@@ -1,6 +1,10 @@
 function addItem(_src){
     // localStorage 저장
-    
+    if(localStorage.getItem('img_collection')== null){
+        console.log("없어");
+        let img_collection = ['abc'];
+        localStorage.setItem('img_collection',JSON.stringify(img_collection));
+    }
     console.log(_src);
     let a = JSON.parse(localStorage.getItem('img_collection'));
     a.push(_src);
