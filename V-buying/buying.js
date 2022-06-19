@@ -1,390 +1,103 @@
-function poatatocount(type) {
-	if (typeof (Storage) !== "undefined") {
+var mypoint = parseInt(localStorage.getItem("mypoint", 0));
+var cnt = 0;
 
-		const result = document.getElementById("result1");
-		let cnt = result.innerHTML;
+function buycnt(type, result){
+	
+	var local = document.getElementById(result);
+	
+	if (type === 'plus') {
 
-		if (type === 'plus') {
+		cnt = cnt + 1;
 
-			if(localStorage.potato){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.potato = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('감자 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.potato = Number(localStorage.potato) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
+		local.innerHTML = cnt;
 		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
+	} else if (type === 'minus' && cnt > 0) {
+		
+		cnt = cnt - 1;
+
+		local.innerHTML = cnt;
+
 	}
 
 }
 
-function sweetpotatocount(type) {
-	if (typeof (Storage) !== "undefined") {
+function buy(buyid) {
+	var name = '';
+	var buypoint = 0;
 
-		const result = document.getElementById("result2");
-		let cnt = result.innerHTML;
+	if(buyid == 'buypotato'){
+		name = '감자 1.5kg';
+		buypoint = 60;
 
-		if (type === 'plus') {
+	} else if(buyid == 'buysweetpotato'){
+		name = '고구마 1kg';
+		buypoint = 60;
 
-			if(localStorage.sweetpotato){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.sweetpotato = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
+	} else if(buyid == 'buycarrot'){
+		name = '당근 1kg';
+		buypoint = 36;
 
-			if(cnt != 0){
-				if(confirm('고구마 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.sweetpotato = Number(localStorage.sweetpotato) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
+	} else if(buyid == 'buyradish'){
+		name = '무 1.5kg';
+		buypoint = 23;
 		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
+	} else if(buyid == 'buylettuce'){
+		name = '상추 100g';
+		buypoint = 18;
+
+	} else if(buyid == 'buyspinach'){
+		name = '시금치 200g';
+		buypoint = 25;
+
+	} else if(buyid == 'buyonion'){
+		name = '양파 1kg';
+		buypoint = 20;
+
+	} else if(buyid == 'buycucumber'){
+		name = '오이 150g';
+		buypoint = 10;
+
+	} else if(buyid == 'buybean'){
+		name = '콩나물 360g';
+		buypoint = 26;
+
+	} else if(buyid == 'buytomato'){
+		name = '토마토 1kg';
+		buypoint = 50;
+
 	}
-}
 
-function carrotcount(type) {
-	if (typeof (Storage) !== "undefined") {
+	if(cnt != 0 && mypoint >= buypoint*cnt){
+		var price = buypoint * cnt;
+		localbuy = parseInt(localStorage.getItem(buyid));
 
-		const result = document.getElementById("result3");
-		let cnt = result.innerHTML;
+		if (confirm(name + ' 상품 ' + cnt + '개를 ' + price + '포인트에 구매하시겠습니까?\n' + price + '포인트가 차감됩니다.') == true) {
+			alert("주문이 완료 되었습니다. 마이페이지에서 확인해보세요.");
 
-		if (type === 'plus') {
+			point = mypoint - price;
 
-			if(localStorage.carrot){
-				cnt = parseInt(cnt) + 1;
+			if(localStorage.getItem(buyid) != null){
+				localbuy = localbuy + cnt;
+
+				localStorage.removeItem(buyid);
+				localStorage.setItem(buyid, localbuy);
+				
 			} else {
-				localStorage.carrot = 0;
+				localStorage.setItem(buyid, cnt);
 			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
+			
+			localStorage.removeItem('mypoint');
+			localStorage.setItem('mypoint', point);
 
-			if(cnt != 0){
-				if(confirm('당근 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.carrot = Number(localStorage.carrot) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
+			location.reload();
 
+		} else {
+			alert("상품 구매가 취소되었습니다.");
 		}
-		result.innerHTML = cnt;
-		
+	} else if(cnt == 0) {
+		alert("수량을 선택해주세요.");
 	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
+		alert("포인트가 부족합니다. 나의 포인트 : " + mypoint);
 	}
-}
 
-function radishcount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result4");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.radish){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.radish = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('무 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.radish = Number(localStorage.radish) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function lettucecount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result5");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.lettuce){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.lettuce = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('상추 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.lettuce = Number(localStorage.lettuce) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function spinachcount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result6");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.spinach){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.spinach = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('시금치 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.spinach = Number(localStorage.spinach) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function onioncount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result7");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.onion){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.onion = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('양파 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.onion = Number(localStorage.onion) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function cucumbercount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result8");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.cucumber){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.cucumber = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('오이 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.cucumber = Number(localStorage.cucumber) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function beancount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result9");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.bean){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.bean = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('콩나물 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.bean = Number(localStorage.bean) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
-}
-
-function tomatocount(type) {
-	if (typeof (Storage) !== "undefined") {
-
-		const result = document.getElementById("result10");
-		let cnt = result.innerHTML;
-
-		if (type === 'plus') {
-
-			if(localStorage.tomato){
-				cnt = parseInt(cnt) + 1;
-			} else {
-				localStorage.tomato = 0;
-			}
-		} else if (type === 'minus') {
-			if(cnt > 0){
-				cnt = parseInt(cnt) - 1;
-			}
-		} else if (type === 'save'){
-
-			if(cnt != 0){
-				if(confirm('토마토 수 총 (' + cnt + ')개 X 현재 시세(5880/100) = ' + parseInt(cnt * (5880/100)) + '포인트에 매수하시겠습니까?') == true){
-					alert("매수되었습니다.");
-					localStorage.tomato = Number(localStorage.tomato) + Number(cnt);
-					cnt = 0;
-				}else{
-					alert("취소되었습니다.");
-				}
-			} else{
-				alert("수량을 선택해주세요.");
-			}
-
-		}
-		result.innerHTML = cnt;
-		
-	} else {
-		document.getElementById("result").innerHTML = "web storage 지원 X.";
-	}
 }

@@ -589,13 +589,26 @@ ul li {
 
 }
 
-#one {
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#ten {
     width: 276px;
     height: 335px;
 
     background: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+}
+
+#one{
+    /* visibility: hidden; */
 }
 
 .prices {
@@ -818,7 +831,8 @@ ul li {
     color: #FFFFFF;
 }
 
-#third, #fourth{
+#third,
+#fourth {
     margin-left: 83%;
 }
 
@@ -869,7 +883,8 @@ ul li {
     color: #AAAAAA;
 }
 
-#GoPurchase, #GoPurchase_2{
+#GoPurchase,
+#GoPurchase_2 {
     width: 276px;
     height: 335px;
 
@@ -891,7 +906,7 @@ ul li {
     display: none;
 }
 
-#GoPurchase:hover{
+#GoPurchase:hover {
     cursor: pointer;
     background-color: #EEBB4D;
 }
@@ -901,15 +916,15 @@ ul li {
     background-color: #6A9258;
 }
 
-#GoPurchase:hover .PurchaseEname{
+#GoPurchase:hover .PurchaseEname {
     color: #FFFFFF;
 }
 
-#GoPurchase:hover .PurchaseGO{
+#GoPurchase:hover .PurchaseGO {
     color: #FFFFFF;
 }
 
-#GoPurchase:hover .PurchaseSolution{
+#GoPurchase:hover .PurchaseSolution {
     color: #FFFFFF;
 }
 
@@ -923,15 +938,15 @@ ul li {
 
 
 
-#GoPurchase_2:hover .PurchaseEname{
+#GoPurchase_2:hover .PurchaseEname {
     color: #FFFFFF;
 }
 
-#GoPurchase_2:hover .PurchaseGO{
+#GoPurchase_2:hover .PurchaseGO {
     color: #FFFFFF;
 }
 
-#GoPurchase_2:hover .PurchaseSolution{
+#GoPurchase_2:hover .PurchaseSolution {
     color: #FFFFFF;
 }
 
@@ -942,4 +957,3 @@ ul li {
 #GoPurchase_2:hover #fourth {
     display: inline-block;
 }
-
