@@ -92,6 +92,10 @@
             <div class="coin_list">
                 <ul class="row">
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 186px; height: 228px; margin-top: 5px;" src="./img/감자.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
@@ -104,6 +108,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/고구마.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
@@ -116,6 +124,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/당근.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
@@ -128,6 +140,10 @@
                         </div>
                         </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 202px; height: 222px; margin-top: 13px;" src="./img/무.png" alt=""></div>
                         <div class="product-info" style="margin-top: 16px;">
                             <div class="quantity">
@@ -142,6 +158,10 @@
                 </ul>
                 <ul class="row">
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/상추.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
@@ -154,6 +174,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/시금치.png" alt=""></div>
                         <div class="product-info" style="margin-top: 20px;">
                             <div class="quantity">
@@ -166,6 +190,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 38px;" src="./img/양파.png" alt=""></div>
                         <div class="product-info" style="margin-top: 18px;">
                             <div class="quantity">
@@ -178,6 +206,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 171px; height: 220px; margin-top: 20px;" src="./img/오이.png" alt=""></div>
                         <div class="product-info" style="margin-top: 11px;">
                             <div class="quantity">
@@ -190,6 +222,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 210px; margin-top: 35px;" src="./img/콩나물.png" alt=""></div>
                         <div class="product-info" style="margin-top: 8px;">
                             <div class="quantity">
@@ -202,6 +238,10 @@
                         </div>
                     </li>
                     <li class="coin">
+                        <div class="product-price">
+                            <img class="img_coin" src="/V-buying/img/dollar.png">
+                            <div class="price">50</div>
+                        </div>
                         <div class="img-box"><img style="width: 195px; height: 195px; margin-top: 35px;" src="./img/토마토.png" alt=""></div>
                         <div class="product-info" style="margin-top: 21px;">
                             <div class="quantity">
@@ -240,18 +280,18 @@
         </div>
        
         <script>
-            // function tranfromChart(id){
-            //     var x = document.getElementById(id);
-            //     if(x.className.indexOf("w3-show") == -1){
-            //         x.className += " w3-show";
-            //     }else{
-            //         x.className = x.className.replace(" w3-show","");
-            //     }
-            // }
             function tranfromChart(id){
                 var x = document.getElementById(id);
-                x.style.display = "";
+                if(x.className.indexOf("w3-show") == -1){
+                    x.className += " w3-show";
+                }else{
+                    x.className = x.className.replace(" w3-show","");
+                }
             }
+            // function tranfromChart(id){
+            //     var x = document.getElementById(id);
+            //     x.style.display = "";
+            // }
         </script>
     </div>
     <footer include-html="/footer/footer.html" style="position: relative; margin-top: 2844px;"></footer>
