@@ -68,7 +68,7 @@ iframe {
     /* 16:9 비율 */
 }
 
-nav {
+.w3-container nav {
     position: relative;
     display: flex;
     width: 876px;
@@ -78,7 +78,7 @@ nav {
     margin-top: 0;
 }
 
-nav a {
+.w3-container nav a {
     font-family: 'Noto Sans KR', sans-serif;
     display: block;
     /* width: 6%; */
@@ -104,51 +104,51 @@ nav a {
     transition: all .3s ease-in-out;
 }
 
-nav a:hover {
+.w3-container nav a:hover {
     color: #6A9258;
 }
 
-nav a:nth-child(1):hover~.nav-underline {
+.w3-container nav a:nth-child(1):hover~.nav-underline {
     left: 0;
 }
 
-nav a:nth-child(2):hover~.nav-underline {
+.w3-container nav a:nth-child(2):hover~.nav-underline {
     left: 7.5%;
 }
 
-nav a:nth-child(3):hover~.nav-underline {
+.w3-container nav a:nth-child(3):hover~.nav-underline {
     left: 15.5%;
 }
 
-nav a:nth-child(4):hover~.nav-underline {
+.w3-container nav a:nth-child(4):hover~.nav-underline {
     left: 23%;
     width: 5%;
 }
 
-nav a:nth-child(5):hover~.nav-underline {
+.w3-container nav a:nth-child(5):hover~.nav-underline {
     left: 32.4%;
 }
 
-nav a:nth-child(6):hover~.nav-underline {
+.w3-container nav a:nth-child(6):hover~.nav-underline {
     left: 40%;
     width: 5%;
 }
 
-nav a:nth-child(7):hover~.nav-underline {
+.w3-container nav a:nth-child(7):hover~.nav-underline {
     left: 49.4%;
     width: 5%;
 }
 
-nav a:nth-child(8):hover~.nav-underline {
+.w3-container nav a:nth-child(8):hover~.nav-underline {
     left: 58.5%;
     width: 2%;
 }
 
-nav a:nth-child(9):hover~.nav-underline {
+.w3-container nav a:nth-child(9):hover~.nav-underline {
     left: 64.7%;
 }
 
-nav a:nth-child(10):hover~.nav-underline {
+.w3-container nav a:nth-child(10):hover~.nav-underline {
     left: 72.5%;
     width: 5%;
 }
@@ -242,7 +242,7 @@ nav a:nth-child(10):hover~.nav-underline {
     margin-bottom: 30px;
 }
 
-ul li {
+.coin_list ul li {
     list-style-type: none;
     float: left;
 }
@@ -597,3 +597,4 @@ ul li {
     line-height: 24px;
     color: #6A9258;
 }
+
