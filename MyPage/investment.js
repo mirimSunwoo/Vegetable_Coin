@@ -9,11 +9,10 @@ var incucumber = localStorage.getItem('cucumber');
 var inbean = localStorage.getItem('bean');
 var intomato = localStorage.getItem('tomato');
 
-var mypoint = 0;
-localStorage.setItem("mypoint", mypoint);
+var local = document.getElementById('label-container');
+local.innerText = localStorage.getItem("mypoint",0);
 
 function init() {
-
     document.getElementById('investment').style.display = 'none';
     document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_inventory_title').style.display = 'none';
@@ -58,13 +57,18 @@ function potato() {
 }
 
 function investpotato() {
+    var mypoint = 0;
+    localStorage.setItem("mypoint", mypoint);
 
     mypoint = mypoint + parseInt(parseInt(inpotato) * (5880 / 100));  
 
     if (confirm("매수한 감자 수(" + parseInt(inpotato) + ") X 현재 시세(5880/100)= " + mypoint + "포인트입니다.\n매도하시겠습니까?") == true) {
         alert("매도되었습니다.");
         localStorage.removeItem('potato');
-        document.getElementById('potato').style.display = 'none';        
+        document.getElementById('potato').style.display = 'none';   
+
+        localStorage.removeItem('mypoint');
+        localStorage.setItem('mypoint', mypoint);
 
         document.getElementById('label-container').innerHTML = mypoint;
     } else {
@@ -271,4 +275,10 @@ function delivery(){
     document.getElementById('my_investment').style.display = 'none';
     document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_delivery').style.display = 'block';
+}
+
+function inves(){
+    document.getElementById('my_investment').style.display = 'block';
+    document.getElementById('delivery').style.display = 'none';
+    document.getElementById('my_delivery').style.display = 'none';
 }

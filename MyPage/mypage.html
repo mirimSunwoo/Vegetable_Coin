@@ -17,7 +17,6 @@
 
 
     <!-- <link rel="stylesheet" href="css/test.css"> -->
-    <script src="investment.js"></script>
     <script src="/V-coin/coin.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -48,7 +47,7 @@
             <div class="my_point_title">My Point</div>
             <div class="my_point_box">
                 <img src="./image/point.png" style="float: left; mix-blend-mode: luminosity;">
-                <div class="point" id="label-container" style="float: left; margin-left: 99px;">0</div>
+                <div class="point" id="label-container" style="float: left; margin-left: 99px;"></div>
             </div>
         </div>
 
@@ -376,6 +375,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div id="GoPurchase" onclick="location.href='/Solution/solution_main.html'">
+                                <div class="Purchaseimg">
+                                    <img id="third" src="image/arrow.png">
+                                    <img id="fourth" src="image/whiteArrow.png">
+                                </div>
+                                    <span class="PurchaseEname">채소키우기</span>
+                                    <span class="PurchaseGO">구매한 채소를<br>키워보세요!</span>
+                                    <span class="PurchaseSolution">Solution Page</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" onclick="inves()">
+                            <div id="GoPurchase_2">
+                                <div class="Purchaseimg">
+                                    <img id="third" src="image/arrow.png">
+                                    <img id="fourth" src="image/whiteArrow.png">
+                                </div>
+                                    <span class="PurchaseEname">매수 채소</span>
+                                    <span class="PurchaseGO">매수한 채소를<br>확인해보세요!</span>
+                                    <span class="PurchaseSolution">Solution Page</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -384,8 +405,7 @@
         </div>
     </div>
 
-
-    </div>
+    
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -446,6 +466,7 @@
         closeButton.addEventListener("click", toggleModal);
         window.addEventListener("click", windowOnClick);
     </script>
+    <script src="investment.js"></script>
     <!-- 식물추가 팝업될 레이어(삭제) -->
     <!-- <script type="text/javascript">
         var add_modal = document.querySelector(".add_modal");

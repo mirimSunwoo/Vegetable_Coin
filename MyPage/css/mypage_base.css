@@ -305,7 +305,8 @@ option:hover .option-bg {
     color: #6A9258;
 }
 
-.my_investment .my_investment_title, .my_delivery .my_delivery_title {
+.my_investment .my_investment_title,
+.my_delivery .my_delivery_title {
     position: absolute;
     width: 495px;
     height: 58px;
@@ -334,23 +335,24 @@ option:hover .option-bg {
     top: 1338px;
 }
 
-.investment-img, .delivery-img{
+.investment-img,
+.delivery-img {
     border-radius: 20px;
 }
 
-.investment-img img{
+.investment-img img {
     margin-top: 30px;
     margin-left: 39px;
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.1));
 }
 
-.delivery-img img{
+.delivery-img img {
     width: 220px;
     height: 220px;
     margin-top: 25px;
 }
 
-.product{
+.product {
     width: 276px;
     height: 101px;
     margin-top: -15px;
@@ -358,11 +360,11 @@ option:hover .option-bg {
     border-radius: 0px 0px 20px 20px;
 }
 
-#delivery{
+#delivery {
     margin-left: 23.4%;
 }
 
-.delivery{
+.delivery {
     width: 276px;
     height: 101px;
     background: #FFFFFF;
@@ -391,7 +393,7 @@ option:hover .option-bg {
     margin-top: 25px;
 }
 
-.deliverybutton{
+.deliverybutton {
     width: 236px;
     height: 44px;
     border: none;
@@ -574,7 +576,8 @@ ul li {
 
 }
 
-#investment, #delivery {
+#investment,
+#delivery {
     position: absolute;
     text-align: center;
     width: 276px;
@@ -587,11 +590,8 @@ ul li {
 }
 
 #one {
-    /* position: absolute; */
     width: 276px;
     height: 335px;
-    /* left: 363px;
-    top: 460px; */
 
     background: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
@@ -630,14 +630,6 @@ ul li {
     line-height: 24px;
     color: #6A9258;
 }
-
-/* .Vimg {
-    position: absolute;
-    width: 199px;
-    height: 199px;
-    left: 41px;
-    top: 15px;
-} */
 
 .rec {
     position: absolute;
@@ -730,7 +722,7 @@ ul li {
     color: #FFFFFF;
 }
 
-.raise:hover .raisetxt3{
+.raise:hover .raisetxt3 {
     color: #FFFFFF;
 }
 
@@ -757,7 +749,8 @@ ul li {
     color: #191919;
 }
 
-#first, #second {
+#first,
+#second {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -765,7 +758,7 @@ ul li {
     right: 29px;
 }
 
-#second{
+#second {
     display: none;
 }
 
@@ -785,7 +778,7 @@ ul li {
     color: #191919;
 }
 
-.raisetxt2_1{
+.raisetxt2_1 {
     position: absolute;
     width: 218px;
     height: 88px;
@@ -801,7 +794,7 @@ ul li {
     color: #191919;
 }
 
-.raisetxt3{
+.raisetxt3 {
     position: absolute;
     width: 227px;
     height: 38px;
@@ -817,10 +810,136 @@ ul li {
     color: #AAAAAA;
 }
 
-.purchase:hover{
+.purchase:hover {
     background-color: #6A9258;
 }
 
-.purchase:hover .raisetxt2_1{
+.purchase:hover .raisetxt2_1 {
     color: #FFFFFF;
 }
+
+#third, #fourth{
+    margin-left: 83%;
+}
+
+.PurchaseEname {
+    position: absolute;
+    width: 111px;
+    height: 35px;
+    top: 34px;
+    left: 20px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #191919;
+}
+
+.PurchaseGO {
+    position: absolute;
+    width: 218px;
+    height: 88px;
+    top: 170px;
+    left: 20px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+
+    color: #191919;
+}
+
+.PurchaseSolution {
+    position: absolute;
+    width: 227px;
+    height: 38px;
+    top: 255px;
+    left: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #AAAAAA;
+}
+
+#GoPurchase, #GoPurchase_2{
+    width: 276px;
+    height: 335px;
+
+    background: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+#third,
+#fourth {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 36px;
+    right: 40px;
+}
+
+#fourth {
+    display: none;
+}
+
+#GoPurchase:hover{
+    cursor: pointer;
+    background-color: #EEBB4D;
+}
+
+#GoPurchase_2:hover {
+    cursor: pointer;
+    background-color: #6A9258;
+}
+
+#GoPurchase:hover .PurchaseEname{
+    color: #FFFFFF;
+}
+
+#GoPurchase:hover .PurchaseGO{
+    color: #FFFFFF;
+}
+
+#GoPurchase:hover .PurchaseSolution{
+    color: #FFFFFF;
+}
+
+#GoPurchase:hover #third {
+    display: none;
+}
+
+#GoPurchase:hover #fourth {
+    display: inline-block;
+}
+
+
+
+#GoPurchase_2:hover .PurchaseEname{
+    color: #FFFFFF;
+}
+
+#GoPurchase_2:hover .PurchaseGO{
+    color: #FFFFFF;
+}
+
+#GoPurchase_2:hover .PurchaseSolution{
+    color: #FFFFFF;
+}
+
+#GoPurchase_2:hover #third {
+    display: none;
+}
+
+#GoPurchase_2:hover #fourth {
+    display: inline-block;
+}
+
