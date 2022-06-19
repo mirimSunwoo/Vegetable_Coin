@@ -18,6 +18,7 @@ function show_item(){
     kname.innerHTML = localStorage.getItem('kname');
     shortEx.innerHTML = localStorage.getItem('shortEx');
     // intro_img.src = localStorage.getItem('imgsrc');
+    intro_img.src = localStorage.getItem('intro_img');
     ename.innerHTML = localStorage.getItem('ename');
     water.innerHTML = localStorage.getItem('water');
     sun.innerHTML = localStorage.getItem('sun');
