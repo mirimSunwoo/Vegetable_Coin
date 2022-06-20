@@ -1,5 +1,5 @@
 var inpotato = localStorage.getItem('potato');
-var insweetpotato = localStorage.getItem('sweetpotato');
+var insweetpotato = localStorage.getItem('sweetPotato');
 var incarrot = localStorage.getItem('carrot');
 var inradish = localStorage.getItem('radish');
 var inlettuce = localStorage.getItem('lettuce');

@@ -17,7 +17,7 @@
 
 
     <!-- <link rel="stylesheet" href="css/test.css"> -->
-    <script src="/V-coin/coin.js"></script>
+    <!-- <script src="/V-coin/coin_1.js"></script> -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -60,7 +60,7 @@
                     <div class="investment-img" style="background-color: #F4F4F4;">
                         <img src="/V-coin/img/스파게티.png" alt="매수전토마토" style="mix-blend-mode: luminosity;"></div>
                     <div class="product">
-                        <button class="invebutton" onclick="init()">나의 매수 채소들 보기</button>
+                        <button class="invebutton" onclick="init();">나의 매수 채소들 보기</button>
                     </div>
                 </li>
 
@@ -80,17 +80,17 @@
                             <div class="product-name" id="product-name">감자<span class="product-e-name"
                                     id="product-e-name">Potato</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investpotato()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('potato');">전체 매도</button>
                         </div>
                     </li>
 
-                    <li class="coin" id="sweetpotato">
+                    <li class="coin" id="sweetPotato">
                         <div class="img-box"><img id="imgsd" src="/V-coin/img/고구마.png" alt="고구마"></div>
                         <div class="product-info">
                             <div class="product-name" id="product-name">고구마<span class="product-e-name"
                                     id="product-e-name">Sweet Potato</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investsweetpotato()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('sweetPotato')">전체 매도</button>
                         </div>
                     </li>
 
@@ -100,7 +100,7 @@
                             <div class="product-name" id="product-name">당근<span class="product-e-name"
                                     id="product-e-name">Carrot</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investcarrot()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('carrot')">전체 매도</button>
                         </div>
                     </li>
 
@@ -111,7 +111,7 @@
                             <div class="product-name" id="product-name">무<span class="product-e-name"
                                     id="product-e-name">Radish</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investradish()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('radish')">전체 매도</button>
                         </div>
                     </li>
 
@@ -121,7 +121,7 @@
                             <div class="product-name" id="product-name">상추<span class="product-e-name"
                                     id="product-e-name">Lettuce</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investlettuce()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('lettuce')">전체 매도</button>
                         </div>
                     </li>
 
@@ -131,7 +131,7 @@
                             <div class="product-name" id="product-name">시금치<span class="product-e-name"
                                     id="product-e-name">Spinach</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investspinach()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('spinach')">전체 매도</button>
                         </div>
                     </li>
 
@@ -141,7 +141,7 @@
                             <div class="product-name" id="product-name">양파<span class="product-e-name"
                                     id="product-e-name">Onion</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investonion()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('onion')">전체 매도</button>
                         </div>
                     </li>
 
@@ -151,17 +151,17 @@
                             <div class="product-name" id="product-name">오이<span class="product-e-name"
                                     id="product-e-name">Cucumber</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investcucumber()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('cucumber')">전체 매도</button>
                         </div>
                     </li>
 
-                    <li class="coin" id="bean">
+                    <li class="coin" id="beanSprouts">
                         <div class="img-box"><img id="imgsd" src="/V-coin/img/콩나물.png" alt="콩나물"></div>
                         <div class="product-info">
                             <div class="product-name" id="product-name">콩나물<span class="product-e-name"
                                     id="product-e-name">Bean sprouts</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investbean()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('beanSprouts')">전체 매도</button>
                         </div>
                     </li>
 
@@ -171,7 +171,7 @@
                             <div class="product-name" id="product-name">토마토<span class="product-e-name"
                                     id="product-e-name">Tomato</span></div>
                             <button class="all-button">시가 총액</button>
-                            <button class="all-sell-button" onclick="investtomato()">전체 매도</button>
+                            <button class="all-sell-button" onclick="invesVeg('tomato')">전체 매도</button>
                         </div>
                     </li>
 
@@ -467,7 +467,8 @@
         closeButton.addEventListener("click", toggleModal);
         window.addEventListener("click", windowOnClick);
     </script>
-    <script src="investment.js"></script>
+    <!-- <script src="investment.js"></script> -->
+    <script src="investment_1.js"></script>
     <!-- 식물추가 팝업될 레이어(삭제) -->
     <!-- <script type="text/javascript">
         var add_modal = document.querySelector(".add_modal");
