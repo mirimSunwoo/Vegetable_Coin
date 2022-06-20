@@ -29,6 +29,7 @@ function addItem(_src){
 function show_recent(){
 
     let n = JSON.parse(localStorage.getItem('img_collection'));
+    
     console.log(n.length);
     if(n.length > 1){
         for(let i = 1; i< n.length; i++){
@@ -37,13 +38,20 @@ function show_recent(){
             let create_id = 'recent_li'+i;
             let img_id = 'recent-img'+i;
             let btn_id = 'delete_btn'+i;
+            let item_id = 'recent-item'+i;
             let li = document.createElement("li"); //li element 추가
             let recent_items = document.createElement('div'); //item div element 추가
+            let link = document.createElement('a'); //item a element 추가
             let recent_img = document.createElement("img"); //item img element 추가
             recent_img.src = n[i]; //추가할 이미지 주소 넣음
             let delete_btn = document.createElement('img');
             delete_btn.src = './image/recent_img/button.png';
+            link.href = "solution_detail.html";   //최근본 식물 클릭 시 페이지로 이동
             console.log(delete_btn.src);
+            let golink = n[i];
+            link.addEventListener('click',function(){
+                createLink(golink);
+            })
             delete_btn.addEventListener('click',function(delete_btn){
                 removeItem(delete_btn);
             })
@@ -52,17 +60,21 @@ function show_recent(){
             li.id = create_id;
             recent_img.id = img_id;
             delete_btn.id = btn_id;
+            recent_items.id = item_id;
             li.classList.add('recent_li');
             recent_items.classList.add('recent-items');
             recent_img.classList.add('recent-img');
             delete_btn.classList.add('delete');
             
-            
+    
+
+    
 
             //add appendChild
             document.getElementById('recent-box').appendChild(li);
             li.appendChild(recent_items);
-            recent_items.appendChild(recent_img);
+            recent_items.appendChild(link);
+            link.appendChild(recent_img);
             recent_items.appendChild(delete_btn);
         }
 
@@ -76,6 +88,8 @@ function show_recent(){
     }
     
 }
+
+
 function removeItem(btn){
     
     console.log(btn.target);
