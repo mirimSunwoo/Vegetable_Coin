@@ -6,7 +6,7 @@ var inlettuce = localStorage.getItem('lettuce');
 var inspinach = localStorage.getItem('spinach');
 var inonion = localStorage.getItem('onion');
 var incucumber = localStorage.getItem('cucumber');
-var inbean = localStorage.getItem('bean');
+var inbean = localStorage.getItem('beanSprouts');
 var intomato = localStorage.getItem('tomato');
 
 var local = document.getElementById('label-container');

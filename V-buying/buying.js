@@ -4,20 +4,20 @@ var cnt = 0;
 function buycnt(type, result){
 
 	var local = document.getElementById(result);
+	var localcnt = Number(local.innerHTML);
+
+	// console.log(local.innerHTML);
 	
 	if (type === 'plus') {
 
-		cnt = cnt + 1;
+		cnt = localcnt + 1;
 
-		local.innerHTML = cnt;
+	} else if (type === 'minus' && localcnt > 0) {
 		
-	} else if (type === 'minus' && cnt > 0) {
-		
-		cnt = cnt - 1;
-
-		local.innerHTML = cnt;
-
+		cnt = localcnt - 1;
 	}
+
+	local.innerHTML = cnt;
 }
 
 function buy(buyid) {
