@@ -2,7 +2,7 @@ var mypoint = parseInt(localStorage.getItem("mypoint", 0));
 var cnt = 0;
 
 function buycnt(type, result){
-	
+
 	var local = document.getElementById(result);
 	
 	if (type === 'plus') {
@@ -18,7 +18,6 @@ function buycnt(type, result){
 		local.innerHTML = cnt;
 
 	}
-
 }
 
 function buy(buyid) {

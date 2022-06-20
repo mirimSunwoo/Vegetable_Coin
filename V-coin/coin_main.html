@@ -11,10 +11,20 @@
     <link rel="stylesheet" href="../Solution/css/slick.css">
 
     <script src="coin.js"></script>
-    <script src="/MyPage/investment.js"></script>
+    <script src="temp.js"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title>Document</title>
+
+    <style>
+        .w3-continaer{
+            display: none;
+        }
+        input[type=radio] {
+            opacity:0;
+        }
+    </style>
+
 </head>
 <body>
     <div class="wrapper">
@@ -44,56 +54,86 @@
             <span class="coin_title">Vegetable Coin</span>
             <span class="coin_title_info">현재 채소 물가를 확인해보세요!</span>
             <nav>
-                <a onclick="tranfromChart('VT_1')" class="vt1">오이</a>
-                <a onclick="tranfromChart('VT_2')" class="vt2">양파</a>
-                <a onclick="tranfromChart('VT_3')" class="vt3">감자</a>
-                <a onclick="tranfromChart('VT_4')" class="vt4">고구마</a>
-                <a onclick="tranfromChart('VT_5')" class="vt5">당근</a>
-                <a onclick="tranfromChart('VT_6')" class="vt6">콩나물</a>
-                <a onclick="tranfromChart('VT_7')" class="vt7">토마토</a>
-                <a onclick="tranfromChart('VT_8')" class="vt8">무</a>
-                <a onclick="tranfromChart('VT_9')" class="vt9">상추</a>
-                <a onclick="tranfromChart('VT_10')" class="vt10">시금치</a> 
+                <input type="radio" name="vt" id="VT_1" onclick="showDiv(this)"/><label for="VT_1">오이</label>
+                <input type="radio" name="vt" id="VT_2" onclick="showDiv(this)"/><label for="VT_2">양파</label>
+                <input type="radio" name="vt" id="VT_3" onclick="showDiv(this)"/><label for="VT_3">감자</label>
+                <input type="radio" name="vt" id="VT_4" onclick="showDiv(this)"/><label for="VT_4">고구마</label>
+                <input type="radio" name="vt" id="VT_5" onclick="showDiv(this)"/><label for="VT_5">당근</label>
+                <input type="radio" name="vt" id="VT_6" onclick="showDiv(this)"/><label for="VT_6">콩나물</label>
+                <input type="radio" name="vt" id="VT_7" onclick="showDiv(this)"/><label for="VT_7">토마토</label>
+                <input type="radio" name="vt" id="VT_8" onclick="showDiv(this)"/><label for="VT_8">무</label>
+                <input type="radio" name="vt" id="VT_9" onclick="showDiv(this)"/><label for="VT_9">상추</label>
+                <input type="radio" name="vt" id="VT_10" onclick="showDiv(this)"/><label for="VT_10">시금치</label>
                 <div class="nav-underline"></div>   
             </nav>
             
-            <div id="VT_1" class="w3-continaer w3-hide">
+            <div id="VT_1" class="w3-continaer" 
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>오이 불러오는중...🕊️</h1>
                 <iframe id="site" scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0110&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_2" class="w3-continaer w3-hide">
+            <div id="VT_2" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>양파 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0100&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_3" class="w3-continaer w3-hide">
+            <div id="VT_3" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>감자 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0010&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_4" class="w3-continaer w3-hide">
+            <div id="VT_4" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>고구마 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0020&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_5" class="w3-continaer w3-hide">
+            <div id="VT_5" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>당근 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0040&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_6" class="w3-continaer w3-hide">
+            <div id="VT_6" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>콩나물 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0120&area_cd=101&itemsub_cd=0030&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_7" class="w3-continaer w3-hide">
+            <div id="VT_7" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>토마토 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0130&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_8" class="w3-continaer w3-hide">
+            <div id="VT_8" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>무 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0170&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_9" class="w3-continaer w3-hide">
+            <div id="VT_9" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>상추 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0080&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
-            <div id="VT_10" class="w3-continaer w3-hide">
+            <div id="VT_10" class="w3-continaer"
+            style="position: relative;
+            width: 80%;
+            padding-bottom: 40.25%;">
                 <h1>시금치 불러오는중...🕊️</h1>
                 <iframe scrolling = "no" src=https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0090&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0></iframe>
             </div>
@@ -275,18 +315,21 @@
             </div>
         </div>
 
-        
-       
         <script>
-            function tranfromChart(id){
-                var x = document.getElementById(id);
-                if(x.className.indexOf("w3-show") == -1){
-                    x.className += " w3-show";
-                }else{
-                    x.className = x.className.replace(" w3-show","");
+            function showDiv(element){
+                var tag = document.getElementsByClassName("w3-continaer");
+                        
+                for(var i=0; i<tag.length; i++){
+                    if(element.id == tag[i].id)
+                        tag[i].style.display = "block";
+                    else
+                        tag[i].style.display = "none";
+                    
                 }
             }
         </script>
+       
+        
     </div>
     <div class="footer-box" style="top: 3044px;">
         <div>
@@ -341,6 +384,8 @@
         <a class="myInfoStore" href="/V-buying/buying_main.html">스토어 바로가기</a>
     </div>
 </footer>
+
+
 
 </body>
 

@@ -51,23 +51,6 @@ iframe {
     bottom: -100px;
 }
 
-#VT_1,
-#VT_2,
-#VT_3,
-#VT_4,
-#VT_5,
-#VT_6,
-#VT_7,
-#VT_8,
-#VT_9,
-#VT_10 {
-    position: relative;
-    /* absolute는 부모가 relative일 때 부모를 따라간다. */
-    width: 80%;
-    padding-bottom: 40.25%;
-    /* 16:9 비율 */
-}
-
 .w3-container nav {
     position: relative;
     display: flex;
@@ -78,7 +61,7 @@ iframe {
     margin-top: 0;
 }
 
-.w3-container nav a {
+.w3-container nav input {
     font-family: 'Noto Sans KR', sans-serif;
     display: block;
     /* width: 6%; */
@@ -94,6 +77,11 @@ iframe {
     border: none;
 }
 
+label{
+    margin-left: -50px;
+    padding-right: 30px;
+}
+
 .nav-underline {
     position: absolute;
     left: 0;
@@ -104,53 +92,48 @@ iframe {
     transition: all .3s ease-in-out;
 }
 
-.w3-container nav a:hover {
+.w3-container nav label:hover {
     color: #6A9258;
 }
 
-.w3-container nav a:nth-child(1):hover~.nav-underline {
-    left: 0;
+.w3-container nav :nth-child(2):hover~.nav-underline {
+    left: 0%;
 }
 
-.w3-container nav a:nth-child(2):hover~.nav-underline {
-    left: 7.5%;
+.w3-container nav :nth-child(4):hover~.nav-underline {
+    left: 7.4%;
 }
 
-.w3-container nav a:nth-child(3):hover~.nav-underline {
-    left: 15.5%;
+.w3-container nav :nth-child(6):hover~.nav-underline {
+    left: 14.7%;
 }
 
-.w3-container nav a:nth-child(4):hover~.nav-underline {
-    left: 23%;
-    width: 5%;
+.w3-container nav :nth-child(8):hover~.nav-underline {
+    left: 22.7%;
 }
 
-.w3-container nav a:nth-child(5):hover~.nav-underline {
-    left: 32.4%;
+.w3-container nav :nth-child(10):hover~.nav-underline {
+    left: 30.8%;
 }
 
-.w3-container nav a:nth-child(6):hover~.nav-underline {
-    left: 40%;
-    width: 5%;
+.w3-container nav :nth-child(12):hover~.nav-underline {
+    left: 38.8%;
 }
 
-.w3-container nav a:nth-child(7):hover~.nav-underline {
-    left: 49.4%;
-    width: 5%;
+.w3-container nav :nth-child(14):hover~.nav-underline {
+    left: 47.6%;
 }
 
-.w3-container nav a:nth-child(8):hover~.nav-underline {
-    left: 58.5%;
-    width: 2%;
+.w3-container nav :nth-child(16):hover~.nav-underline {
+    left: 55%;
 }
 
-.w3-container nav a:nth-child(9):hover~.nav-underline {
-    left: 64.7%;
+.w3-container nav :nth-child(18):hover~.nav-underline {
+    left: 61.3%;
 }
 
-.w3-container nav a:nth-child(10):hover~.nav-underline {
-    left: 72.5%;
-    width: 5%;
+.w3-container nav :nth-child(20):hover~.nav-underline {
+    left: 69.3%;
 }
 
 .top-buy {
@@ -408,6 +391,7 @@ iframe {
     background: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    text-align: center;
 }
 
 .myInfoTitle {
@@ -520,21 +504,23 @@ iframe {
     left: 18px;
     width: 208.64px;
     height: 44px;
+    color: #6A9258;
 
-    background: #6A9258;
-    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border: 2px solid #6A9258;
+
+    
     border-radius: 100px;
-    border: #6A9258;
+    
 
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
 
-    padding-top: 9px;
+    padding-top: 6px;
     text-decoration: none;
 
-    color: #FFFFFF;
+    
 }
 
 .myInfoStore {
@@ -544,32 +530,32 @@ iframe {
     width: 208.64px;
     height: 44px;
 
-    background: #6A9258;
-    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    color: #6A9258;
+
+    border: 2px solid #6A9258;
     border-radius: 100px;
-    border: #6A9258;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
 
-    padding-top: 9px;
+    padding-top: 6px;
     text-decoration: none;
-
-    color: #FFFFFF;
 }
 
 .myInfoMypage:hover,
 .myInfoStore:hover {
-    background-color: transparent;
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #6A9258;
 
-    border: 2px solid #6A9258;
+
+    background: #6A9258;
+    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border: #6A9258;
+    color: #FFFFFF;
 }
 .product-price{
     position: absolute;
