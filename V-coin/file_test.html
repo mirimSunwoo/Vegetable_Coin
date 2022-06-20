@@ -7,28 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="openTextFile()">Open</button>
-    <div id="output">...</div></body>
+    <form>
+        <div>
+            <label for="input_file">파일을 추가해주세요.</label>
+            <input type="file" id="input_file">
+        </div>
+        <div>
+            <button onclick="test(event)">summit</button>
+        </div>
+    </form>
+</body>
 <script>
-    // var fs = require('fs');
-    // var readline = require('readline');
+      function test(event) {
+        event.preventDefault(); //submit 할때 새로고침 되는것을 방지
+        let fileObject = 'price.txt';
+        let fileName = 'price';
 
-    // 한 줄씩 읽어들이는 함수 정의
-    function openTextFile() {
-        var input = document.createElement("input");
-        input.type = "file";
-        input.accept = "text/plain"; // 확장자가 xxx, yyy 일때, ".xxx, .yyy"
-        input.onchange = function (event) {
-            processFile(event.target.files[0]);
-        };
-        input.click();
+        let fr = new FileReader();
+        fr.readAsText(fileName, "utf-8");
+
+        fr.onload = () => {
+            parseText(fr.result);
+        }
     }
-    function processFile(file) {
-        var reader = new FileReader();
-        reader.onload = function () {
-            output.innerText = reader.result;
-        };
-        reader.readAsText(file, /* optional */ "euc-kr");
+    function parseText(text) {
+        console.log(text)
+        // 여기서 파일 가공하면됨
     }
 </script>
 </html>

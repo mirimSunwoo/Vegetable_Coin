@@ -12,6 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from time import sleep
+import json
 
 #1차시도
 options = webdriver.ChromeOptions()
@@ -38,7 +39,10 @@ def linkgetFunction(name, link):
     re_string = price_string.replace(',','')
     name = name.strip()
     re_string = re_string.strip()
-    price_file.write(name+':'+re_string+'\n')
+    price_file.write(name+':'+re_string+',')
+
+    with open('./price.json','w')as f:
+        json.dump(name,f,ensure_ascii=False, indent=10)
     # price_file.close()
     return print(name, re_string)
 
