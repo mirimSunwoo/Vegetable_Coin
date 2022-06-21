@@ -86,52 +86,74 @@ function investment(investid) {
 
 
     // var price = vprice/100;
+    if (investid == 'potato') {
+        localStorage.potato = Number(localStorage.potato) + Number(cnt);
+
+    } else if (investid == 'sweetPotato') {
+        localStorage.sweetPotato = Number(localStorage.sweetPotato) + Number(cnt);
+
+    } else if (investid == 'carrot') {
+        localStorage.carrot = Number(localStorage.carrot) + Number(cnt);
+
+    } else if (investid == 'radish') {
+        localStorage.radish = Number(localStorage.radish) + Number(cnt);
+
+    } else if (investid == 'lettuce') {
+        localStorage.lettuce = Number(localStorage.lettuce) + Number(cnt);
+
+    } else if (investid == 'spinach') {
+        localStorage.spinach = Number(localStorage.spinach) + Number(cnt);
+
+    } else if (investid == 'onion') {
+        localStorage.onion = Number(localStorage.onion) + Number(cnt);
+
+    } else if (investid == 'cucumber') {
+        localStorage.cucumber = Number(localStorage.cucumber) + Number(cnt);
+
+    } else if (investid == 'beanSprouts') {
+        localStorage.beanSprouts = Number(localStorage.beanSprouts) + Number(cnt);
+
+    } else if (investid == 'tomato') {
+        localStorage.tomato = Number(localStorage.tomato) + Number(cnt);
+
+    }
 
     if (cnt != 0 && mypoint >= parseInt(cnt * (vprice / 100))) {
-        if (confirm(name + ' 수 총 (' + cnt + ')개 X 현재 시세(' + vprice + '/100) = ' + parseInt(cnt * (vprice / 100)) + '포인트에 매수하시겠습니까?') == true) {
-            alert("매수되었습니다.");
-
-            if (investid == 'potato') {
-                localStorage.potato = Number(localStorage.potato) + Number(cnt);
-
-            } else if (investid == 'sweetPotato') {
-                localStorage.sweetPotato = Number(localStorage.sweetPotato) + Number(cnt);
-
-            } else if (investid == 'carrot') {
-                localStorage.carrot = Number(localStorage.carrot) + Number(cnt);
-
-            } else if (investid == 'radish') {
-                localStorage.radish = Number(localStorage.radish) + Number(cnt);
-
-            } else if (investid == 'lettuce') {
-                localStorage.lettuce = Number(localStorage.lettuce) + Number(cnt);
-
-            } else if (investid == 'spinach') {
-                localStorage.spinach = Number(localStorage.spinach) + Number(cnt);
-
-            } else if (investid == 'onion') {
-                localStorage.onion = Number(localStorage.onion) + Number(cnt);
-
-            } else if (investid == 'cucumber') {
-                localStorage.cucumber = Number(localStorage.cucumber) + Number(cnt);
-
-            } else if (investid == 'beanSprouts') {
-                localStorage.beanSprouts = Number(localStorage.beanSprouts) + Number(cnt);
-
-            } else if (investid == 'tomato') {
-                localStorage.tomato = Number(localStorage.tomato) + Number(cnt);
-
+        Swal.fire({
+            title: parseInt(cnt * (vprice / 100)) + '포인트에 매수할까요?',
+            text: name+' 수 총 ' + cnt + '개 X (현재 시세 '+ vprice +'원÷100)',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#6A9258',
+            cancelButtonColor: '#AAAAAA',
+            confirmButtonText: '매수',
+            cancelButtonText: '취소'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title:'매수가 완료되었습니다.',
+                    text:'마이페이지에서 확인할 수 있습니다',
+                    icon:'success',
+                    confirmButtonColor: '#6A9258'
+                })
+                // location.reload();
             }
-
-            localStorage.mypoint = parseInt(localStorage.mypoint) - parseInt(cnt * (vprice / 100));
-            location.reload();
-
-        }
+        })
     } else if (cnt == 0) {
-        alert("수량을 선택해주세요.");
+        Swal.fire(
+            '수량을 선택해주세요',
+            '',
+            'warning'
+        )
     } else {
-        alert("포인트가 부족합니다. 나의 포인트 : " + mypoint);
+        Swal.fire(
+            '포인트가 부족합니다',
+            '나의 포인트' + mypoint,
+            'warning'
+        )
     }
+    localStorage.mypoint = parseInt(localStorage.mypoint) - parseInt(cnt * (vprice / 100));
+    
 
 }
 
