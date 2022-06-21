@@ -4,6 +4,17 @@ var cnt = 0;
 var infopoint = document.getElementById('myInfoPointNum');
 infopoint.innerHTML = localStorage.getItem("mypoint", 0);
 
+오이 = live_price.오이;
+양파 = live_price.양파;
+감자 = live_price.감자;
+고구마 = live_price.고구마;
+당근 = live_price.당근;
+콩나물 = live_price.콩나물;
+토마토 = live_price.토마토;
+무 = live_price.무;
+상추 = live_price.상추;
+시금치 = live_price.시금치;
+
 function investcnt(type, result) {
 
     var local = document.getElementById(result);
@@ -30,43 +41,43 @@ function investment(investid) {
 
     if (investid == 'potato') {
         name = '감자';
-        vprice = 5880;
+        vprice = 감자;
 
     } else if (investid == 'sweetPotato') {
         name = '고구마';
-        vprice = 5880;
+        vprice = 고구마;
 
     } else if (investid == 'carrot') {
         name = '당근';
-        vprice = 5880;
+        vprice = 당근;
 
     } else if (investid == 'radish') {
         name = '무';
-        vprice = 5880;
+        vprice = 무;
 
     } else if (investid == 'lettuce') {
         name = '상추';
-        vprice = 5880;
+        vprice = 상추;
 
     } else if (investid == 'spinach') {
         name = '시금치';
-        vprice = 5880;
+        vprice = 시금치;
 
     } else if (investid == 'onion') {
         name = '양파';
-        vprice = 5880;
+        vprice = 양파;
 
     } else if (investid == 'cucumber') {
         name = '오이';
-        vprice = 5880;
+        vprice = 오이;
 
     } else if (investid == 'beanSprouts') {
         name = '콩나물';
-        vprice = 5880;
+        vprice = 콩나물;
 
     } else if (investid == 'tomato') {
         name = '토마토';
-        vprice = 5880;
+        vprice = 토마토;
 
     }
 
