@@ -1,3 +1,58 @@
+.quantity {
+    position: absolute;
+    width: 65px;
+    height: 26px;
+    right: 20px;
+    top: 15px;
+
+    text-align: center;
+
+    border: 0.5px solid #191919;
+    filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
+    border-radius: 100px;
+}
+
+.minus{
+    left: 9px;
+    top: 1px;
+}
+
+.plus{
+    right: 7px;
+    top: 3px;
+}
+
+.plus,
+.minus {
+    position: absolute;
+
+    border: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.plus:hover,
+.minus:hover {
+    cursor: pointer;
+}
+
+#result1,
+#result2,
+#result3,
+#result4,
+#result5,
+#result6,
+#result7,
+#result8,
+#result9,
+#result10 {
+    position: absolute;
+    top: 1px;
+    left: 27px;
+}
 #store {
     position: absolute;
     width: 72px;
