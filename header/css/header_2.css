@@ -29,7 +29,7 @@
 }
 
 .intro_bg .nav {
-    margin-left:800px;
+    margin-left:752px;
     position: relative;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
@@ -56,6 +56,17 @@
     text-decoration: none;
     margin-top: 0px;
     z-index: 3;
+  }
+  .intro_bg .con_2{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1479px;
+    bottom: 50px;
+    top: 54px;
+  }
+  .intro_bg .con_2 a{
+    margin-right: 10px;
   }
   .intro_bg .nav .slide1,
   .intro_bg .nav .slide2 {
