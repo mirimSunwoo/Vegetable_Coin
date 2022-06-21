@@ -72,7 +72,7 @@
 
 .Vname {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 20px;
 
     font-family: 'Pretendard';
@@ -86,9 +86,8 @@
 }
 
 .VEname {
-    position: absolute;
-    top: 57px;
-    left: 20px;
+    margin-top: 18px;
+    margin-left: 10px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -105,7 +104,7 @@
     right: 20px;
 
     height: 44px;
-    width: 120px;
+    width: 236px;
 
     background: #EEBB4D;
     box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
@@ -263,4 +262,181 @@
     height: 206px;
     top: 19px;
     left: 41px;
+}
+
+.myInfo {
+    position: fixed;
+    top: 270px;
+    margin-left: 85%;
+    width: 244px;
+    height: 366px;
+
+    background: #F4F4F4;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.myInfoTitle {
+    position: absolute;
+    top: 17px;
+    left: 27px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #191919;
+}
+
+.myInfoPoint {
+    position: absolute;
+    top: 59px;
+    left: 28px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #6A9258;
+}
+
+.myInfoPointBox {
+    position: absolute;
+    top: 89px;
+    left: 18px;
+    width: 208px;
+    height: 51.11px;
+
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.myInfoDollarImg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 96px;
+    left: 28px;
+}
+
+#myInfoPointNum {
+    position: absolute;
+    top: 94px;
+    left: 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #6A9258;
+}
+
+.myInfoInves {
+    position: absolute;
+    top: 140px;
+    left: 28px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #6A9258;
+
+}
+
+.myInfoInvesBox {
+    position: absolute;
+    top: 168px;
+    left: 18px;
+    width: 208px;
+    height: 51.11px;
+
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.myInfoTomatoImg {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 174px;
+    left: 28px;
+}
+
+#myInfoInveCnt {
+    position: absolute;
+    top: 174px;
+    left: 80px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #6A9258;
+}
+
+.myInfoMypage {
+    position: absolute;
+    top: 235px;
+    left: 18px;
+    width: 208.64px;
+    height: 44px;
+    color: #6A9258;
+
+    border: 2px solid #6A9258;
+
+    
+    border-radius: 100px;
+    
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    padding-top: 6px;
+    text-decoration: none;
+
+    
+}
+
+.myInfoStore {
+    position: absolute;
+    top: 295px;
+    left: 18px;
+    width: 208.64px;
+    height: 44px;
+
+    color: #6A9258;
+
+    border: 2px solid #6A9258;
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.myInfoMypage:hover,
+.myInfoStore:hover {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+
+    background: #6A9258;
+    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border: #6A9258;
+    color: #FFFFFF;
 }

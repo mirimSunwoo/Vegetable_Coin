@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/header/css/recipe_heaader.css">
     <link rel="stylesheet" href="/footer/css/footer.css">
     <script src="buying.js"></script>
+    <script src="/V-coin/storage.js"></script>
 
-    <script src="temp.js"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
@@ -20,10 +20,10 @@
     /* Quantity */
     .quantity {
         position: absolute;
-        width: 120px;
+        width: 65px;
         height: 26px;
         right: 20px;
-        top: 20px;
+        top: 15px;
 
         text-align: center;
 
@@ -31,19 +31,14 @@
         filter: drop-shadow(0px 4px 4px rgba(238, 187, 77, 0.2));
         border-radius: 100px;
     }
-
-    .quantity button {
-        border: none;
-        background-color: transparent;
-    }
     
     .minus{
-        left: 17px;
-        top: 2px;
+        left: 9px;
+        top: 1px;
     }
 
     .plus{
-        right: 15px;
+        right: 7px;
         top: 3px;
     }
 
@@ -75,8 +70,8 @@
     #result9,
     #result10 {
         position: absolute;
-        left: 51px;
-        top: 2px;
+        top: 1px;
+        left: 27px;
     }
 </style>
 
@@ -101,8 +96,7 @@
                             <div id='result1'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result1")' value='&#43;' />
                         </div>
-                        <span class="Vname">감자</span>
-                        <span class="VEname">Potato</span>
+                        <div class="Vname">감자<span class="VEname">Potato</span></div>
                         <input class="buy" type="button" id="buypotato" onclick="buy('buypotato')" value="구매하기" />
                     </div>
                 </div>
@@ -122,8 +116,7 @@
                             <div id='result2'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result2")' value='&#43;' />
                         </div>
-                        <span class="Vname">고구마</span>
-                        <span class="VEname">Sweet<br>Potato</span>
+                        <div class="Vname">고구마<span class="VEname" style="font-size: small;">SweetPotato</span></div>
                         <input class="buy" type="button" id="buysweetpotato" onclick="buy('buysweetpotato')"
                             value="구매하기" />
                     </div>
@@ -144,8 +137,7 @@
                             <div id='result3'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result3")' value='&#43;' />
                         </div>
-                        <span class="Vname">당근</span>
-                        <span class="VEname">Carrot</span>
+                        <div class="Vname">당근<span class="VEname">Carrot</span></div>
                         <input class="buy" type="button" id="buycarrot" onclick="buy('buycarrot')" value="구매하기" />
                     </div>
                 </div>
@@ -165,8 +157,7 @@
                             <div id='result4'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result4")' value='&#43;' />
                         </div>
-                        <span class="Vname">무</span>
-                        <span class="VEname">Radish</span>
+                        <div class="Vname">무<span class="VEname">Radish</span></div>
                         <input class="buy" type="button" id="buyradish" onclick="buy('buyradish')" value="구매하기" />
                     </div>
                 </div>
@@ -188,8 +179,7 @@
                             <div id='result5'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result5")' value='&#43;' />
                         </div>
-                        <span class="Vname">상추</span>
-                        <span class="VEname">Lettuce</span>
+                        <div class="Vname">상추<span class="VEname">Lettuce</span></div>
                         <input class="buy" type="button" id="buylettuce" onclick="buy('buylettuce')" value="구매하기" />
                     </div>
                 </div>
@@ -209,8 +199,7 @@
                             <div id='result6'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result6")' value='&#43;' />
                         </div>
-                        <span class="Vname">시금치</span>
-                        <span class="VEname">Spinach</span>
+                        <div class="Vname">시금치<span class="VEname">Spinach</span></div>
                         <input class="buy" type="button" id="buyspinach" onclick="buy('buyspinach')" value="구매하기" />
                     </div>
                 </div>
@@ -230,8 +219,7 @@
                             <div id='result7'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result7")' value='&#43;' />
                         </div>
-                        <span class="Vname">양파</span>
-                        <span class="VEname">Onion</span>
+                        <div class="Vname">양파<span class="VEname">Onion</span></div>
                         <input class="buy" type="button" id="buyonion" onclick="buy('buyonion')" value="구매하기" />
                     </div>
                 </div>
@@ -251,8 +239,7 @@
                             <div id='result8'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result8")' value='&#43;' />
                         </div>
-                        <span class="Vname">오이</span>
-                        <span class="VEname">Cucumber</span>
+                        <div class="Vname">오이<span class="VEname">Cucumber</span></div>
                         <input class="buy" type="button" id="buycucumber" onclick="buy('buycucumber')" value="구매하기" />
                     </div>
                 </div>
@@ -274,8 +261,7 @@
                             <div id='result9'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result9")' value='&#43;' />
                         </div>
-                        <span class="Vname">콩나물</span>
-                        <span class="VEname">Bean<br>Sprouts</span>
+                        <div class="Vname">콩나물<span class="VEname" style="font-size: small;">BeanSprouts</span></div>
                         <input class="buy" type="button" id="buybean" onclick="buy('buybean')" value="구매하기" />
                     </div>
                 </div>
@@ -295,14 +281,36 @@
                             <div id='result10'>0</div>
                             <input class="plus" type='button' onclick='buycnt("plus", "result10")' value='&#43;' />
                         </div>
-                        <span class="Vname">토마토</span>
-                        <span class="VEname">Tomato</span>
+                        <div class="Vname">토마토<span class="VEname">Tomato</span></div>
                         <input class="buy" type="button" id="buytomato" onclick="buy('buytomato')" value="구매하기" />
                     </div>
                 </div>
             </td>
         </tr>
     </table>
+
+    <div class="myInfo">
+        <p class="myInfoTitle">My Infomation</p>
+        <p class="myInfoPoint">my Point</p>
+        <div class="myInfoPointBox""></div>
+
+        <img class="myInfoDollarImg" src="/V-buying/img/dollar.png">
+
+        <p id="myInfoPointNum"></p>
+
+        <p class="myInfoInves">my Invesment</p>
+
+        <div class="myInfoInvesBox"></div>
+
+        <img class="myInfoTomatoImg" src="/V-coin/img/토마토.png">
+
+        <p id="myInfoInveCnt"></p>
+
+        <a class="myInfoMypage" href="/MyPage/mypage.html">마이페이지</a>
+
+        <a class="myInfoStore" href="/V-coin/coin_main.html">채소코인 바로가기</a>
+    </div>
+
 <script src="buying.js"></script>
 </body>
 </html>

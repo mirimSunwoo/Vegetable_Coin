@@ -1,6 +1,9 @@
 var mypoint = parseInt(localStorage.getItem("mypoint", 0));
 var cnt = 0;
 
+var infopoint = document.getElementById('myInfoPointNum');
+infopoint.innerHTML = localStorage.getItem("mypoint", 0);
+
 function buycnt(type, result){
 
 	var local = document.getElementById(result);
@@ -107,7 +110,7 @@ function buy(buyid) {
 			localStorage.removeItem('mypoint');
 			localStorage.setItem('mypoint', point);
 
-			location.reload();
+			// location.reload();
         })
 	} else if (cnt == 0) {
         Swal.fire(
@@ -123,3 +126,10 @@ function buy(buyid) {
         )
     }
 }
+
+var totalcnt = Number(localStorage.potato) + Number(localStorage.sweetPotato) + Number(localStorage.carrot) +
+    Number(localStorage.radish) + Number(localStorage.lettuce) + Number(localStorage.spinach) +
+    Number(localStorage.onion) + Number(localStorage.cucumber) + Number(localStorage.beanSprouts) + Number(localStorage.tomato);
+    
+var infocnt = document.getElementById('myInfoInveCnt');
+infocnt.innerHTML = totalcnt;
