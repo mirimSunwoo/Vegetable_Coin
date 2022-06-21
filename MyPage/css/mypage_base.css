@@ -542,7 +542,7 @@ ul li {
     color: #EEBB4D;
 }
 
-.product_point {
+/* .product_point {
     position: absolute;
     margin-left: 16px;
     margin-top: 16px;
@@ -570,11 +570,10 @@ ul li {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    /* line-height: 24px; */
 
     color: #6A9258;
 
-}
+} */
 
 #investment,
 #delivery {
@@ -607,14 +606,9 @@ ul li {
     border-radius: 20px;
 }
 
-#one{
-    /* visibility: hidden; */
-}
-
 .prices {
-    position: absolute;
-    top: 15px;
-    left: 16px;
+    margin-top: 15px;
+    margin-left: 16px;
     background: #FFFFFF;
     width: 71px;
     height: 34px;
@@ -623,17 +617,15 @@ ul li {
 
 .dollar {
     /* 이미지 깨짐 다시 다운 받기 */
-    position: absolute;
+    /* position: absolute; */
+    left: 8px;
     width: 30px;
     height: 30px;
-    top: 2px;
-    left: 4px;
+    margin-top: 2px;
 }
 
 .price {
-    position: absolute;
-    top: 5px;
-    left: 38px;
+    margin: 0%;
 
     /* 폰트 적용 안됨 */
     font-family: 'Montserrat';
@@ -644,11 +636,13 @@ ul li {
     color: #6A9258;
 }
 
+.Vimg{
+    margin-top: -23px;
+}
+
 .rec {
-    position: absolute;
     width: 276px;
     height: 115px;
-    top: 220px;
 
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;

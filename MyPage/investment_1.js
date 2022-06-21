@@ -1,3 +1,4 @@
+// 매수
 var inpotato = localStorage.getItem('potato');
 var insweetpotato = localStorage.getItem('sweetPotato');
 var incarrot = localStorage.getItem('carrot');
@@ -9,6 +10,18 @@ var incucumber = localStorage.getItem('cucumber');
 var inbean = localStorage.getItem('beanSprouts');
 var intomato = localStorage.getItem('tomato');
 
+// 구매
+var buypotato = localStorage.getItem('buypotato');
+var buysweetpotato = localStorage.getItem('buysweetpotato');
+var buycarrot = localStorage.getItem('buycarrot');
+var buyradish = localStorage.getItem('buyradish');
+var buylettuce = localStorage.getItem('buylettuce');
+var buyspinach = localStorage.getItem('buyspinach');
+var buyonion = localStorage.getItem('buyonion');
+var buycucumber = localStorage.getItem('buycucumber');
+var buybean = localStorage.getItem('buybean');
+var buytomato = localStorage.getItem('buytomato');
+
 var local = document.getElementById('label-container');
 local.innerText = localStorage.getItem("mypoint", 0);
 var mypoint = parseInt(localStorage.getItem("mypoint", 0));
@@ -16,9 +29,8 @@ var names = '';
 var prices = 0;
 
 function init(){
-
+    document.getElementById('my_delivery').style.display = 'none';
     document.getElementById('investment').style.display = 'none';
-    document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_inventory_title').style.display = 'none';
     document.getElementById('my_investment_title').style.display = 'block';
     document.getElementById("raise").style.display = "block";
@@ -80,7 +92,6 @@ function init(){
 
     names = name;
     prices = price;
-    localStorage.setItem("sweetPotato", 0);
 }
 
 function showVeg(vegi){
@@ -105,19 +116,46 @@ function invesVeg(vegi){
 
 }
 
-function purchase(){
-    document.getElementById('my_investment').style.display = 'none';
-    document.getElementById('my_delivery').style.display = 'block';
-}
-
 function delivery(){
     document.getElementById('my_investment').style.display = 'none';
     document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_delivery').style.display = 'block';
+
+    document.getElementById("raise_1").style.display = "block";
+    document.getElementById("purchase_1").style.display = "block";
+
+    if(buypotato != 0 && buypotato !== null){
+        document.getElementById('one').style.display = 'block';
+    }
+    if(buysweetpotato != 0 && buysweetpotato !== null){
+        document.getElementById('two').style.display = 'block';
+    }
+    if(buycarrot != 0 && buycarrot !== null){
+        document.getElementById('three').style.display = 'block';
+    }
+    if(buyradish != 0 && buyradish !== null){
+        document.getElementById('four').style.display = 'block';
+    }if(buylettuce != 0 && buylettuce !== null){
+        document.getElementById('five').style.display = 'block';
+    }if(buyspinach != 0 && buyspinach !== null){
+        document.getElementById('six').style.display = 'block';
+    }if(buyonion != 0 && buyonion !== null){
+        document.getElementById('seven').style.display = 'block';
+    }if(buycucumber != 0 && buycucumber !== null){
+        document.getElementById('eight').style.display = 'block';
+    }if(buybean != 0 && buybean !== null){
+        document.getElementById('nine').style.display = 'block';
+    }if(buytomato != 0 && buytomato !== null){
+        document.getElementById('ten').style.display = 'block';
+    }
 }
 
 function inves(){
     document.getElementById('my_investment').style.display = 'block';
     document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_delivery').style.display = 'none';
+    document.getElementById('my_investment_title').style.display = 'block';
+    document.getElementById("raise").style.display = "block";
+    document.getElementById("purchase").style.display = "block";
+    init();
 }
