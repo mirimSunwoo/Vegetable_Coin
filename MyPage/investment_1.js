@@ -31,6 +31,7 @@ var prices = 0;
 function init(){
     document.getElementById('my_delivery').style.display = 'none';
     document.getElementById('investment').style.display = 'none';
+    document.getElementById('delivery').style.display = 'none';
     document.getElementById('my_inventory_title').style.display = 'none';
     document.getElementById('my_investment_title').style.display = 'block';
     document.getElementById("raise").style.display = "block";
