@@ -130,13 +130,61 @@
     left: 1180px;
     top: 1475px;
 }
+
+/* coin_recommend */
+.coin_recommend > h1{
+    position: absolute;
+    width: 342px;
+    height: 70px;
+    left: 765px;
+    top: 2254px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+
+    color: #6A9258;
+}
+.coin_recommend > p{
+    position: absolute;
+    width: 400px; 
+    height: 29px;
+    left: 812px;
+    top: 2216px;
+    margin-bottom: 9px;
+
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #EEBB4D;
+}
+.coin_item{
+    width: 1194px;
+    height: 382px;
+    border: 1px solid khaki;
+    position: absolute;
+    width: 1194px;
+    height: 382px;
+    left: 363px;
+    top: 2394px;
+}
 /* 요즘 핫한 채소 */
+.vegetables{
+    top: 3873px;
+}
 .vegetables > p{
     position: absolute;
     width: 166px;
     height: 29px;
     left: 879px;
-    top: 2311px;
+    top: 3873px;
 
     font-family: Gotham;
     font-style: normal;
@@ -150,16 +198,17 @@
 }
 .vegetables > h1{
     position: absolute;
-    width: 350px;
-    height: 58px;
-    left: 796px;
-    top: 2350px;
+    width: 287px;
+    height: 70px;
+    left: 817px;
+    top: 3920px;
 
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 70px;
+    /* identical to box height */
 
     text-align: center;
 
@@ -171,7 +220,7 @@
     width: 1194px;
     height: 433px;
     left: 366px;
-    top: 2508px;
+    top: 4078px;
     display: flex;
     /* background-color: orange; */
 }
@@ -212,7 +261,7 @@
     width: 234px;
     height: 68px;
     left: 846px;
-    top: 3041px;
+    top: 4611px;
 
     background: #EEBB4D;
     box-shadow: 0px 4px 16px rgba(238, 187, 77, 0.3);
@@ -253,16 +302,18 @@ button:hover{
 /* coin_ad */
 .coin_ad{
     position: absolute;
-    background-image: url("./MyPage/image/coin_ad_bg.png");
+    background-image: url("imgs/coin_banner.png");
     width: 100%;
     height: 600px;
-    top: 3239px;
+    top: 3024px;
 }
 .ad_title{
     position: absolute;
-    width: 567px;
+    display: inline-block;
+    width: 800px;
     height: 166px;
-
+    left: 942px;
+    top: 170px;
     /* margin-top:3380px; */
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -274,13 +325,55 @@ button:hover{
 
     color: #6A9258;
 }
+.coin_ad div:nth-child(2){
+    position: absolute;
+    width: 506px;
+    height: 30px;
+    left: 948px;
+    top: 360px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #6A9258;
+}
+.ad_btn{
+    position: absolute;
+    width: 236px;
+    height: 56px;
+    left: 942px;
+    top: 434px;
+
+    background: #6A9258;
+    border: 0px;
+    color:#fff;
+    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+}
+.title_bold{
+    /* font-style: bold; */
+    width: auto;
+    display: inline;
+    font-weight: bolder;
+}
 /* recipes */
 .recipes{
     position: absolute;
     width: 1194px;
     height: 707px;
     /* left: 365px; */
-    top: 4076px;
+    top: 5747px;
 
 }
 .recipes > p{
@@ -439,7 +532,7 @@ form > select:hover{
     width: 1426px;
     height: 568px;
     left: 364px;
-    top: 5064px;
+    top: 4929px;
 }
 .vbti > h1{
     position: absolute;
