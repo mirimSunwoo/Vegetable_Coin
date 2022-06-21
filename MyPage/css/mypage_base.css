@@ -518,8 +518,9 @@ ul li {
     text-align: center;
     top: 22px;
     margin-top: 16px;
+    border: 2px solid #EEBB4D;
 
-    background: #EEBB4D;
+    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
     border-radius: 100px;
 
@@ -531,15 +532,15 @@ ul li {
     /* identical to box height */
 
 
-    color: #FFFFFF;
+    color: #EEBB4D;
 }
 
 .all-button:hover,
 .all-sell-button:hover {
     cursor: pointer;
-    background: #FFFFFF;
+    background: #EEBB4D;
     border: 2px solid #EEBB4D;
-    color: #EEBB4D;
+    color: #FFFFFF;
 }
 
 /* .product_point {
