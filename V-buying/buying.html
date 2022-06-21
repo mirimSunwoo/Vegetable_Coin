@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스토어</title>
     <link rel="stylesheet" href="buying.css">
-    <link rel="stylesheet" href="/header/css/recipe_heaader.css">
+    <link rel="stylesheet" href="/header/css/recipe_heaader copy.css">
     <link rel="stylesheet" href="/footer/css/footer.css">
     <script src="buying.js"></script>
     <script src="/V-coin/storage.js"></script>
@@ -76,8 +76,26 @@
 </style>
 
 <body>
-    <header include-html="/header/recipe_header.html"></header>
-
+    <!-- <header include-html="/header/recipe_header.html"></header> -->
+    <div class="header con">
+        <div class="header_logo">
+            <a href="/main.html"><img src="/header/image/header.png"></a>
+        </div>
+        <ul class="nav">
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li class="cell"><a href="/V-coin/coin_main.html" class="block">채소코인</a></li>
+            <li class="cell"><a href="/V-buying/buying_main.html" class="block">스토어</a></li>
+            <li class="cell"><a href="/Solution/solution_main.html" class="block">채소 키우기</a></li>
+            <li class="cell"><a href="/vbti/vbti.html" class="block">VBTI</a></li>
+        </ul>
+        <div class="con_2">
+            <a href="/MyPage/mypage.html" class="no-block"  style="left: 160px;"><img src="/header/image/User_green.png"></a>
+            <a href="/MyPage/login.html" class="no-block" style="left: 110px;"><img src="/header/image/Lock_green.png"></a>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="/header/script.js"></script>
+        
+    </div>
     <div id="store">스토어</div>
     <table>
         <tr>
@@ -289,6 +307,37 @@
         </tr>
     </table>
 
+    <div class="footer-box" style="top: 1827px;">
+        <div>
+            <p class="team-title">VEGETABLE COIN TEAM</p>
+            <p class="period-title">PERIOD</p>
+        </div>
+
+        <div style="margin-bottom: 0;">
+            <p class="designer-team">DESIGNER</p>
+            <p class="designer-period">DESIGN</p>
+        </div>
+        
+        <div>
+            <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+            <p class="design-date">2022. 01</p>
+        </div>
+        
+        <div>
+            <p class="developer-team">DEVELOPER</p>
+            <p class="develop-period">DEVELOP</p>
+        </div>
+
+        <div>
+            <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+            <p class="develop-date">2022. 02</p>
+        </div>
+        <hr class="line">
+        <p class="contact">Contact</p>
+        <p class="email">vegatable@mirim.hs.kr</p>
+        
+    </div>
+    
     <div class="myInfo">
         <p class="myInfoTitle">My Infomation</p>
         <p class="myInfoPoint">my Point</p>
