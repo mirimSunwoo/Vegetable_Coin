@@ -165,15 +165,138 @@
 
     color: #EEBB4D;
 }
-.coin_item{
+.coin_box{
     width: 1194px;
     height: 382px;
-    border: 1px solid khaki;
+    /* border: 1px solid khaki; */
     position: absolute;
     width: 1194px;
     height: 382px;
     left: 363px;
     top: 2394px;
+    background-color: #fff;
+}
+.coin_item{
+    /* position: absolute; */
+    width: 378px;
+    height: 382px;
+    display: inline-block;
+    margin-right: 22px;
+    /* left: 1179px;
+    top: 1982px; */
+
+    background: #FFE4E2;
+    /* border: 1px solid saddlebrown; */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.coin_item:nth-child(1){
+    background-color: #FFE4E2;
+}
+.coin_item:nth-child(2){
+    background-color: #FFDEB9;
+}
+.coin_item:nth-child(3){
+    margin-right: 0px;
+    background-color: #DEF4D2;
+}
+.white_box{
+    background: #FFFFFF;
+    width: 378px;
+    height: 131px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    /* border: 1px solid khaki */
+
+}
+.kname{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #191919;
+}
+.ename{
+    position: absolute;
+    left: 24px;
+    top: 61px;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ABABAB;
+}
+/* .item_img:nth-child(1){
+    position: absolute;
+    width: 267.07px;
+    height: 195px;
+    left: 65px;
+    top: 45px;
+} */
+.item_img1{
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    margin-top:40px;
+    margin-left: 65px;
+}
+.item_img2{
+    position: absolute;
+    margin-top:38px;
+    margin-left: 95px;
+    width: 230px;
+    height: 230px;
+}
+.item_img3{
+    position: absolute;
+    margin-top:45px;
+    margin-left: 90px;
+    width: 230px;
+    height: 230px;
+}
+.coin_show{
+    position: absolute;
+    margin-left: 257px;
+    margin-top: 18px;
+    width: 98px;
+    height: 34px;
+
+    background: #FFFFFF;
+    border-radius: 34px;
+}
+.coin_img{
+    position:absolute;
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.coin_text{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* Main */
+
+    color: #6A9258;
 }
 /* 요즘 핫한 채소 */
 .vegetables{
