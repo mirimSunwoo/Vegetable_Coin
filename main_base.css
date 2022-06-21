@@ -239,6 +239,7 @@
     height: 51.19px;
     margin-left: 212.5px;
     top: 29.81px;
+    cursor: pointer;
 }
 /* 채소이름 */
 .contents_name{
@@ -374,6 +375,7 @@ button:hover{
     height: 707px;
     /* left: 365px; */
     top: 5747px;
+    margin-top: 50px;
 
 }
 .recipes > p{
