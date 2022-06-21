@@ -25,9 +25,9 @@ driver = webdriver.Chrome('./chromedriver', options=options)
 
 driver = webdriver.Chrome('chromedriver')
 
-price_file = open("price.txt","w", encoding="UTF-8-sig")
+price_file = open("price.js","w", encoding="UTF-8-sig")
 
-def linkgetFunction(name, link):
+def linkgetFunction(name, link, cnt):
     driver.get(link)
     # driver.implicitly_wait(3)
     html = driver.page_source
@@ -39,12 +39,15 @@ def linkgetFunction(name, link):
     re_string = price_string.replace(',','')
     name = name.strip()
     re_string = re_string.strip()
-    price_file.write(name+':'+re_string+',')
 
-    with open('./price.json','w')as f:
-        json.dump(name,f,ensure_ascii=False, indent=10)
-    # price_file.close()
-    return print(name, re_string)
+    if(cnt==1):
+        price_file.write("var live_price = {"+'\n'+'"'+name+'"'+':'+re_string+','+'\n')
+    elif(cnt==10):
+        price_file.write('"'+name+'"'+':'+re_string+'\n'+"}")
+    else:
+        price_file.write('"'+name+'"'+':'+re_string+','+'\n')
+ 
+    return print('"'+name+'"'+':'+re_string+','+'\n')
 
 # 오이 양파 감자 고구마 당근 콩나물 토마토 무 상추 시금치
 오이 = 'https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0110&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0'
@@ -59,14 +62,14 @@ def linkgetFunction(name, link):
 시금치 = 'https://www.kprc.or.kr/consumerMain.do?lcla_cd=0759&mcla_cd=10&page=1&page_sz=10&board_id=use08&itemst_cd=0759&item_cd=0090&area_cd=101&itemsub_cd=0010&to_yyyymm=&from_yyyymm=&board=0'
 
 # 함수불러오기
-print(linkgetFunction('오이', 오이))
-print(linkgetFunction('양파', 양파))
-print(linkgetFunction('감자', 감자))
-print(linkgetFunction('고구마', 고구마))
-print(linkgetFunction('당근', 당근))
-print(linkgetFunction('콩나물', 콩나물))
-print(linkgetFunction('토마토', 토마토))
-print(linkgetFunction('무', 무))
-print(linkgetFunction('상추', 상추))
-print(linkgetFunction('시금치', 시금치))
+print(linkgetFunction('오이', 오이,1))
+print(linkgetFunction('양파', 양파,2))
+print(linkgetFunction('감자', 감자,3))
+print(linkgetFunction('고구마', 고구마,4))
+print(linkgetFunction('당근', 당근,5))
+print(linkgetFunction('콩나물', 콩나물,6))
+print(linkgetFunction('토마토', 토마토,7))
+print(linkgetFunction('무', 무,8))
+print(linkgetFunction('상추', 상추,9))
+print(linkgetFunction('시금치', 시금치,10))
 
