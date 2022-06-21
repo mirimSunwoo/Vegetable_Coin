@@ -37,18 +37,20 @@
     margin: 0;
     padding: 0;
     left: 350px;
+    margin-top: 80px;
     /* margin-top: 549px; */
     /* display: none; */
 }
 
 iframe {
     position: absolute;
-    width: 1200px;
-    height: 2050px;
-    top: -1280px;
-    left: -10px;
-    right: -450px;
-    bottom: -100px;
+    width: 2000px;
+    height: 1930px;
+    top: -1410px;
+    left: -703px;
+    right: -1000px;
+    bottom: -50px;
+    margin-right: -100px;
 }
 
 .w3-container nav {
