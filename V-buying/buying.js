@@ -27,7 +27,6 @@ function buy(buyid) {
 	if(buyid == 'buypotato'){
 		name = '감자 1.5kg';
 		buypoint = 60;
-
 	} else if(buyid == 'buysweetpotato'){
 		name = '고구마 1kg';
 		buypoint = 60;
@@ -70,9 +69,29 @@ function buy(buyid) {
 		var price = buypoint * cnt;
 		localbuy = parseInt(localStorage.getItem(buyid));
 
-		if (confirm(name + ' 상품 ' + cnt + '개를 ' + price + '포인트에 구매하시겠습니까?\n' + price + '포인트가 차감됩니다.') == true) {
-			alert("주문이 완료 되었습니다. 마이페이지에서 확인해보세요.");
+		// if (confirm(name + ' 상품 ' + cnt + '개를 ' + price + '포인트에 구매하시겠습니까?\n' + price + '포인트가 차감됩니다.') == true) {
+		// 	alert("주문이 완료 되었습니다. 마이페이지에서 확인해보세요.");
 
+			
+		Swal.fire({
+            title: price + '포인트에 구매할까요?',
+            text: name+' 상품 ' + cnt + '개 X ' + price +' Point',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#6A9258',
+            cancelButtonColor: '#AAAAAA',
+            confirmButtonText: '매수',
+            cancelButtonText: '취소'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title:'구매가 완료되었습니다.',
+                    text:'마이페이지에서 확인할 수 있습니다',
+                    icon:'success',
+                    confirmButtonColor: '#6A9258'
+                })
+                // location.reload();
+            }
 			point = mypoint - price;
 
 			if(localStorage.getItem(buyid) != null){
@@ -89,14 +108,18 @@ function buy(buyid) {
 			localStorage.setItem('mypoint', point);
 
 			location.reload();
-
-		} else {
-			alert("상품 구매가 취소되었습니다.");
-		}
-	} else if(cnt == 0) {
-		alert("수량을 선택해주세요.");
-	} else {
-		alert("포인트가 부족합니다. 나의 포인트 : " + mypoint);
-	}
-
+        })
+	} else if (cnt == 0) {
+        Swal.fire(
+            '수량을 선택해주세요',
+            '',
+            'warning'
+        )
+    } else {
+        Swal.fire(
+            '포인트가 부족합니다',
+            '나의 포인트' + mypoint,
+            'warning'
+        )
+    }
 }
