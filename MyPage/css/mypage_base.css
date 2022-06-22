@@ -415,9 +415,8 @@ option:hover .option-bg {
 }
 
 .coin_list li {
-    /* position: absolute; */
     width: 276px;
-    height: 439px;
+    height: 335px;
     background-color: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
@@ -464,7 +463,7 @@ ul li {
 }
 
 .img-box {
-    margin-top: 35px;
+    margin-top: 21px;
 }
 
 .img-box img {
@@ -473,8 +472,7 @@ ul li {
 }
 
 .product-info {
-    height: 188px;
-    margin-top: 21px;
+    height: 115px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
 }
@@ -483,7 +481,7 @@ ul li {
     /* position: absolute; */
     text-align: left;
     margin-left: 20px;
-    padding-top: 23px;
+    padding-top: 13px;
 
     font-family: 'Noto Sans KR', sans-serif;
     font-style: normal;
@@ -509,8 +507,33 @@ ul li {
     color: #191919;
 }
 
-.all-button,
-.all-sell-button {
+.all-button {
+    /* position: absolute; */
+    width: 236px;
+    height: 44px;
+    border: none;
+    text-align: center;
+    top: 22px;
+    margin-top: 16px;
+    border: 2px solid #4D8DEE;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(238, 187, 77, 0.2);
+    border-radius: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    color: #4D8DEE;
+}
+
+
+.all-sell-button{
     /* position: absolute; */
     width: 236px;
     height: 44px;
@@ -535,7 +558,6 @@ ul li {
     color: #EEBB4D;
 }
 
-.all-button:hover,
 .all-sell-button:hover {
     cursor: pointer;
     background: #EEBB4D;
@@ -638,7 +660,7 @@ ul li {
 }
 
 .Vimg{
-    margin-top: -23px;
+    margin-top: 13px;
 }
 
 .rec {
@@ -710,7 +732,7 @@ ul li {
     text-align: left;
     position: absolute;
     width: 276px;
-    height: 439px;
+    height: 335px;
 
     background: #F4F4F4;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
@@ -752,7 +774,7 @@ ul li {
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 35px;
     color: #191919;
 }
@@ -774,14 +796,14 @@ ul li {
     position: absolute;
     width: 218px;
     height: 88px;
-    top: 247px;
+    top: 143px;
     left: 20px;
 
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 29px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 34px;
 
     color: #191919;
 }
@@ -790,14 +812,14 @@ ul li {
     position: absolute;
     width: 218px;
     height: 88px;
-    top: 200px;
+    top: 143px;
     left: 20px;
 
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 29px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 34px;
 
     color: #191919;
 }
@@ -806,13 +828,13 @@ ul li {
     position: absolute;
     width: 227px;
     height: 38px;
-    top: 371px;
+    top: 267px;
     left: 20px;
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
 
     color: #AAAAAA;

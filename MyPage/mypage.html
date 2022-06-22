@@ -11,15 +11,14 @@
 
     <link rel="stylesheet" href="./css/mypage_base.css">
 
-    <link rel="stylesheet" href="/header/css/header_2.css">
+    <link rel="stylesheet" href="/header/css/recipe_heaader copy.css">
     <link rel="stylesheet" href="/footer/css/footer.css">
-    <script src="/footer/includeHTML.js"></script>
 
     <script src="temp.js"></script>
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <!-- <link rel="stylesheet" href="css/test.css"> -->
-    <!-- <script src="/V-coin/coin_1.js"></script> -->
+
+
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -32,7 +31,6 @@
 <body style="overflow-x: hidden;">
 
     <div class="wrap">
-        <!-- <header include-html="/header/header.html"></header> -->
         <div class="header con">
             <div class="header_logo">
                 <a href="/main.html"><img src="/header/image/header.png"></a>
@@ -100,7 +98,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">감자<span class="product-e-name"
                                     id="product-e-name">Potato</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('potato');">전체 매도</button>
                         </div>
                     </li>
@@ -110,7 +107,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">고구마<span class="product-e-name"
                                     id="product-e-name">Sweet Potato</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('sweetPotato')">전체 매도</button>
                         </div>
                     </li>
@@ -120,7 +116,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">당근<span class="product-e-name"
                                     id="product-e-name">Carrot</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('carrot')">전체 매도</button>
                         </div>
                     </li>
@@ -131,7 +126,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">무<span class="product-e-name"
                                     id="product-e-name">Radish</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('radish')">전체 매도</button>
                         </div>
                     </li>
@@ -141,7 +135,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">상추<span class="product-e-name"
                                     id="product-e-name">Lettuce</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('lettuce')">전체 매도</button>
                         </div>
                     </li>
@@ -151,7 +144,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">시금치<span class="product-e-name"
                                     id="product-e-name">Spinach</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('spinach')">전체 매도</button>
                         </div>
                     </li>
@@ -161,7 +153,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">양파<span class="product-e-name"
                                     id="product-e-name">Onion</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('onion')">전체 매도</button>
                         </div>
                     </li>
@@ -171,7 +162,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">오이<span class="product-e-name"
                                     id="product-e-name">Cucumber</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('cucumber')">전체 매도</button>
                         </div>
                     </li>
@@ -181,7 +171,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">콩나물<span class="product-e-name"
                                     id="product-e-name">Bean sprouts</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('beanSprouts')">전체 매도</button>
                         </div>
                     </li>
@@ -191,7 +180,6 @@
                         <div class="product-info">
                             <div class="product-name" id="product-name">토마토<span class="product-e-name"
                                     id="product-e-name">Tomato</span></div>
-                            <button class="all-button">시가 총액</button>
                             <button class="all-sell-button" onclick="invesVeg('tomato')">전체 매도</button>
                         </div>
                     </li>
@@ -236,153 +224,113 @@
                 <ul class="row" id="row">
 
                     <li class="coin" id="one">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">60</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/potato.png" style="width: 199px; height: 199px;">
                         </div>
-                        <div class="rec" style="margin-top: -7px">
+                        <div class="rec" style="margin-top: 3px">
                             <div class="product-name" id="product-name">감자<span class="product-e-name"
                                     id="product-e-name">Potato</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="two">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">60</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/sweetPotato.png" style="width: 223px; height: 223px;">
                         </div>
-                        <div class="rec" style="margin-top: -30px">
+                        <div class="rec" style="margin-top: -20px">
                             <div class="product-name" id="product-name">고구마<span class="product-e-name"
                                     id="product-e-name">Sweet Potato</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="three">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">36</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/carrot.png" style="width: 194px; height: 194px;;">
                         </div>
-                        <div class="rec">
+                        <div class="rec" style="margin-top: 10px">
                             <div class="product-name" id="product-name">당근<span class="product-e-name"
                                     id="product-e-name">Carrot</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="four">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">23</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/Radish.png" style="width: 225px; height: 225px;">
                         </div>
-                        <div class="rec" style="margin-top: -30px">
+                        <div class="rec" style="margin-top: -20px">
                             <div class="product-name" id="product-name">무<span class="product-e-name"
                                     id="product-e-name">Radish</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="five">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">18</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/lettuce.png" style="width: 208px; height: 208px;">
                         </div>
-                        <div class="rec" style="margin-top: -16px">
+                        <div class="rec" style="margin-top: -6px">
                             <div class="product-name" id="product-name">상추<span class="product-e-name"
                                     id="product-e-name">Lettuce</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="six">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">25</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/spinach.png" style="width: 227px; height: 227px;">
                         </div>
-                        <div class="rec" style="margin-top: -35px">
+                        <div class="rec" style="margin-top: -25px">
                             <div class="product-name" id="product-name">시금치<span class="product-e-name"
                                     id="product-e-name">Spinach</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="seven">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">20</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/onion.png" style="width: 226px; height: 226px;">
                         </div>
 
-                        <div class="rec" style="margin-top: -34px">
+                        <div class="rec" style="margin-top: -24px">
                             <div class="product-name" id="product-name">양파<span class="product-e-name"
                                     id="product-e-name">Onion</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="eight">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">10</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/cucumber.png" style="width: 192px; height: 192px;">
                         </div>
-                        <div class="rec">
+                        <div class="rec" style="margin-top: 10px;">
                             <div class="product-name" id="product-name">오이<span class="product-e-name"
                                     id="product-e-name">Cucumber</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="nine">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">26</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/beanSprouts.png" style="width: 225px; height: 225px;">
                         </div>
-                        <div class="rec" style="margin-top: -33px">
+                        <div class="rec" style="margin-top: -23px">
                             <div class="product-name" id="product-name">콩나물<span class="product-e-name"
                                     id="product-e-name">Bean sprouts</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
                     <li class="coin" id="ten">
-                        <div class="prices">
-                            <img class="dollar" src="/V-buying/img/dollar.png">
-                            <span class="price">50</span>
-                        </div>
                         <div class="Vimg">
                             <img src="/V-buying/img/tomato.png" style="width: 206px; height: 206px;;">
                         </div>
-                        <div class="rec" style="margin-top: -13px">
+                        <div class="rec" style="margin-top: -3px">
                             <div class="product-name" id="product-name">토마토<span class="product-e-name"
                                     id="product-e-name">Tomato</span></div>
-                            <button class="all-button">시가 총액</button>
+                            <button class="all-button">주문 완료</button>
                         </div>
                     </li>
 
@@ -407,7 +355,7 @@
                             <img id="first" src="image/arrow.png">
                             <img id="second" src="image/whiteArrow.png">
 
-                            <p class="raisetxt2_1">내가<br>구매한 채소를<br>확인해보세요!</p>
+                            <p class="raisetxt2_1">내가<br>매수한 채소를<br>확인해보세요!</p>
 
                             <p class="raisetxt3">Solution Page</p>
 
@@ -468,11 +416,38 @@
 
     <script src="investment_1.js"></script>
     <script src="/price.js"></script>
-    
-    <!-- <footer include-html="/footer/footer.html" style="margin-top: 20px;"></footer></footer> -->
+
+    <!-- footer html코드 -->
+    <div class="footer-box" style="top: 2644px;">
+        <div>
+            <p class="team-title">VEGETABLE COIN TEAM</p>
+            <p class="period-title">PERIOD</p>
+        </div>
+
+        <div style="margin-bottom: 0;">
+            <p class="designer-team">DESIGNER</p>
+            <p class="designer-period">DESIGN</p>
+        </div>
+
+        <div>
+            <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+            <p class="design-date">2022. 01</p>
+        </div>
+
+        <div>
+            <p class="developer-team">DEVELOPER</p>
+            <p class="develop-period">DEVELOP</p>
+        </div>
+
+        <div>
+            <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+            <p class="develop-date">2022. 02</p>
+        </div>
+        <hr class="line">
+        <p class="contact">Contact</p>
+        <p class="email">vegatable@mirim.hs.kr</p>
+
+    </div>
 </body>
-<script>
-    includeHTML();
-</script>
 
 </html>
