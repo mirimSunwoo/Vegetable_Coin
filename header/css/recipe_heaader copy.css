@@ -21,7 +21,7 @@
     position: fixed;
     width: 118px;
     background-color: white;
-    height: 31px;
+    height: 80px;
     /* background: green; */
     border-radius: 5px;
     padding-top: 15px;
@@ -32,7 +32,7 @@
 }
 
 .header .nav {
-    margin-left:800px;
+    margin-left:752px;
     position: fixed;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
@@ -59,6 +59,17 @@
     text-decoration: none;
     margin-top: 0px;
     z-index: 3;
+  }
+  .header .con_2{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 1479px;
+    bottom: 50px;
+    top: 44px;
+  }
+  .header .con_2 a{
+    margin-right: 10px;
   }
   .header .nav .slide1,
   .header .nav .slide2 {

@@ -11,11 +11,12 @@ function buycnt(type, result){
 
 	// console.log(local.innerHTML);
 	
-	if (type === 'plus') {
+	if (type === 'plus' && localcnt < 9) {
 
 		cnt = localcnt + 1;
 
 	} else if (type === 'minus' && localcnt > 0) {
+
 		
 		cnt = localcnt - 1;
 	}
@@ -78,7 +79,7 @@ function buy(buyid) {
 			
 		Swal.fire({
             title: price + '포인트에 구매할까요?',
-            text: name+' 상품 ' + cnt + '개 X ' + price +' Point',
+            text: name+' 상품 ' + cnt + '개 X ' + buypoint +' Point',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#6A9258',

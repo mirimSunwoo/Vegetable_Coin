@@ -37,83 +37,118 @@ function init(){
     document.getElementById("raise").style.display = "block";
     document.getElementById("purchase").style.display = "block";
 
+    오이 = live_price.오이;
+    양파 = live_price.양파;
+    감자 = live_price.감자;
+    고구마 = live_price.고구마;
+    당근 = live_price.당근;
+    콩나물 = live_price.콩나물;
+    토마토 = live_price.토마토;
+    무 = live_price.무;
+    상추 = live_price.상추;
+    시금치 = live_price.시금치;
+
     var name = '';
     var price = 0;
 
     if (inpotato != 0) {
         showVeg('potato');
         name = "감자";
-        price = 5880;
+        price = 감자;
     }
     if (insweetpotato != 0) {
         showVeg('sweetPotato');
         name = "고구마";
-        price = 5880;
+        price = 고구마;
     }
     if (incarrot != 0) {
         showVeg('carrot');
         name = "당근";
-        price = 5880;
+        price = 당근;
     }
     if (inradish != 0) {
         showVeg('radish');
         name = "무";
-        price = 5880;
+        price = 무;
     }
     if (inlettuce != 0) {
         showVeg('lettuce');
         name = "상추";
-        price = 5880;
+        price = 상추;
     }
     if (inspinach != 0) {
         showVeg('spinach');
         name = "시금치";
-        price = 5880;
+        price = 시금치;
     }
     if (inonion != 0) {
         showVeg('onion');
         name = "양파";
-        price = 5880;
+        price = 양파;
     }
     if (incucumber != 0) {
         showVeg('cucumber');
         name = "오이";
-        price = 5880;
+        price = 오이;
     }
     if (inbean != 0) {
         showVeg('beanSprouts');
         name = "콩나물";
-        price = 5880;
+        price = 콩나물;
     }
     if (intomato && intomato != 0) {
         showVeg('tomato');
         name = "토마토";
-        price = 5880;
+        price = 토마토;
     }
 
     names = name;
     prices = price;
 }
 
-function showVeg(vegi){
+function showVeg(vegi,price){
     document.getElementById(vegi).style.display = "block";
+    // Swal.fire({
+        
+    //     title:'시가총액',
+    //     text:names+'의 시가 총액은 '+localStorage.getItem(vegi)*price+' Point 입니다',
+    //     icon:'info'
+    // })
 }
 
-function invesVeg(vegi){
+function invesVeg(vegi,price){
 
-    if (confirm("매수한 " + names + " 수(" + localStorage.getItem(vegi) + ") X 현재 시세(" + prices + "/100)= " + parseInt(parseInt(localStorage.getItem(vegi)) * (prices / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
-        alert("매도되었습니다.");
+    // if (confirm("매수한 " + names + " 수(" + localStorage.getItem(vegi) + ") X 현재 시세(" + prices + "/100)= " + parseInt(parseInt(localStorage.getItem(vegi)) * (prices / 100)) + "포인트입니다.\n매도하시겠습니까?") == true) {
+    //     alert("매도되었습니다.");
 
-        localStorage.mypoint = parseInt(localStorage.mypoint) + parseInt(parseInt(localStorage.getItem(vegi)) * (prices / 100));
-        localStorage.removeItem(vegi);
-        localStorage.setItem(vegi, 0);
-        
-        document.getElementById(vegi).style.display = 'none';  
-
-        local.innerHTML = mypoint;
-    } else {
-        return;
-    }
+    Swal.fire({
+        title: parseInt(parseInt(localStorage.getItem(vegi)) * (prices / 100))+'포인트에 매도할까요?',
+        text: "매수한 " + names + " 수(" + localStorage.getItem(vegi) + ") X 현재 시세(" + prices + "/100)",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#6A9258',
+        cancelButtonColor: '#AAAAAA',
+        confirmButtonText: '매도',
+        cancelButtonText: '취소'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title:'매도가 완료되었습니다.',
+                text:'마이페이지에서 확인할 수 있습니다',
+                icon:'success',
+                confirmButtonColor: '#6A9258'
+            })
+            // location.reload();
+            localStorage.mypoint = parseInt(localStorage.mypoint) + parseInt(parseInt(localStorage.getItem(vegi)) * (prices / 100));
+            localStorage.removeItem(vegi);
+            localStorage.setItem(vegi, 0);
+            
+            document.getElementById(vegi).style.display = 'none';  
+    
+            local.innerHTML = mypoint;
+        }
+       
+    })
 
 }
 
