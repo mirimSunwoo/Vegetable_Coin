@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700&family=Nanum+Myeongjo:wght@800&display=swap');
+
+
 .quantity {
     position: absolute;
     width: 65px;
@@ -324,10 +330,10 @@
     top: 270px;
     margin-left: 85%;
     width: 244px;
-    height: 366px;
+    height: 320px;
 
     background: #F4F4F4;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
     border-radius: 20px;
     text-align: center;
 }
@@ -336,9 +342,9 @@
     position: absolute;
     top: 17px;
     left: 27px;
-    font-family: 'Noto Sans';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 27px;
 
@@ -347,11 +353,11 @@
 
 .myInfoPoint {
     position: absolute;
-    top: 59px;
-    left: 28px;
-    font-family: 'Noto Sans KR';
+    top: 68px;
+    left: 24px;
+    font-family: 'Montserrat', sans-serif;   
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 22px;
     color: #6A9258;
@@ -359,32 +365,32 @@
 
 .myInfoPointBox {
     position: absolute;
-    top: 89px;
-    left: 18px;
-    width: 208px;
+    top: 94px;
+    left: 24px;
+    width: 196px;
     height: 51.11px;
 
     background: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 6px;
 }
 
 .myInfoDollarImg {
     position: absolute;
     width: 38px;
     height: 38px;
-    top: 96px;
+    top: 100px;
     left: 28px;
 }
 
 #myInfoPointNum {
     position: absolute;
-    top: 94px;
+    top: 98px;
     left: 80px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif; 
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 39px;
 
     color: #6A9258;
@@ -392,11 +398,11 @@
 
 .myInfoInves {
     position: absolute;
-    top: 140px;
-    left: 28px;
-    font-family: 'Noto Sans KR';
+    top: 158px;
+    left: 24px;
+    font-family: 'Montserrat', sans-serif; 
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 22px;
     color: #6A9258;
@@ -405,32 +411,32 @@
 
 .myInfoInvesBox {
     position: absolute;
-    top: 168px;
-    left: 18px;
-    width: 208px;
+    top: 184px;
+    left: 24px;
+    width: 196px;
     height: 51.11px;
 
     background: #FFFFFF;
-    border-radius: 100px;
+    border-radius: 6px;
 }
 
 .myInfoTomatoImg {
     position: absolute;
     width: 38px;
     height: 38px;
-    top: 174px;
+    top: 188px;
     left: 28px;
 }
 
 #myInfoInveCnt {
     position: absolute;
-    top: 174px;
+    top: 187px;
     left: 80px;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif; 
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 39px;
 
     color: #6A9258;
@@ -438,16 +444,16 @@
 
 .myInfoMypage {
     position: absolute;
-    top: 235px;
-    left: 18px;
-    width: 208.64px;
+    top: 252px;
+    left: 24px;
+    width: 108px;
     height: 44px;
     color: #6A9258;
 
     border: 2px solid #6A9258;
 
     
-    border-radius: 100px;
+    border-radius: 6px;
     
 
     font-family: 'Noto Sans KR';
@@ -457,21 +463,21 @@
 
     padding-top: 6px;
     text-decoration: none;
-
     
 }
 
 .myInfoStore {
     position: absolute;
-    top: 295px;
-    left: 18px;
-    width: 208.64px;
+    top: 252px;
+    left: 141px;
+    width: 79px;
     height: 44px;
-
     color: #6A9258;
 
     border: 2px solid #6A9258;
-    border-radius: 100px;
+
+    
+    border-radius: 6px;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -486,12 +492,38 @@
 .myInfoStore:hover {
     font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    /* font-weight: 500; */
+    /* font-size: 18px; */
 
 
     background: #6A9258;
-    box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2);
+    /* box-shadow: 0px 4px 4px rgba(106, 146, 88, 0.2); */
     border: #6A9258;
     color: #FFFFFF;
+}
+.product-price{
+    position: absolute;
+    width: 71px;
+    height: 34px;
+    background-color: white;
+    margin-top: 18px;
+    border-radius: 34px;
+    margin-left: 189px;
+}
+.product-price .img_coin{
+    position: absolute;
+    /* text-align: left; */
+    padding-right: 30px;
+    padding-top: 2px;
+}
+.product-price .price{
+    position: relative;
+    margin-top: 5px;
+    margin-right: 25px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6A9258;
 }
