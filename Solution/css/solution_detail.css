@@ -1,13 +1,6 @@
 /* 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Noto+Sans+KR:wght@400;500&display=swap');
-.wrapper { 
-    display: grid;
-    grid-template-rows: 332px 683px 1186px 577px 810px;
-    grid-template-columns: 1920px;
-    height : 100vh;  
-    /* align-items: center; */
-    /* justify-content: center; */
-}
+
 
 *{
     list-style-type: none;
@@ -16,7 +9,9 @@
 
 .introduction{
     /* border: 1px solid black; */
+    position: absolute;
     display: flex;
+    margin-top: 200px;
 }
 /* li{
     list-style: none;
@@ -179,6 +174,8 @@
 /* 필요한 재료 상세 */
 /* 키우기 방법 박스 */
 .grow_box{
+    position: absolute;
+    margin-top: 1000px;
     width: 1494px;
 }
 /* 재료 텍스트 */
