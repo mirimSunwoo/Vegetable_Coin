@@ -45,10 +45,10 @@
 
 iframe {
     position: absolute;
-    width: 2000px;
-    height: 1930px;
+    width: 1189px;
+    height: 1980px;
     top: -1410px;
-    left: -703px;
+    left: -6px;
     right: -1000px;
     bottom: -50px;
     margin-right: -100px;
@@ -587,4 +587,50 @@ label{
     line-height: 24px;
     color: #6A9258;
 }
+.prices {
+    position: absolute;
+    /* top: 15px; */
+    /* left: 16px; */
+    margin-left: 188px;
+    margin-top: 18px;
+    background: #FFFFFF;
+    width: 71px;
+    height: 34px;
+    border-radius: 34px;
+}
 
+.dollar {
+    /* 이미지 깨짐 다시 다운 받기 */
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    left: 4px;
+}
+
+#오이_price,#양파_price,#감자_price,#고구마_price,#당근_price,#콩나물_price,
+#토마토_price,#무_price,#상추_price,#시금치_price{
+    position: absolute;
+    top: 5px;
+    /* left: 37px; */
+
+    /* 폰트 적용 안됨 */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6A9258;
+}
+.before{
+ 
+}
+.before .before_img{
+    /* width: 2000px; */
+    height:600px;
+    margin-top: 500px;
+}
+.before_info{
+    position: absolute;
+
+}
