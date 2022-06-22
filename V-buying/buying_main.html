@@ -1,28 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>구매 스토어</title>
-    <link rel="stylesheet" href="../header/css/recipe_heaader copy.css">
+    <title>스토어</title>
+    <link rel="stylesheet" href="buying.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/header/css/recipe_heaader copy.css">
     <link rel="stylesheet" href="/footer/css/footer.css">
-
-    <script src="/footer/includeHTML.js"></script>
     <script src="buying.js"></script>
     <script src="/V-coin/storage.js"></script>
 
-    <link rel="stylesheet" href="buying.css">
-
+    <script src="temp.js"></script>
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
-<body>
-    <article include-html="buying.html"></article>
-    <script src="buying.js"></script>
-</body>
 
-<script>
-    includeHTML();
-</script>
+<body>
+    <!-- <header include-html="/header/recipe_header.html"></header> -->
+     <div class="header con">
+        <div class="header_logo">
+            <a href="/main.html"><img src="/header/image/header.png"></a>
+        </div>
+        <ul class="nav">
+            <li class="slide1"></li>
+            <li class="slide2"></li>
+            <li class="cell"><a href="/V-coin/coin_main.html" class="block">채소코인</a></li>
+            <li class="cell"><a href="/V-buying/buying_main.html" class="block">스토어</a></li>
+            <li class="cell"><a href="/Solution/solution_main.html" class="block">채소 키우기</a></li>
+            <li class="cell"><a href="/vbti/vbti.html" class="block">VBTI</a></li>
+        </ul>
+        <div class="con_2">
+            <a href="/MyPage/mypage.html" class="no-block"  style="left: 160px;"><img src="/header/image/User_green.png"></a>
+            <a href="/MyPage/login.html" class="no-block" style="left: 110px;"><img src="/header/image/Lock_green.png"></a>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="/header/script.js"></script>  
+    </div>
+    <div id="store">스토어</div>
+    <table>
+        <tr>
+            <td>
+                <div class="object one">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">60</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="potatoImg" src="img/potato.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result1")' value='&#45;' />
+                            <div id='result1'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result1")' value='&#43;' />
+                        </div>
+                        <div class="Vname">감자<span class="VEname">Potato</span></div>
+                        <input class="buy" type="button" id="buypotato" onclick="buy('buypotato')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object two">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">60</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="sweetPotatoImg" src="img/sweetPotato.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result2")' value='&#45;' />
+                            <div id='result2'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result2")' value='&#43;' />
+                        </div>
+                        <div class="Vname">고구마<span class="VEname" style="font-size: small;">SweetPotato</span></div>
+                        <input class="buy" type="button" id="buysweetpotato" onclick="buy('buysweetpotato')"
+                            value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object three">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">36</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="carrotImg" src="img/carrot.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result3")' value='&#45;' />
+                            <div id='result3'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result3")' value='&#43;' />
+                        </div>
+                        <div class="Vname">당근<span class="VEname">Carrot</span></div>
+                        <input class="buy" type="button" id="buycarrot" onclick="buy('buycarrot')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object four">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">23</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="radishImg" src="img/Radish.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result4")' value='&#45;' />
+                            <div id='result4'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result4")' value='&#43;' />
+                        </div>
+                        <div class="Vname">무<span class="VEname">Radish</span></div>
+                        <input class="buy" type="button" id="buyradish" onclick="buy('buyradish')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="object five">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">18</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="lettuceImg" src="img/lettuce.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result5")' value='&#45;' />
+                            <div id='result5'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result5")' value='&#43;' />
+                        </div>
+                        <div class="Vname">상추<span class="VEname">Lettuce</span></div>
+                        <input class="buy" type="button" id="buylettuce" onclick="buy('buylettuce')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object six">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">25</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="spinachImg" src="img/spinach.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result6")' value='&#45;' />
+                            <div id='result6'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result6")' value='&#43;' />
+                        </div>
+                        <div class="Vname">시금치<span class="VEname">Spinach</span></div>
+                        <input class="buy" type="button" id="buyspinach" onclick="buy('buyspinach')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object seven">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">20</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="onionImg" src="img/onion.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result7")' value='&#45;' />
+                            <div id='result7'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result7")' value='&#43;' />
+                        </div>
+                        <div class="Vname">양파<span class="VEname">Onion</span></div>
+                        <input class="buy" type="button" id="buyonion" onclick="buy('buyonion')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object eight">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">10</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="cucumberImg" src="img/cucumber.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result8")' value='&#45;' />
+                            <div id='result8'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result8")' value='&#43;' />
+                        </div>
+                        <div class="Vname">오이<span class="VEname">Cucumber</span></div>
+                        <input class="buy" type="button" id="buycucumber" onclick="buy('buycucumber')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="object nine">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">26</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="beanImg" src="img/beanSprouts.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result9")' value='&#45;' />
+                            <div id='result9'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result9")' value='&#43;' />
+                        </div>
+                        <div class="Vname">콩나물<span class="VEname" style="font-size: small;">BeanSprouts</span></div>
+                        <input class="buy" type="button" id="buybean" onclick="buy('buybean')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="object ten">
+                    <div class="prices">
+                        <img class="dollar" src="img/dollar.png">
+                        <span class="price">50</span>
+                    </div>
+                    <div class="Vimg">
+                        <img id="tomatoImg" src="img/tomato.png">
+                    </div>
+                    <div class="rec">
+                        <div class="quantity">
+                            <input class="minus" type='button' onclick='buycnt("minus", "result10")' value='&#45;' />
+                            <div id='result10'>0</div>
+                            <input class="plus" type='button' onclick='buycnt("plus", "result10")' value='&#43;' />
+                        </div>
+                        <div class="Vname">토마토<span class="VEname">Tomato</span></div>
+                        <input class="buy" type="button" id="buytomato" onclick="buy('buytomato')" value="구매하기" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer-box" style="top: 1827px;">
+        <div>
+            <p class="team-title">VEGETABLE COIN TEAM</p>
+            <p class="period-title">PERIOD</p>
+        </div>
+
+        <div style="margin-bottom: 0;">
+            <p class="designer-team">DESIGNER</p>
+            <p class="designer-period">DESIGN</p>
+        </div>
+        
+        <div>
+            <p class="designer-name">KIM JUNG MI, NAM DA JEONG</p>
+            <p class="design-date">2022. 01</p>
+        </div>
+        
+        <div>
+            <p class="developer-team">DEVELOPER</p>
+            <p class="develop-period">DEVELOP</p>
+        </div>
+
+        <div>
+            <p class="develop-name">JO YUN A, OH MIN JUNG,<br>LEE SUN WOO</p>
+            <p class="develop-date">2022. 02</p>
+        </div>
+        <hr class="line">
+        <p class="contact">Contact</p>
+        <p class="email">vegatable@mirim.hs.kr</p>
+        
+    </div>
+    
+    <div class="myInfo">
+        <p class="myInfoTitle">My Infomation</p>
+        <p class="myInfoPoint">my Point</p>
+        <div class="myInfoPointBox""></div>
+
+        <img class="myInfoDollarImg" src="/V-buying/img/dollar.png">
+
+        <p id="myInfoPointNum"></p>
+
+        <p class="myInfoInves">my Invesment</p>
+
+        <div class="myInfoInvesBox"></div>
+
+        <img class="myInfoTomatoImg" src="/V-coin/img/토마토.png">
+
+        <p id="myInfoInveCnt"></p>
+
+        <a class="myInfoMypage" href="/MyPage/mypage.html">마이페이지</a>
+
+        <a class="myInfoStore" href="/V-coin/coin_main.html">채소코인 바로가기</a>
+    </div>
+
+<script src="buying.js"></script>
+</body>
 </html>
