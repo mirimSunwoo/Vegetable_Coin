@@ -576,7 +576,7 @@ label{
     padding-right: 30px;
     padding-top: 2px;
 }
-.product-price .price{
+/* .product-price .price{
     position: relative;
     margin-top: 5px;
     margin-right: 25px;
@@ -586,18 +586,16 @@ label{
     font-size: 20px;
     line-height: 24px;
     color: #6A9258;
-}
-.prices {
+} */
+/* .prices {
     position: absolute;
-    /* top: 15px; */
-    /* left: 16px; */
     margin-left: 188px;
     margin-top: 18px;
     background: #FFFFFF;
     width: 71px;
     height: 34px;
     border-radius: 34px;
-}
+} */
 
 .dollar {
     /* 이미지 깨짐 다시 다운 받기 */
@@ -622,9 +620,9 @@ label{
     line-height: 24px;
     color: #6A9258;
 }
-.before{
+/* .before{
  
-}
+} */
 .before .before_img{
     /* width: 2000px; */
     height:600px;
@@ -633,4 +631,36 @@ label{
 .before_info{
     position: absolute;
 
+}
+.prices {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 188px;
+    background: #FFFFFF;
+    width: 71px;
+    height: 34px;
+    border-radius: 34px;
+}
+
+.dollar {
+    /* 이미지 깨짐 다시 다운 받기 */
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    left: 4px;
+}
+
+.price {
+    position: absolute;
+    top: 5px;
+    left: 37px;
+
+    /* 폰트 적용 안됨 */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #6A9258;
 }
