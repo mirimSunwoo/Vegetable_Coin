@@ -94,6 +94,9 @@ function buy(buyid) {
                     icon:'success',
                     confirmButtonColor: '#6A9258'
                 })
+				setTimeout(function(){
+                    location.reload();
+                },1500);
                 // location.reload();
             }
 			point = mypoint - price;
