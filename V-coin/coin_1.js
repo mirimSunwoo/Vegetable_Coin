@@ -136,6 +136,9 @@ function investment(investid) {
                     icon:'success',
                     confirmButtonColor: '#6A9258'
                 })
+                setTimeout(function(){
+                    location.reload();
+                },1500);
                 // location.reload();
             }
         })
